@@ -1,0 +1,74 @@
+
+
+Se necesita convertir el archivo markdown a html con:
+
+https://github.com/apaeffgen/PanConvert/archive/master.zip
+
+descomprimir
+
+Instalar las dependencias:
+
+sudo apt install pandoc python3 python3-pyqt5.qtwebengine python3-pyqt5 python3-pyqt5.qtwebchannel python3-pyqt5.qtwebkit 
+
+no se si sea necesario instalar:
+
+libtext-multimarkdown-perl
+
+Para lanzar
+
+$ python3 Panconvert.py 
+
+
+elegir de
+
+markdown 
+
+a
+
+html
+
+
+luego para poder poner el codigo de mi caja de codigos para comandos de linux que es esta:
+
+
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>escribe o pega
+escribe o pega
+escribe o pega</code></pre>
+
+
+y como al convertir de markdown a html me da así
+
+<pre><code>escribe o pega
+escribe o pega
+escribe o pega</code></pre>
+
+
+
+debo reemplazar en el archivo generado, esto:
+
+<pre><code>
+
+por:
+
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>
+
+
+para lo cual para hacerlo más rapido usaré:
+
+https://sourceforge.net/projects/findandreplace/
+
+este programa en linux tiene un .sh para lanzarlo
+
+alli buscar el archivo y abrirlo y luego en la pestaña de reemplazar añadir lo que voy a buscar y reemplazar y luego guardar esa informacion asi la proxima vez queabra el programa podré abrir otra vez con todo lo que deseo cambiar ya listo
+
+
+
+
+
+lo bueno es que este
+
+
+
+
+
+

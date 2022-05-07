@@ -1,0 +1,10 @@
+
+
+
+
+/lib/modules/5.10.52-rt47avl1-wachin/kernel/fs/exfat/exfat.ko
+
+visto en el video de:
+
+Try out this new Linux exFAT kernel module for improved performance | TechRepublic
+https://www.techrepublic.com/videos/try-out-this-new-linux-exfat-kernel-module-for-improved-performance/

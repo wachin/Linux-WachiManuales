@@ -1,0 +1,154 @@
+
+
+
+
+Longterm release kernels
+https://www.kernel.org/category/releases.html
+
+Version 	Maintainer 	                 Released 	Projected EOL
+5.15 	Greg Kroah-Hartman & Sasha Levin 	2021-10-31 	Oct, 2023
+5.10 	Greg Kroah-Hartman & Sasha Levin 	2020-12-13 	Dec, 2026
+5.4 	Greg Kroah-Hartman & Sasha Levin 	2019-11-24 	Dec, 2025
+4.19 	Greg Kroah-Hartman & Sasha Levin 	2018-10-22 	Dec, 2024
+4.14 	Greg Kroah-Hartman & Sasha Levin 	2017-11-12 	Jan, 2024
+4.9 	Greg Kroah-Hartman & Sasha Levin 	2016-12-11 	Jan, 2023
+
+
+Siguiendo las instrucciones de:
+
+System configuration [Linux-Sound]
+https://wiki.linuxaudio.org/wiki/system_configuration#do_i_really_need_a_real-time_kernel
+
+Me voy a descargar el siguiente Kernel:
+
+
+PARCHE
+
+patch-5.9.1-rt20.patch.xz                          28-Oct-2020 20:05    159K
+
+https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/
+https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/5.9/
+https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/5.9/patch-5.9.1-rt20.patch.xz
+
+y el parque Real Time para esa versión:
+
+
+KERNEL
+
+linux-5.9.1.tar.xz                                 17-Oct-2020 06:38    110M
+
+https://mirrors.edge.kernel.org/pub/linux/kernel/
+https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/
+https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.9.1.tar.xz
+
+
+DESCARGA
+
+wget -c https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/5.9/patch-5.9.1-rt20.patch.xz
+wget -c https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.9.1.tar.xz
+
+INSTALACIÓN
+
+tar xJvf linux-5.9.1.tar.xz
+cd linux-5.9.1
+xzcat ../patch-5.9.1-rt20.patch.xz | patch -p1
+
+
+cp /boot/config-`uname -r` .config
+
+make menuconfig
+
+
+CONFIGURAR EL TIEMPO REAL
+Seleccionar en: 
+
+General setup ---> 
+
+en:
+
+Preemption Model --->
+
+- Fully Preemptible Kernel (Real Time)
+
+
+exFAT
+
+Este Kernel si tiene soporte:
+
+File Systems ---> DOS/FAT/exFAT 
+
+
+
+PONER EL TIMER A 1000 Hz
+En:
+
+Processor type and features --->
+
+Timer Frecuency (xxx) ---
+
+entrar y chequear la frecuencia a 1000 Hz
+
+salir
+ 
+
+
+*********************************************************
+
+
+Parche 5.4
+El ultimo parche disponible a esta fecha 20220409 es:
+
+patch-5.4.182-rt72.patch.xz                        30-Mar-2022 16:56    180K
+
+https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/
+https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/5.4/
+https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/5.4/patch-5.4.182-rt72.patch.xz
+
+
+y para este parche encontré el Kernel:
+
+Kernel 5.4
+
+linux-5.4.182.tar.gz                               02-Mar-2022 10:47    163M
+
+https://mirrors.edge.kernel.org/pub/linux/kernel/
+https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/
+https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.4.182.tar.xz
+
+
+INSTALACIÓN:
+
+wget -c https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/5.4/patch-5.4.182-rt72.patch.xz
+wget -c https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.4.182.tar.xz
+
+tar xJvf linux-5.4.182.tar.xz
+cd linux-5.4.182
+xzcat ../patch-5.4.182-rt72.patch.xz | patch -p1
+
+
+cp /boot/config-`uname -r` .config
+
+make menuconfig
+
+
+
+seleccionar: 
+Fully Preemptible Kernel (RT)
+
+pero veo que este kernel no tiene soporte para exFAT en:
+
+File Systems---
+
+
+
+
+
+
+
+
+
+
+
+
+
+

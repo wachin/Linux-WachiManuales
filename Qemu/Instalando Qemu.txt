@@ -1,0 +1,114 @@
+
+En MX Linux 21 (Debian 11)
+
+sudo apt install qemu virt-manager bridge-utils libvirt-clients qemu-system qemu-system-gui libvirt-daemon-driver-qemu virt-viewer qemu-utils spice-client-gtk qemu-guest-agent qemu-user qemu-user-binfmt gir1.2-spiceclientgtk-3.0 qemu-block-extra python3-guestfs
+
+
+
+sudo apt remove qemu virt-manager bridge-utils libvirt-clients qemu-system qemu-system-gui libvirt-daemon-driver-qemu virt-viewer qemu-utils spice-client-gtk qemu-guest-agent qemu-user qemu-user-binfmt gir1.2-spiceclientgtk-3.0 qemu-block-extra python3-guestfs
+
+
+libvirt-daemon-driver-qemu
+Libvirt is a C toolkit to interact with the virtualization capabilities
+of recent versions of Linux (and other OSes). The library aims at providing
+a long term stable C API for different virtualization mechanisms. It currently
+supports QEMU, KVM, XEN, OpenVZ, LXC, and VirtualBox.
+
+This package contains the libvirtd connection driver for QEMU.
+
+/usr/bin/virt-qemu-run
+
+
+
+Instalar y configurar una solución de virtualización en Ubuntu 18.04 basándonos en KVM, Libvirt y Virtual Machine Manager
+https://opensai.org/bitacora/instalar-y-configurar-una-solucion-de-virtualizacion-en-ubuntu-18-04-basandonos-en-kvm-libvirt-y-virtual-machine-manager
+
+es/KVM - Debian Wiki
+https://wiki.debian.org/es/KVM
+
+sudo apt-get install qemu-system libvirt-clients libvirt-daemon-system
+
+Paquetes sugeridos:
+  augeas-doc augeas-tools libvirt-daemon-driver-storage-gluster
+  libvirt-daemon-driver-storage-iscsi-direct libvirt-daemon-driver-storage-rbd
+  libvirt-daemon-driver-storage-zfs numad apparmor auditd open-iscsi radvd
+  systemtap zfsutils
+Paquetes recomendados:
+  libvirt-daemon-driver-lxc libvirt-daemon-driver-vbox
+  libvirt-daemon-driver-xen libxml2-utils netcat-openbsd mdevctl
+  libnss-mymachines libnss-systemd
+
+
+en la instalación apareció:
+
+Configurando augeas-lenses (1.12.0-2) ...
+Configurando libaugeas0:i386 (1.12.0-2) ...
+Configurando systemd-container (1:247.3-6mx21) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/machines.target → /lib/systemd/system/machines.target.
+Configurando libvirt-daemon-config-nwfilter (7.0.0-3) ...
+Configurando libnetcf1:i386 (1:0.2.8-1.1) ...
+Configurando libvirt-daemon-system-systemd (7.0.0-3) ...
+Configurando libvirt-daemon (7.0.0-3) ...
+Configurando libvirt-daemon-system (7.0.0-3) ...
+Añadiendo al usuario libvirt-qemu al grupo libvirt-qemu
+Created symlink /etc/systemd/system/multi-user.target.wants/libvirtd.service → /lib/systemd/system/libvirtd.service.
+
+
+
+imoprtante:
+Añadiendo al usuario libvirt-qemu al grupo libvirt-qemu
+
+
+De ley hay que reiniciar sino no funciona
+
+Buscar en los programas:
+
+virt-manager
+
+abrirlo
+
+
+ver este video:
+
+How to install & use QEMU+KVM and virt-manager - YouTube
+https://www.youtube.com/watch?v=2SdSiJTGKLM
+
+
+
+
+al añadir la nueva vm poner ejemplo:
+
+MX_Linux_19.04_i386
+
+
+De la siguiente manera añadí el grupo libvirt a mi usuario
+
+Bionic (18.04 LTS) and higher
+
+The group name is changed to libvirt, and you also need to be a member of 'kvm':
+
+$ sudo adduser `id -un` libvirt
+Adding user '<username>' to group 'libvirt' ...
+$ sudo adduser `id -un` kvm
+Adding user '<username>' to group 'kvm' ...
+
+
+me dió así:
+
+wachin@mxlinux:~
+$ sudo adduser `id -un` libvirt
+Añadiendo al usuario `wachin' al grupo `libvirt' ...
+Añadiendo al usuario wachin al grupo libvirt
+Hecho.
+
+
+KVM/Installation - Community Help Wiki
+https://help.ubuntu.com/community/KVM/Installation
+
+Fixing Error Opening Spice Console SpiceClientGtk missing - apt get life
+https://www.aptgetlife.co.uk/fixing-error-opening-spice-console-spiceclientgtk-missing/
+
+
+
+wachi, saliá un error en virt-manager que no se puede arreglar, lo mejor es olvidar esto 
+

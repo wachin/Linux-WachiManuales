@@ -1,0 +1,13 @@
+
+
+https://community.kde.org/Kdenlive/Development/KF5
+
+Check that your compiled melt works:
+
+melt color:red
+
+Should play open a preview window with a red color clip
+
+melt myclip.mp4
+
+Should play your test file in a video window. 

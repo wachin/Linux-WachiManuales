@@ -1,0 +1,9 @@
+
+
+
+hvdwolf/jExifToolGUI: jExifToolGUI is a multi-platform java/Swing graphical frontend for the excellent command-line ExifTool application by Phil Harvey
+https://github.com/hvdwolf/jExifToolGUI
+
+
+Releases · hvdwolf/jExifToolGUI
+https://github.com/hvdwolf/jExifToolGUI/releases

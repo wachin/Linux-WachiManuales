@@ -1,0 +1,19 @@
+
+Dónde está el wallpaper de MX Linux para cambiarlo en Openbox
+
+está en:
+
+/etc/lightdm/lightdm-gtk-greeter.conf
+
+abrirlo como root:
+
+sudo gedit /etc/lightdm/lightdm-gtk-greeter.conf
+
+allí en la línea:
+
+[greeter]
+background = #stretched:/usr/share/backgrounds/honesty-muted.jpg
+
+cambiarla por otro, ejemplo:
+
+/home/wachin/Escritorio/warty-ubuntu-Tux-PFSLE-MX-etc-lightdm.jpg

@@ -1,0 +1,306 @@
+
+Instalando melt 7.0.1 en MX Linux 19 de 32 bits
+
+#####################
+Instalando cmake 3.14
+#####################
+
+sudo apt build-dep cmake
+
+Para instalar el ultimo mlt es necesario tener cmake 3.14, así que me fui a la página de cmake:
+
+https://cmake.org/download/
+
+y allí en old releases:
+
+https://github.com/Kitware/CMake/releases
+
+y me descargué una un poquito superior, la 3.15:
+
+https://github.com/Kitware/CMake/releases/tag/v3.15.0
+
+https://github.com/Kitware/CMake/releases/tag/v3.14.3
+
+y en el tutorial de instalacion:
+
+https://cmake.org/install/
+
+dice:
+
+Or, an existing CMake installation can be used to build a new version 
+
+y como yo tengo la 3.14 entonces pongo las siguientes instrucciones:
+
+cmake .
+make      
+make install
+
+o también así:
+
+./bootstrap
+make 
+sudo make install 
+
+sudo update-alternatives --install /usr/bin/cmake cmake /usr/local/bin/cmake 1 --force 
+
+para dejarlo como estaba
+
+sudo update-alternatives --install /bin/cmake cmake /usr/bin/cmake 1 --force
+
+
+Nota: a cmake no se lo debe instalar con cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr . pues luego hay que desinstalar al cmake del sistema y luego ya no se puede realizar ninguna operaciónpues al desinstalarlo se borrará el cmake que instalamos en /usr/bin/cmake
+
+
+Consultas
+
+Installing and use cmake 3.4.1 in Ubuntu 14.04 using alternatives
+https://www.claudiokuenzler.com/blog/611/installing-cmake-3.4.1-ubuntu-14.04-trusty-using-alternatives
+
+##############
+Instalando mlt
+##############
+
+sudo apt build-dep melt
+
+Para que el sistema lo reconozca lo mejor es desinstalar melt
+
+sudo apt remove melt libmlt6 libmlt-dev
+
+sudo apt install libsdl2-gfx-dev
+
+
+Para descargar melt fui a:
+ 
+https://github.com/mltframework/mlt/releases/
+
+allí descargué:
+
+https://github.com/mltframework/mlt/archive/refs/tags/v7.0.1.tar.gz
+
+descomprimirlo y entrar en la carpeta:
+
+cd mlt
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr .
+make
+sudo make install
+
+al compilar con cmake . a kdenlive aparece un error:
+
+CMake Error at /usr/local/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake:137 (message):
+  Could NOT find MLT: Found unsuitable version "6.16.0", but required is at
+  least "6.20.0" (found /usr/lib/i386-linux-gnu/libmlt.so)
+
+como he instalado melt 7.0.1 voy a tratar de arreglar eso así:
+
+
+sudo ln -s  /usr/lib/i386-linux-gnu/libmlt-7.so /usr/lib/i386-linux-gnu/libmlt.so
+
+sudo ln -s  /usr/lib/i386-linux-gnu/libmlt++-7.so.7.0.1 /usr/lib/i386-linux-gnu/libmlt++.so
+
+sudo ln -s  /usr/share/mlt-7 /usr/share/mlt
+
+sudo ln -s  /usr/include/mlt-7 /usr/include/mlt
+
+sudo ln -s  /usr/lib/i386-linux-gnu/mlt-7 /usr/lib/i386-linux-gnu/mlt
+
+
+
+
+
+
+Nota: y allí el README.md dice que se puede instalar con: cmake .
+
+
+###############################
+Archivos instalados importantes
+###############################
+
+abriendo el archivo:
+
+/home/wachin/github/mlt-releases/mlt-7.0.1/install_manifest.txt
+
+alli hay una parte muy importante:
+
+/usr/local/lib/libmlt-7.so.7.0.1
+/usr/local/lib/libmlt-7.so.7
+/usr/local/lib/libmlt-7.so
+
+y 
+
+/usr/local/bin/melt-7
+/usr/local/lib/libmlt++-7.so.7.0.1
+/usr/local/lib/libmlt++-7.so.7
+/usr/local/lib/libmlt++-7.so
+
+
+y el paquete  
+
+melt instalaba:
+
+/usr/bin/melt
+
+y paquete libmlt6 instalaba:
+
+
+/usr/lib/i386-linux-gnu
+/usr/lib/i386-linux-gnu/libmlt.so.6
+/usr/lib/i386-linux-gnu/libmlt.so.6.12.0
+/usr/lib/i386-linux-gnu/mlt
+/usr/lib/i386-linux-gnu/mlt/libmltavformat.so
+/usr/lib/i386-linux-gnu/mlt/libmltcore.so
+
+
+y el paquete libmlt-dev
+
+/usr/include/mlt
+/usr/include/mlt/framework
+/usr/include/mlt/framework/mlt.h
+/usr/include/mlt/framework/mlt_animation.h
+/usr/lib/i386-linux-gnu/libmlt.so
+/usr/lib/i386-linux-gnu/pkgconfig
+/usr/lib/i386-linux-gnu/pkgconfig/mlt-framework.pc
+
+
+y el paquete libmlt++3
+
+/.
+/usr
+/usr/lib
+/usr/lib/i386-linux-gnu
+/usr/lib/i386-linux-gnu/libmlt++.so.3
+/usr/lib/i386-linux-gnu/libmlt++.so.6.12.0
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libmlt++3
+
+
+y el paquete libmlt++-dev
+/.
+/usr
+/usr/include
+/usr/include/mlt++
+/usr/include/mlt++/Mlt.h
+/usr/include/mlt++/MltAnimation.h
+/usr/lib/i386-linux-gnu/libmlt++.so
+/usr/lib/i386-linux-gnu/pkgconfig
+/usr/lib/i386-linux-gnu/pkgconfig/mlt++.pc
+
+
+y el paquete libmlt-data
+
+
+/.
+/usr
+/usr/share
+/usr/share/mlt/avformat/blacklist.txt
+/usr/share/mlt/avformat/consumer_avformat.yml
+/usr/share/mlt/core/consumer_multi.yml
+/usr/share/mlt/core/data_fx.properties
+/usr/share/mlt/core/filter_audiomap.yml
+/usr/share/mlt/feeds/NTSC/obscure.properties
+/usr/share/mlt/feeds/PAL
+/usr/share/mlt/feeds/PAL/border.properties
+/usr/share/mlt/frei0r/blacklist.txt
+/usr/share/mlt/frei0r/not_thread_safe.txt
+/usr/share/mlt/frei0r/param_name_map.yaml
+/usr/share/mlt/gtk2
+/usr/share/mlt/gtk2/consumer_gtk2_preview.yml
+/usr/share/mlt/gtk2/filter_rescale.yml
+/usr/share/mlt/gtk2/producer_pango.yml
+/usr/share/mlt/gtk2/producer_pixbuf.yml
+/usr/share/mlt/jackrack
+/usr/share/mlt/jackrack/filter_jackrack.yml
+/usr/share/mlt/jackrack/filter_ladspa.yml
+/usr/share/mlt/jackrack/producer_ladspa.yml
+/usr/share/mlt/kdenlive
+/usr/share/mlt/kdenlive/filter_boxblur.yml
+/usr/share/mlt/kdenlive/filter_freeze.yml
+/usr/share/mlt/kdenlive/filter_wave.yml
+/usr/share/mlt/kdenlive/producer_framebuffer.yml
+/usr/share/mlt/linsys/consumer_sdi.yml
+/usr/share/mlt/lumas
+/usr/share/mlt/lumas/NTSC
+/usr/share/mlt/lumas/NTSC/luma01.pgm
+/usr/share/mlt/lumas/NTSC/luma02.pgm
+/usr/share/mlt/presets/consumer/avformat/MP3
+/usr/share/mlt/presets/consumer/avformat/MPEG-2
+/usr/share/mlt/presets/consumer/avformat/MPEG-4
+/usr/share/mlt/presets/consumer/avformat/MPEG-4-ASP
+/usr/share/mlt/presets/consumer/avformat/webm
+/usr/share/mlt/presets/consumer/avformat/webm-pass1
+/usr/share/mlt/presets/consumer/avformat/x264-medium
+/usr/share/mlt/presets/consumer/avformat/x264-medium-baseline
+/usr/share/mlt/presets/consumer/avformat/x264-medium-main
+/usr/share/mlt/presets/consumer/avformat/x264-medium-pass1
+/usr/share/mlt/presets/consumer/avformat/x265-medium
+/usr/share/mlt/presets/consumer/avformat/x265-medium-pass1
+/usr/share/mlt/profiles/atsc_1080p_30
+/usr/share/mlt/profiles/atsc_1080p_50
+/usr/share/mlt/profiles/atsc_1080p_5994
+/usr/share/mlt/profiles/atsc_1080p_60
+/usr/share/mlt/profiles/atsc_720p_2398
+/usr/share/mlt/profiles/atsc_720p_24
+/usr/share/mlt/profiles/atsc_720p_25
+/usr/share/mlt/profiles/atsc_720p_2997
+/usr/share/mlt/xml/mlt-xml.dtd
+/usr/share/mlt/xml/producer_xml-nogl.yml
+/usr/share/mlt/xml/producer_xml-string.yml
+/usr/share/mlt/xml/producer_xml.yml
+
+
+
+
+#############################################
+melt 7.0.1 no es detectado en mi instalación:
+#############################################
+
+según:
+
+
+Mlt libraries not properly found by CMAKE #1506 
+https://github.com/synfig/synfig/issues/1506
+
+arch linux
+
+Issue description:
+
+mlt libraries are not properly found on linux system
+
+workaround: execute the following before building
+
+export CPATH="$CPATH:/usr/include/mlt++:/usr/include/mlt/"
+
+Probably does not have anything directly to do with synfig as the following file will also fail to compile
+
+unless the above workaround is used. Nevertheless, I would expect CMAKE to find the libraries on it's own.
+
+Can you show output of this commands:
+
+pkg-config --cflags mlt++
+
+and
+
+locate mlt++.pc
+
+Thank you for looking into this:
+
+pkg-config --cflags mlt++
+
+debería debolver:
+
+-I/usr/include/mlt++ -I/usr/include/mlt -D_REENTRANT
+
+locate mlt++.pc
+
+/usr/lib/pkgconfig/mlt++.pc
+
+
+
+
+
+
+
+
+
+
+
+

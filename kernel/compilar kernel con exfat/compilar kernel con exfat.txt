@@ -1,0 +1,24 @@
+
+
+https://www.kernelconfig.io/config_exfat_fs
+
+
+exFAT filesystem support
+modulename: exfat.ko
+configname: CONFIG_EXFAT_FS
+Linux Kernel Configuration
+└─> File systems
+└─> DOS/FAT/EXFAT/NT Filesystems
+└─> exFAT filesystem support
+
+This allows you to mount devices formatted with the exFAT file system.
+exFAT is typically used on SD-Cards or USB sticks.
+
+To compile this as a module, choose M here: the module will be called
+exfat.
+
+
+source code:
+fs/exfat/ 
+
+

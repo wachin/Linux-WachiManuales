@@ -1,0 +1,43 @@
+
+usr/local/
+
+sudo rm  /usr/local/bin/melt
+sudo rm  /usr/local/bin/melt-7
+sudo rm -rf /usr/local/lib/libmlt*
+sudo rm -rf /usr/local/lib/mlt*
+sudo rm -rf /usr/local/lib/pkgconfig/mlt*
+sudo rm -rf /usr/local/include/mlt*
+sudo rm -rf /usr/local/share/mlt*
+
+
+usr/
+
+sudo rm  /usr/bin/melt
+sudo rm  /usr/bin/melt-7
+sudo rm -rf /usr/lib/libmlt*
+sudo rm -rf /usr/lib/mlt*
+sudo rm -rf /usr/lib/pkgconfig/mlt*
+sudo rm -rf /usr/include/mlt*
+sudo rm -rf /usr/share/mlt*
+
+
+
+
+
+
+CONSULTA:
+
+https://kevin.deldycke.com/2010/11/latest-stable-kdenlive-development-version-mlt/
+
+
+ Finally, if you want to revert the mess we created on the system, you have to remove the MLT we built in place:
+$ sudo rm -rf /usr/lib/libmlt*
+$ sudo rm -rf /usr/lib/mlt*
+$ sudo rm -rf /usr/lib/pkgconfig/mlt*
+$ sudo rm -rf /usr/include/mlt*
+$ sudo rm -rf /usr/share/mlt*
+
+
+
+
+

@@ -1,0 +1,15 @@
+
+
+
+Hola Escuelas Linux al fin pude publicar las compilaciones, son tres por todas
+
+LibreOffice 7.2.2.2 de 32 bit DEB para MX Linux, antiX, Linux Mint Debbie Basados en Debian(Compilado por Escuelas Linux) - Segúnda versión menor, para entusiastas de la técnología 
+https://facilitarelsoftwarelibre.blogspot.com/2022/02/libreoffice-7222-de-32-bit-deb.html
+
+
+LibreOffice 7.2.5.2 de 32 bit DEB para MX Linux, antiX, Linux Mint Debbie Basados en Debian (Compilado por Escuelas Linux) - Rama fija, Para Empresas
+https://facilitarelsoftwarelibre.blogspot.com/2022/02/libreoffice-7252-de-32-bit-deb-para-mx.html
+
+
+LibreOffice 7.3.0.3 de 32 bit DEB para MX Linux, antiX, Linux Mint Debbie Basados en Debian(Compilado por Escuelas Linux) - Rama nueva, para entusiastas de la tecnología 
+https://facilitarelsoftwarelibre.blogspot.com/2022/02/libreoffice-7303-de-32-bit-deb-para-mx.html

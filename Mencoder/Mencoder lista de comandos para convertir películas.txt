@@ -1,0 +1,57 @@
+
+
+
+mencoder "A prueba de fuego.mp4" -o "A prueba de fuego (mencoder 2).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=715:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128
+
+mencoder "Si sólo pudiera imaginarme (I Can Only Imagine).mp4" -o "Si sólo pudiera imaginarme (I Can Only Imagine)(Mencoder 2) v2.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1500:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=224 
+
+mencoder "UN GRITO DESDE LA MONTAÑA @PeliculasCristianas.mp4" -o "./Mencoder/Un grito desde la montaña.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=580:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=64
+
+mencoder "Entre Sus Brazos @PeliculasCristianas.mp4" -o "./Mencoder/Entre Sus Brazos.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=534:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128
+
+mencoder "El Cuarto Sabio @PeliculasCristianas.mp4" -o "./Mencoder/El cuarto Sabio.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=881:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128 && \
+mencoder "Una Llama En La Oscuridad @PeliculasCristianas.mp4" -o "./Mencoder/Una Llama En La Oscuridad.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1103:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128 && \
+
+
+PLANTILLA:
+
+mencoder "Película A (a convertir).mp4" -o "Película A (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1362:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=255 && \
+mencoder "Película B (a convertir).mp4" -o "Película B (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1362:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=255 && \
+mencoder "Película C (a convertir).mp4" -o "Película C (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1362:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=255
+
+
+A CONVERTIR:
+
+
+mencoder "La Mujer del Predicador.mp4" -o "./Mencoder/La Mujer del Predicador.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1362:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=255 && \
+mencoder "Triunfo En La Adversidad.mp4" -o "./Mencoder/Triunfo En La Adversidad.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2491:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=192 && \
+mencoder "El campamento de mi vida castellano.mp4" -o "./Mencoder/El campamento de mi vida castellano.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2399:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=320 && \
+mencoder "La decisión de Alison.mp4" -o "./Mencoder/La decisión de Alison.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2836:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=192 && \
+mencoder "Policarpo.mp4" -o "./Mencoder/Policarpo.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2802:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=192 && \
+mencoder "Por la Gloria.mp4" -o "./Mencoder/Por la Gloria.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2441:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=192
+
+
+
+
+BRANDON
+
+mencoder "20210721 Aprobación de graduación de Brandon como Enfermero.mp4" -o "./Mencoder/20210721 Aprobación de graduación de Brandon como Enfermero.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2262:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=255 && \
+mencoder "Graduación Enfermero Brandon Pelaez UNESUM 2021.mp4" -o "./Mencoder/Graduación Enfermero Brandon Pelaez UNESUM 2021.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2262:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128
+
+
+
+
+
+
+
+
+
+
+
+
+
+CONSULTAS:
+
+Ejecución de multiples comandos subsecuentes en una línea en la terminal de Linux
+https://facilitarelsoftwarelibre.blogspot.com/2021/08/ejecucion-de-multiples-comandos-en-una-terminal-de-linux.html
+

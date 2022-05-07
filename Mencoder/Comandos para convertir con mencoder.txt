@@ -1,0 +1,82 @@
+
+
+
+
+
+
+
+2021-09-21
+
+mencoder "John Hus.mp4" -o "./Mencoder/John Hus.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=3992:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=192 && \
+mencoder "John Wycliffe, La Estrella de la Mañana.mp4" -o "./Mencoder/John Wycliffe, La Estrella de la Mañana.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=879:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128 && \
+mencoder "José el rey de los sueños.mp4" -o "./Mencoder/José el rey de los sueños.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2588:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128 && \
+mencoder "La Cruz Y El Puñalmp4" -o "./Mencoder/La Cruz Y El Puñalmp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=882:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128 && \
+mencoder "Sublime Gracia.mp4" -o "./Mencoder/Sublime Gracia.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=221:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=126 && \
+echo "Dios te bendiga"
+
+
+
+
+
+
+
+
+
+mencoder "Alma Surfera.mp4" -o "./Mencoder/Alma Surfera.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=799:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=112 && \
+mencoder "Cicatrices.avi" -o "./Mencoder/Cicatrices.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1199:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128 && \
+mencoder "Como flechas.mp4" -o "./Mencoder/Como flechas.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2483:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=192 && \
+mencoder "Cristiano de la secreta.mp4" -o "./Mencoder/Cristiano de la secreta.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1515:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128 && \
+
+
+
+mencoder "Cuarto de Guerra.mp4" -o "./Mencoder/Cuarto de Guerra.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1362:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=255 && \
+mencoder "De la furia a la libertad.mp4" -o "./Mencoder/De la furia a la libertad.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1362:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=255 && \
+mencoder "Desafio de Gigantes.mp4" -o "./Mencoder/Desafio de Gigantes.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1362:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=255 && \
+mencoder "Dios no está muerto 1.mp4" -o "./Mencoder/Dios no está muerto 1.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1362:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=255 && \
+mencoder "Dios no está muerto 2.mp4" -o "./Mencoder/Dios no está muerto 2.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1362:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=255 && \
+mencoder "Dios no está Muerto 3.mp4" -o "./Mencoder/Dios no está Muerto 3.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1362:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=255 && \
+echo "Dios les bendiga"
+
+
+
+2021-09-12
+
+
+mencoder "Por siempre.mp4" -o "./Mencoder/Por siempre.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1753:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=174 && \
+mencoder "Renovación del corazón.mp4" -o "./Mencoder/Renovación del corazón.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2887:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=192 && \
+mencoder "Resucitado (Risen).mp4" -o "./Mencoder/Resucitado (Risen).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=920:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128 && \
+mencoder "Reto de Valientes.mp4" -o "./Mencoder/Reto de Valientes.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1236:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=63 && \
+mencoder "Salvar una vida (To save a life).mp4" -o "./Mencoder/Salvar una vida (To save a life).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=366:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=96 && \
+mencoder "Samson (2018).mp4" -o "./Mencoder/Samson (2018).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1280:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128 && \
+mencoder "Si sólo pudiera imaginar.mp4" -o "./Mencoder/Si sólo pudiera imaginar.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1500:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=448 && \
+mencoder "Sublime Gracia (Amazing Grace).mp4" -o "./Mencoder/Sublime Gracia (Amazing Grace).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=221:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=126 && \
+mencoder "Triunfo en la adversidad.mp4" -o "./Mencoder/Triunfo en la adversidad.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2491:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=192 && \
+mencoder "Una creación del Señor.mp4" -o "./Mencoder/Una creación del Señor.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=750:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=160 && \
+mencoder "Victor.mp4" -o "./Mencoder/Victor.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=2594:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=192 && \
+
+
+mencoder "Victorioso.mp4" -o "./Mencoder/Victorioso.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=569:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=64 && \
+mencoder "Woodlawn.mp4" -o "./Mencoder/Woodlawn.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=656:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128 && \
+
+
+PLANTILLA:
+
+
+mencoder "Película A (a convertir).mp4" -o "./Mencoder/Película A (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película B (a convertir).mp4" -o "./Mencoder/Película B (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película A (a convertir).mp4" -o "./Mencoder/Película A (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película B (a convertir).mp4" -o "./Mencoder/Película B (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película A (a convertir).mp4" -o "./Mencoder/Película A (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película B (a convertir).mp4" -o "./Mencoder/Película B (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película A (a convertir).mp4" -o "./Mencoder/Película A (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película B (a convertir).mp4" -o "./Mencoder/Película B (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película A (a convertir).mp4" -o "./Mencoder/Película A (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película B (a convertir).mp4" -o "./Mencoder/Película B (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película A (a convertir).mp4" -o "./Mencoder/Película A (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película B (a convertir).mp4" -o "./Mencoder/Película B (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película A (a convertir).mp4" -o "./Mencoder/Película A (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película B (a convertir).mp4" -o "./Mencoder/Película B (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película A (a convertir).mp4" -o "./Mencoder/Película A (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película B (a convertir).mp4" -o "./Mencoder/Película B (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película A (a convertir).mp4" -o "./Mencoder/Película A (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \
+mencoder "Película B (a convertir).mp4" -o "./Mencoder/Película B (convertida).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=0000:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=000 && \

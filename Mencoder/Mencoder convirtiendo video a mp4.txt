@@ -1,0 +1,91 @@
+
+
+https://wiki.archlinux.org/title/MEncoder
+
+mencoder -of lavf -lavfopts format=mp4 -oac lavc -ovc lavc -lavcopts \
+aglobal=1:vglobal=1:acodec=libfaac:vcodec=mpeg4:abitrate=128:vbitrate=640:keyint=250:mbd=1:vqmax=10:lmax=10:turbo  -af lavcresample=44100 \
+-vf harddup,scale=640:-3 "delete_me.mpg" -o "$1.mp4"
+
+
+############################
+
+
+https://www.linux.com/news/cli-magic-video-conversion-mencoder/
+
+mencoder file.mpg -o file.avi -ovc lavc -oac lavc 
+
+mencoder "Alma Surfera.mp4" -o "Alma Surfera (mencoder).mp4" -ovc lavc -oac lavc 
+
+mencoder "A prueba de fuego.mp4" -o "A prueba de fuego (mencoder).mp4" -ovc lavc -oac lavc 
+
+
+#############################
+
+How to use mencoder to convert MP4 videos for a Pioneer AVH-280BT head unit
+https://gist.github.com/rudylacrete/dd4ec2f983beff730791e03b8baa362f
+
+These directions are geared toward OS X but I'm assuming this will work on Linux systems and possibly Windows machines with mplayer/mencoder installed. These directions assume basic familiarity with the terminal/command line. If you are not comfortable with that or would rather use a GUI, there are other options like this helpful page which shows how to use the DivX video converter to do this same thing.
+
+I also assume these instructions will work on other Pioneer head units I don't happen to own, and possibly on other brands as well.
+
+
+Format a USB drive
+
+The manufacturer's documentation specifies that you need a FAT32-formatted USB storage device. If you don't know how to format a USB drive, just Google it. You'll probably want to use Disk Utility if you're on OS X, but every OS will have some way of doing this. There are some other file and filesystem requirements in that documentation as well, which may be of use for troubleshooting.
+Use mencoder to convert your files
+
+Cutting to the chase, here's an example of a commandline that works:
+
+mencoder {input_file}.mp4 -o {outfile_file}.avi -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=500:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=192 -vf scale=720:-10,harddup
+
+Where {input_file}.mp4 is something like adventure_time_s1e01.mp4 and {output_file}.mp4 is adventure_time_s1e01.avi. I have read that Pioneer head units don't like underscores in file names but I haven't found that to be the case.
+Copy to USB
+
+Copy your file(s) to the USB storage and connect it to the head unit. You should be able to see and hear the video little to no trouble at this point. See Troubleshooting for some tips if it doesn't work for you at this point.
+Tweaking
+
+I had never used mencoder before this, so I had to do a lot of Googling to figure out what I was doing. I don't know a ton about video and audio codecs either, so there was a good deal of trial-and-error involved here. Here are the mencoder options I'm using as why, as far as I can understand.
+
+    mencoder {input_file}.mp4 -o {output_file}.avi: Base mencoder command, giving it the input and output filenames
+    -ovc lavc: Tells mencoder to use the libavcodec video codec library
+    -lavopts: sets libavcodec options
+    vcodec=mpeg4: use mpeg4 video codec
+    vbitrate=500: sets the video bitrate to 500 Kbps; higher might work as well, but this has consistently worked for 11-minute cartoon mp4s for me.
+    vpass=1: Specifies one-pass encoding. Two-pass encoding works sometimes but not always. There is no noticeable difference on the small screen in my car anyway, though.
+    -ffourcc DX50: This is critical but I'm not sure what it does other than set ID_VIDEO_FORMAT=DX50
+
+
+    -oac mp3lame: Tells mencoder to use the mp3lame codec library for audio
+    -lameopts: Sets mp3lame options
+    br=192: Sets audio bitrate to 192 kbps but I'm not sure it works
+    -vf: Sets video options, I guess
+    scale=720:-10: Sets the horizontal resolution to 720 pixels and auto-scales the vertical resolution -- this is critical
+    harddup: Tells mencoder to include unchanged frames in the copy (e.g. there if there is no difference between frame 10 and frame 11, copy it anyway instead of using some sort of index to indicate an unchanged frame. I'm not sure how important this actually is.
+
+Known issues
+
+An error like this pops up for every frame while encoding:
+
+[mpeg4 @ 0x10d7f5080]AVFrame.format is not set
+[mpeg4 @ 0x10d7f5080]AVFrame.width or height is not set
+
+It doesn't appear to cause any playback issues.
+Troubleshooting
+Installation problems
+
+If brew install --build-from-source mplayer appears to freeze, as it did on my computer, you may be having troubling downloading the source. I'm not sure why curl can't do that in this circumstance, but I found that you could just run brew install -v --build-from-source mplayer and use your browser to go to the URL it shows it's trying to download from. Once you've got the file, just stick it in ~/Library/Caches/Homebrew/ and run brew install --build-from-source mplayer again.
+
+
+WACHIN SOLUCIÓN:
+
+mencoder "A prueba de fuego.mp4" -o "A prueba de fuego (mencoder 2).mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=715:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=128
+
+
+mencoder "Si sólo pudiera imaginarme (I Can Only Imagine).mp4" -o "Si sólo pudiera imaginarme (I Can Only Imagine)(Mencoder 2) v2.mp4" -ovc lavc -lavcopts vcodec=mpeg4:vbitrate=1500:vpass=1 -ffourcc DX50 -oac mp3lame -lameopts br=224
+
+
+
+
+
+
+

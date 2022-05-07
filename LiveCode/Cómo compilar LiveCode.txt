@@ -1,0 +1,63 @@
+
+
+Compilando LiveCode en MX Linux 19
+
+Según
+
+livecode/build-linux.md at develop · livecode/livecode
+https://github.com/livecode/livecode/blob/develop/docs/development/build-linux.md
+
+Instalar las dependencias:
+
+sudo apt-get install build-essential automake libtool gawk git curl flex &&
+sudo apt-get install bison libx11-dev libxext-dev libxrender-dev libxft-dev &&
+sudo apt-get install libxinerama-dev libxv-dev libxcursor-dev libfreetype6-dev && 
+sudo apt-get install libpopt-dev liblcms2-dev pkg-config libgtk2.0-dev zip
+
+pero esta está deprecada:
+
+libesd0-dev 
+
+Nota: Está en Stretch https://packages.debian.org/stretch/libesd0-dev
+
+pero instalo la siguiente:
+
+libesd-java
+
+
+DESCARGAR EL CÓDIGO FUENTE CON GIT
+
+Primero crear un lugar donde poner el código y luego descargar:
+
+mkdit LiveCode
+cd LiveCode
+git clone https://github.com/livecode/livecode
+
+allí dentro están las carpetas:
+
+thirdparty
+
+allí hay que poner
+
+git clone https://github.com/livecode/livecode-thirdparty
+
+e 
+
+ide
+
+allí hay que poner
+
+git clone https://github.com/livecode/livecode-ide
+
+cd .. / ..
+
+COMPILAR:
+
+make config-linux
+
+make -k
+
+
+make -C build-linux-x86/livecode development
+
+Esperar 

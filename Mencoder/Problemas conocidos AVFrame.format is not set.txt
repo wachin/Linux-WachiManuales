@@ -1,0 +1,14 @@
+
+
+
+Problemas conocidos AVFrame.format is not set
+
+Aparece un error como este para cada fotograma durante la codificación:
+
+[mpeg4 @ 0x10d7f5080]AVFrame.format is not set
+[mpeg4 @ 0x10d7f5080]AVFrame.width or height is not set
+
+
+
+How to use `mencoder` to convert MP4 videos for a Pioneer AVH-280BT head unit
+https://gist.github.com/chaseroden/86dd48feb7c20d03308f74e132046cc3

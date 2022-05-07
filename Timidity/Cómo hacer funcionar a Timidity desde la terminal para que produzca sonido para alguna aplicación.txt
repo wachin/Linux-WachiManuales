@@ -1,0 +1,21 @@
+
+
+
+Necesito hacer funcionar a DTab (de Windows) con Timidity
+
+debo instalar desde la terminal así:
+
+sudo apt install timidity
+
+luego para lanzarlo y hacerlo sonar poner:
+
+timidity -iA
+
+y luego en programas que lo puedan usar como kmid2 u otro reproductor de midi
+
+
+
+BASADO EN
+sound - How to use timidity in Ubuntu 18.04? - Ask Ubuntu
+https://askubuntu.com/a/1238036/145772
+

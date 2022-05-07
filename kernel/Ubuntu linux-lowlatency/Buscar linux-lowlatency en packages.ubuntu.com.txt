@@ -1,0 +1,28 @@
+
+
+
+
+linux-lowlatency
+
+o poner:
+
+https://packages.ubuntu.com/linux-lowlatency
+
+https://packages.ubuntu.com/linux-headers-lowlatency
+
+allí entre las dependencias hay un archivo con numeros de versión. Me voy a descargar:
+
+https://packages.ubuntu.com/focal/linux-image-5.4.0-107-lowlatency
+
+luego lo descomprimo y busco viendo los archivos ocultos en thunar con Ctrl + H buscando al archivo .config
+
+
+/focal/linux-headers-5.4.0-107-lowlatency_5.4.0-107.121_amd64/usr/src/linux-headers-5.4.0-107-lowlatency/
+
+
+allí está el archivo 
+
+.config
+
+
+
