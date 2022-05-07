@@ -1,0 +1,102 @@
+<h1 id="instalando-dmidiplayer-1.5.3-en-mx-linux-21-de-32-o-64-bits-desde-código-fuente">Instalando dmidiplayer 1.5.3 en MX Linux 21 de 32 o 64 bits desde código fuente</h1>
+<p>La siguiente es la única manera en que he podido instalar dmidiplayer en MX Linux 21 (basado en Debian 11 Bullseye), puede que funcione en otro Linux pero todavía no lo he probado (usted puede testearlo). Lo siguiente es la solución unicamente para la versión 1.5.3, pues puede que luego cambien alguno en el código y se deba de instalar de otra forma.</p>
+<h2 id="desinstalando-drumstick">Desinstalando drumstick</h2>
+<p>Si usted tenía instalado desde los repositorios a drumstick desinstálelo:</p>
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>sudo apt remove drumstick-tools</code></pre>
+<p>Eso porque es necesaria una librería de desarrollo que viene unicamente en el código fuente.</p>
+<h1 id="dependencias">Dependencias</h1>
+<p>dmidiplayer depende de drumstick, uchardet, desde código fuente (no desde los repositorios), y para poderlas compilar necesita instalar las siguientes dependencias:</p>
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>sudo apt install libasound2-dev doxygen libpulse-dev libfluidsynth-dev qttools5-dev cmake qttools5-dev pandoc</code></pre>
+<p><strong>Nota:</strong> <em>En mi sistema MX Linux 21 tenía instalado algunas otras librerías de desarrollo por lo que puede que falten algunas, pero usted podrá verlas al momento de intentar compilar pues allí saldrán1.5.3 mensajes de error y buscando en Google debería encontrar las faltantes.</em></p>
+<h1 id="compilando-drumstick">Compilando drumstick</h1>
+<p>Entrar en la siguiente dirección:</p>
+<p>https://sourceforge.net/projects/drumstick/files/</p>
+<p>y realizo la compilación poniendo en la terminal uno por uno lo siguiente:</p>
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>wget -c https://sourceforge.net/projects/drumstick/files/2.6.0/drumstick-2.6.0.tar.gz
+tar -xvzf drumstick-2.6.0.tar.gz
+cd drumstick-2.6.0
+mkdir -p build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..
+make
+sudo make install
+exit</code></pre>
+<p>También si lo desea en la dirección se puede descargar el código fuente manualmente, luego descomprimiendo el archivo y entrando allí desde una terminal y poniendo como está arriba indicado desde mkdir . . . . . se puede compilar:</p>
+<p>https://sourceforge.net/projects/drumstick/files/2.6.0/</p>
+<p>Al compilarlose instalaran los siguientes lanzadores en su sistema:</p>
+<p>/usr/bin/drumstick-drumgrid /usr/bin/drumstick-guiplayer<br />
+/usr/bin/drumstick-vpiano</p>
+<p><strong>Nota:</strong> <em>Yo configuré en cmake para que haga la instalación en la ruta /usr pues de lo contrario se instalaba todo en /usr/local y no funcionaba el programa.</em></p>
+<p><strong>Para desinstalar:</strong> Lo siguiente es si en algún caso luego lo desea desinstalar, esto estándo en la carpeta del codigo fuente en una terminal:</p>
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>sudo make uninstall</code></pre>
+<h1 id="compilando-uchardet">Compilando Uchardet</h1>
+<p>Siguiendo las instrucciones de instalación desde:</p>
+<p>https://www.freedesktop.org/wiki/Software/uchardet/</p>
+<p>abra una terminal y ponga uno por uno:</p>
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>git clone https://gitlab.freedesktop.org/uchardet/uchardet.git
+cd uchardet
+cmake .
+make
+sudo make install
+exit</code></pre>
+<p><strong>Para desinstalar:</strong> Lo siguiente es si en algún caso luego lo desea desinstalar, esto estándo en la carpeta del codigo fuente en una terminal:</p>
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>sudo make uninstall</code></pre>
+<h1 id="compilando-dmidiplayer-1.5.3">Compilando dmidiplayer 1.5.3</h1>
+<p>Las siguientes instrucciones son para la versión 1.5.3 para MX Linux 21 porque para esta versión de la siguiente manera funcionó bien:</p>
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>wget -c https://github.com/pedrolcl/dmidiplayer/archive/refs/tags/v1.5.3.tar.gz
+tar -xvzf v1.5.3.tar.gz
+cd dmidiplayer-1.5.3
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX:PATH=/usr
+make
+sudo make install
+exit</code></pre>
+<p>Al hacer esto el programa quedará instalado entre sus aplicaciones:</p>
+<p><img src="img/01%20buscando%20dmidiplayer%20entre%20las%20aplicaciones%20en%20Linux.jpg" /></p>
+<p>quedando con el nombre:</p>
+<p>Reproductor Drumstick de archivos MIDI</p>
+<p><strong>Nota:</strong> <em>En cmake lo configuré para que vaya la instalación a /usr pues así funciona, pues por defecto estaba a usr/local y así no funcionaba. También no es necesario poner -DCMAKE_PREFIX_PATH=“<span class="math inline"><em>H</em><em>O</em><em>M</em><em>E</em>/<em>Q</em><em>t</em>5;</span>HOME/drumstick2;$HOME/uchardet” como ha esta fecha 2022-04-28 dice en la página de https://github.com/pedrolcl/dmidiplayer porque al haber compilado a drumstick2 y uchardet e instalado ambos ya se configuraron correctamente las rutas en Linux, y en cuando a Qt pues también ya está configurado el path por las dependencias instaladas.</em></p>
+<p><strong>Para desinstalar:</strong> Lo siguiente es si en algún caso luego lo desea desinstalar, esto estándo en la carpeta del codigo fuente en una terminal:</p>
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>sudo make uninstall</code></pre>
+<h1 id="compilación-alternativa-dmididplayer">Compilación Alternativa dmididplayer</h1>
+<p>También se lo puede instalar de la siguiente manera y a esta fecha 2022-04-29 funciona:</p>
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>git clone https://github.com/pedrolcl/dmidiplayer
+cd dmidiplayer
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX:PATH=/usr
+make
+sudo make install</code></pre>
+<p>pero no lo pongo como principal porque con el paso del tiempo el desarrollador seguirá mejorando y cambiando el código y puede que luego no se pueda instalar de esta manera</p>
+<h1 id="usando-dmidiplayer">Usando dmidiplayer</h1>
+<p>Abra el programa y de clic en:</p>
+<p><strong>Archivo → Abrir</strong></p>
+<p>busque un archivo de alguna secuencia, pueden ser:</p>
+<p>.kar<br />
+.mid<br />
+.midi<br />
+.rmi<br />
+.wrk</p>
+<p>en la siguiente imagen estoy escuchando un MIDI:</p>
+<p><img src="img/02%20dmidiplayer%20abriendo%20archivo%20midi.png" /></p>
+<p>Por defecto el programa está configurado para reproducir los archivos de secuencias usando SonivoxEAS, esto lo puede constalar en:</p>
+<p><strong>Preferencias → Ajustes MIDI</strong></p>
+<p><img src="img/03%20viendo%20la%20configuración%20MIDI.png" /></p>
+<h1 id="usando-dmidiplayer-con-jack">Usando dmidiplayer con JACK</h1>
+<p>Si usted desea usar este programa en <a href="https://ubuntustudio.org/">UbuntuStudio</a> o <a href="http://www.bandshed.net/">AV Linux</a> debe usar ALSA</p>
+<p>Antes de todo instale una fuente de sonido, para mi tiene buen sonido:</p>
+<pre class="linux-code" style="background: url(https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; font-size: medium; line-height: 22.3999996185303px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><code>sudo apt-get install musescore-general-soundfont-lossless</code></pre>
+<p>También puede instalar otras, aquí le dejo un tutorial:</p>
+<p><strong><a href="https://facilitarelsoftwarelibre.blogspot.com/2019/11/fuentes-de-sonido-soundfonts-gratuitas.html">Fuentes de sonido (SoundFonts) gratis desde paquetes de Ubuntu, Debian, Deepin Linux y TuxGuitar</a></strong></p>
+<p>Ahora si, debe seguir estos pasos:</p>
+<ol type="1">
+<li>Abrir QjackCtl y darle <strong>Play</strong></li>
+<li>Abrir Qsynth y cargar una fuente de sonidos:<br />
+<strong>Configuración → SoundFonts → Abrir</strong></li>
+<li>Abrir dmidiplayer y en Ajustes M IDI seleccionar ALSA y debajo aparecerá FLUID Synth</li>
+</ol>
+<p>En la siguiente imagen estoy escuando un MIDI con muy buen sonido:</p>
+<p><img src="img/04%20Usando%20dmidiplayer%20con%20JACK.png" /></p>
+<p>Dios les bendiga</p>
+

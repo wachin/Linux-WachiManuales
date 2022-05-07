@@ -1,0 +1,96 @@
+ 
+
+Instalando dmidiplayer en MX Linux 21 de 32 bits
+
+
+
+
+
+DEPENDENCIAS
+dmidiplayer depende de drumstick, uchardet desde código fuente (no desde los repositorios) y es necesario instalar las siguientes dependencias:
+
+sudo apt install libasound2-dev doxygen libpulse-dev libfluidsynth-dev qttools5-dev cmake qttools5-dev pandoc
+
+Nota: En mi sistema MX Linux 21 tenía instalado algunas otras librerías de desarrollo por lo que puede que falten algunas, pero usted podrá verlas al momento de intentar compilar pues allí saldrán mensajes de error y buscando en Google debería encontrar las faltantes
+
+luego es necesario instalar drumstick desde el código fuente pues necesito un archivo que debo ser compilado allí:
+
+DRUMSTICK
+Entrar  la siguiente dirección:
+
+Drumstick Libraries - Browse Files at SourceForge.net
+https://sourceforge.net/projects/drumstick/files/
+
+Allí descargar el codigo fuente:
+
+https://sourceforge.net/projects/drumstick/files/2.6.0/
+
+COMPILACIÓN:
+
+$ cd drumstick-x.x.x
+$ mkdir -p build
+$ cd build
+$ cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..
+$ make
+$ sudo make install
+
+Lanzadores instalados
+
+Install the project...
+
+/usr/bin/drumstick-metronome
+/usr/bin/drumstick-guiplayer
+/usr/bin/drumstick-vpiano
+
+
+Nota: Configuré en cmake para que haga la instalación en la ruta /usr pues de lo contrario se instala todo en /usr/local y no funciona el programa.
+
+
+para desinstalar:
+
+$ sudo make uninstall
+
+
+
+UCHARDET
+Las instrucciones de instalación están en:
+
+https://www.freedesktop.org/wiki/Software/uchardet/
+
+y hay que poner en la terminal uno por uno:
+
+git clone https://gitlab.freedesktop.org/uchardet/uchardet.git
+cd uchardet
+cmake .
+make
+sudo make install
+
+
+
+
+INSTALANDO DMIDIPLAYER
+
+pedrolcl/dmidiplayer: Drumstick MIDI File Player Multiplatform (mirror)
+
+git clone https://github.com/pedrolcl/dmidiplayer
+cd dmidiplayer
+
+$ tar -xvzf dmidiplayer-x.y.z.tar.gz
+$ cd dmidiplayer-x.y.z
+$ mkdir build
+$ cd build
+$ cmake .. -DCMAKE_INSTALL_PREFIX:PATH=/usr
+$ make
+$ sudo make install
+
+
+Nota: En cmake lo he configurado para que vaya la instalación a usr pues así funciona, sino iba a usr/local no funciona. También no es necesario poner -DCMAKE_PREFIX_PATH="$HOME/Qt5;$HOME/drumstick2;$HOME/uchardet" porque al haber compilado a drumstick2 y uchardet e instalado ambos ya se configuraron correctamente las rutas en Linux, y en cuando a Qt pues también ya está configurada el path.
+
+
+
+
+
+
+
+
+

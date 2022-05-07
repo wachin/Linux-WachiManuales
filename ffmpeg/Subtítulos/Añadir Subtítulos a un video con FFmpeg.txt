@@ -1,0 +1,58 @@
+
+
+Añadir Subtítulos a un video con FFmpeg y aumentar el tamaño de la fuente
+
+
+Esto sólo que yo sepa se puede hacer redenderizando el video por lo que se demorará.
+
+
+
+
+The downside to using a pure .srt file, is that you cannot tweak the subtitles.
+Convert .srt to .ass
+
+That’s why it’s better to convert them to .ass:
+
+ffmpeg -i utf8.srt subs.ass
+
+Tweak the subtitles
+
+To format the subtitles, just open the .ass file in any text editor and modify the font size, etc. —I always change the font size from 16 to 24.
+
+
+
+gedit subs.ass
+
+
+subtitles filter
+
+Draw subtitles on top of input video using the libass library. This filter requires ffmpeg to be compiled with --enable-libass. See the ​subtitles video filter documentation for more details.
+
+If the subtitle is a separate file called subtitle.srt, you can use this command:
+
+ffmpeg -i video.avi -vf subtitles=subtitle.srt out.avi
+
+
+EJEMPLO DE CONVERSIÓN
+Tengo los siguientes archivos y quiero añadir el subtitulo al video y que se convierta a mp4:    
+
+Big Brother (2018).mkv
+Big Brother (2018).srt
+
+
+
+ffmpeg -i "Big Brother (2018).srt" "Big Brother (2018).ass"
+
+
+SOLUCIÓN:
+
+ffmpeg -i "Big Brother (2018).mkv" -vf subtitles="Big Brother (2018).srt" out.mp4
+
+
+CONSULTA
+
+HowToBurnSubtitlesIntoVideo – FFmpeg
+https://trac.ffmpeg.org/wiki/HowToBurnSubtitlesIntoVideo
+
+Add subtitles to a video in Linux - lobo_tuerto's notes
+https://lobotuerto.com/notes/add-subtitles-to-a-video-in-linux

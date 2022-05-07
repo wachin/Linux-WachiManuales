@@ -1,0 +1,33 @@
+Necesita tener instalado fakeroot, esto es para al reconstruir los deb sean de buena calidad y no aparezcan errores de comprobación en gdebi
+
+sudo apt install fakeroot
+
+ 
+
+Pongase en una terminal en el lugar donde está su archivo .deb y ponga uno por uno, ejemplo:
+
+dpkg-deb -x tuprograma.deb tmpdir
+dpkg-deb --control tuprograma.deb tmpdir/DEBIAN
+gedit tmpdir/DEBIAN/control
+fakeroot dpkg -b tmpdir tuhackeadoprograma.deb
+
+
+Nota: allí cuando vaya en el comando tercero puede cambiar la dependencia que usted quiera o borrarla pero para eso no deje la coma al final, guardar y cerrar el gedit
+
+ejemplo:
+
+wachin@Dell-Inspiron-1750:~/Apps-Linux-Instaladores/PhotoFilmStrip$
+
+dpkg-deb -x photofilmstrip_3.5.1-1_all.deb tmpdir
+dpkg-deb --control photofilmstrip_3.5.1-1_all.deb tmpdir/DEBIAN
+gedit tmpdir/DEBIAN/control
+fakeroot dpkg -b tmpdir photofilmstrip_3.5.1-1_all-wachin.deb 
+
+
+BASADO EN:
+
+Howto change dependencies
+https://ubuntuforums.org/showthread.php?t=110458
+
+Debian: The package is of bad quality: wrong-file-owner-uid-or-gid
+https://www.askingbox.com/question/debian-the-package-is-of-bad-quality-wrong-file-owner-uid-or-gid 

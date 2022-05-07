@@ -1,0 +1,63 @@
+
+Thank you for download JingOS v0.9！
+Spam
+JingOS Team service@jingos.com a través de mkhightemplar.com 
+	
+22:37 (hace 6 minutos)
+	
+para mí
+
+
+
+Hi, 
+
+Release Notes: https://jingos.feishu.cn/docs/doccnFhsqYIUT2ozejeOlfvMfsf
+
+Devices has been officially tested: 
+
+Surface Pro 6 
+
+Huawei MateBook 14 
+
+eve V 
+
+Virtual machines on Windows 10 
+
+ 
+
+JingOS v0.9 for x86 can only be installed on x86 devices. If some functions of your device cannot be used after the system is installed, you need to find the relevant Linux driver and install it manually. 
+
+ 
+
+* PIN Code:123456 
+
+Installation guide (based on JingOS v0.8):  
+
+https://forum.jingos.com/t/jingos-installation-process-first-look-feedback-request/1521
+
+1.Google driver:
+
+https://drive.google.com/file/d/1l2-VMvozA_7DGulSIz8lWF7FMWYqRlYJ/view?usp=sharing
+
+2. Download link: https://download.jingos.com/os/JingOS-V0.9-a25ea3.iso
+
+
+
+
+Thank you for Dowload JingOS and Welcome join our community！
+Please check your Email and get a download link.
+ 
+Download link:
+1.Google driver:
+https://drive.google.com/file/d/1l2-VMvozA_7DGulSIz8lWF7FMWYqRlYJ/view?usp=sharing
+2. Website:
+https://download.jingos.com/os/JingOS-V0.9-a25ea3.iso
+ 
+Discord : https://discord.gg/xEwDGW7RnJ
+Telegram : https://t.me/JingOS_Linux
+QQ Group : 910952886
+Facebook:https://www.facebook.com/JingOSfb/
+Twitter:https://twitter.com/Jingos94455470
+Forum: https://forum.jingos.com/
+
+

@@ -1,0 +1,17 @@
+
+INSTALAR Discos (gnome-disk-utility).-
+Sirve para ver todas las particiones y editarlas, 
+
+sudo apt-get install gnome-disk-utility
+
+se lanza desde la terminal con 
+
+gnome-disks 
+
+
+sudo apt install gnome-system-tools
+
+
+Primero poner en la terminal:
+
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1

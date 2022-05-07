@@ -1,0 +1,10 @@
+broadcom 802.11
+
+
+bcmwl-kernel-source
+
+
+https://packages.ubuntu.com/bcmwl-kernel-source
+
+
+http://linuxwireless.sipsolutions.net/en/users/Drivers/b43/__v199.html

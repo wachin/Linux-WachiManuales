@@ -1,0 +1,75 @@
+
+
+
+sudo apt install fspanel
+
+lanzar con:
+
+fspanel
+
+pero aparece el siguiente mensaje:
+
+
+volume: can't open /dev/mixer
+HINT: Do you have ALSA-OSS emulation loaded?
+HINT: Check out if you have 'snd-mixer-oss' kernel module loaded.
+HINT: Or disable 'volume' plugin at ~/.config/fbpanel/default.
+fbpanel: can't start plugin volume
+
+
+para arreglar esto hay que abrir la configuración:
+
+
+gedit ~/.config/fbpanel/default
+
+allí buscar la palabra:
+
+volume
+
+y lo siguiente:
+
+plugin {
+    type = volume
+}
+
+dejarlo así:
+
+#plugin {
+#    type = volume
+#}
+
+
+
+GLOBAL
+Ahora bien a mi no me gusta que el panel no recubre todo, y también no quiero transparencia, así que en la sección:
+
+Global {
+    edge = bottom
+    allign = center
+    margin = 0
+    widthtype = percent
+    width = 86
+    height = 24
+    transparent = true
+    tintcolor = #ffffff
+    alpha = 28
+    setdocktype = true
+    setpartialstrut = true
+    autohide = false
+    heightWhenHidden = 2
+    roundcorners = true
+    roundcornersradius = 7
+    layer = none
+    MaxElemHeight = 32
+}
+
+
+allí le cambié
+
+    width = 98
+    height = 26
+    transparent = false
+
+
+
+

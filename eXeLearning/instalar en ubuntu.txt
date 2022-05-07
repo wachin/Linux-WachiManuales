@@ -1,0 +1,23 @@
+
+
+https://github.com/exelearning/iteexe/tree/master/installs/debian/ubuntu
+
+
+
+https://exelearning.net/descargas/
+
+para:
+https://github.com/exelearning/iteexe
+
+
+instalar:
+
+sudo apt install python3-pip
+
+alli esta el archivo
+
+requirements.txt
+
+ubicarse y poner
+
+python3 -m pip install -r requirements.txt

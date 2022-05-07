@@ -1,0 +1,18 @@
+
+
+stalonetray system tray: wmhints
+https://kolbusa.github.io/stalonetray/wmhints.html
+
+
+
+
+FVWM
+
+To run stalonetray swallowed by FvwmButtons, add the following snippet to ~/.fvwm/config (or ~/.fvwm/.fvwm2rc).
+
+*FvwmButtons: (16x32, Frame 0, Swallow (NoClose,UseOld) "stalonetray" `/home/busa/bin/systemtray`)
+
+Be sure to add no_shrink true to your ~/.stalonetrayrc (or specify --no-shrink on the command line) to tell stalonetray not to change its geometry. Starting from version 0.8 stalonetray can manage more icons than fits in its window if scrollbars are enabled (see documentation for more info).
+
+If you run stalonetray without FvwmButtons, decorations all is required for FVWM to control the decorations of stalonetray with the Style command. Without this, FVWM will use the default style for stalonetray and will not apply any Style stalonetray commands. Kudos to Leeman Strout for pointing this out. Also, you may need to instruct Fvwm to honor extended window manager hints for window stacking order by adding EWMHUseStackingOrderHints to Fvwm configuration file. Without this --window-layer command may not work.
+

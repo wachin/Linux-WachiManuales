@@ -1,0 +1,139 @@
+
+
+Install the project...
+-- Install configuration: ""
+-- Installing: /usr/local/lib/libdrumstick-alsa.so.2.6.0
+-- Installing: /usr/local/lib/libdrumstick-alsa.so.2
+-- Up-to-date: /usr/local/lib/libdrumstick-alsa.so
+-- Installing: /usr/local/include/drumstick/alsaclient.h
+-- Installing: /usr/local/include/drumstick/alsaevent.h
+-- Installing: /usr/local/include/drumstick/alsaport.h
+-- Installing: /usr/local/include/drumstick/alsaqueue.h
+-- Installing: /usr/local/include/drumstick/alsatimer.h
+-- Installing: /usr/local/include/drumstick/playthread.h
+-- Installing: /usr/local/include/drumstick/sequencererror.h
+-- Installing: /usr/local/include/drumstick/subscription.h
+-- Installing: /usr/local/include/drumstick/macros.h
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-alsa-targets.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-alsa-targets-noconfig.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-alsa-config-version.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-alsa-config.cmake
+-- Installing: /usr/local/lib/libdrumstick-file.so.2.6.0
+-- Installing: /usr/local/lib/libdrumstick-file.so.2
+-- Up-to-date: /usr/local/lib/libdrumstick-file.so
+-- Up-to-date: /usr/local/include/drumstick/macros.h
+-- Installing: /usr/local/include/drumstick/qsmf.h
+-- Installing: /usr/local/include/drumstick/qwrk.h
+-- Installing: /usr/local/include/drumstick/rmid.h
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-file-targets.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-file-targets-noconfig.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-file-config-version.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-file-config.cmake
+-- Installing: /usr/local/lib/libdrumstick-rt.so.2.6.0
+-- Installing: /usr/local/lib/libdrumstick-rt.so.2
+-- Up-to-date: /usr/local/lib/libdrumstick-rt.so
+-- Up-to-date: /usr/local/include/drumstick/macros.h
+-- Installing: /usr/local/include/drumstick/rtmidiinput.h
+-- Installing: /usr/local/include/drumstick/rtmidioutput.h
+-- Installing: /usr/local/include/drumstick/backendmanager.h
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-rt-targets.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-rt-targets-noconfig.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-rt-config-version.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-rt-config.cmake
+-- Installing: /usr/local/lib/drumstick2/libdrumstick-rt-alsa-in.so
+-- Set runtime path of "/usr/local/lib/drumstick2/libdrumstick-rt-alsa-in.so" to ""
+-- Installing: /usr/local/lib/drumstick2/libdrumstick-rt-alsa-out.so
+-- Set runtime path of "/usr/local/lib/drumstick2/libdrumstick-rt-alsa-out.so" to ""
+-- Installing: /usr/local/lib/drumstick2/libdrumstick-rt-eassynth.so
+-- Installing: /usr/local/lib/drumstick2/libdrumstick-rt-net-in.so
+-- Set runtime path of "/usr/local/lib/drumstick2/libdrumstick-rt-net-in.so" to ""
+-- Installing: /usr/local/lib/drumstick2/libdrumstick-rt-net-out.so
+-- Set runtime path of "/usr/local/lib/drumstick2/libdrumstick-rt-net-out.so" to ""
+-- Installing: /usr/local/lib/drumstick2/libdrumstick-rt-oss-in.so
+-- Installing: /usr/local/lib/drumstick2/libdrumstick-rt-oss-out.so
+-- Installing: /usr/local/lib/drumstick2/libdrumstick-rt-fluidsynth.so
+-- Set runtime path of "/usr/local/lib/drumstick2/libdrumstick-rt-fluidsynth.so" to ""
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_cs.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_de.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_en.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_es.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_fr.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_gl.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_it.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_nl.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_ru.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_sr.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_sv.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_tr.qm
+-- Installing: /usr/local/share/drumstick/drumstick-widgets_zh_CN.qm
+-- Installing: /usr/local/lib/libdrumstick-widgets.so.2.6.0
+-- Installing: /usr/local/lib/libdrumstick-widgets.so.2
+-- Set runtime path of "/usr/local/lib/libdrumstick-widgets.so.2.6.0" to ""
+-- Up-to-date: /usr/local/lib/libdrumstick-widgets.so
+-- Installing: /usr/local/include/drumstick/pianokeybd.h
+-- Installing: /usr/local/include/drumstick/pianopalette.h
+-- Installing: /usr/local/include/drumstick/settingsfactory.h
+-- Installing: /usr/local/include/drumstick/configurationdialogs.h
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-widgets-targets.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-widgets-targets-noconfig.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-widgets-config-version.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-widgets-config.cmake
+-- Installing: /usr/local/lib/i386-linux-gnu/qt5/plugins/designer/libdrumstick-vpiano-plugin.so
+-- Set runtime path of "/usr/local/lib/i386-linux-gnu/qt5/plugins/designer/libdrumstick-vpiano-plugin.so" to ""
+-- Installing: /usr/local/include/drumstick.h
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-config.cmake
+-- Installing: /usr/local/lib/cmake/drumstick/drumstick-config-version.cmake
+-- Installing: /usr/local/bin/drumstick-dumpsmf
+-- Set runtime path of "/usr/local/bin/drumstick-dumpsmf" to ""
+-- Installing: /usr/local/bin/drumstick-dumprmi
+-- Set runtime path of "/usr/local/bin/drumstick-dumprmi" to ""
+-- Installing: /usr/local/bin/drumstick-dumpwrk
+-- Set runtime path of "/usr/local/bin/drumstick-dumpwrk" to ""
+-- Installing: /usr/local/bin/drumstick-dumpmid
+-- Set runtime path of "/usr/local/bin/drumstick-dumpmid" to ""
+-- Installing: /usr/local/bin/drumstick-sysinfo
+-- Set runtime path of "/usr/local/bin/drumstick-sysinfo" to ""
+-- Installing: /usr/local/bin/drumstick-metronome
+-- Set runtime path of "/usr/local/bin/drumstick-metronome" to ""
+-- Installing: /usr/local/share/drumstick/drumstick-drumgrid_en.qm
+-- Installing: /usr/local/share/drumstick/drumstick-drumgrid_es.qm
+-- Installing: /usr/local/bin/drumstick-drumgrid
+-- Set runtime path of "/usr/local/bin/drumstick-drumgrid" to ""
+-- Installing: /usr/local/share/applications/net.sourceforge.drumstick-drumgrid.desktop
+-- Installing: /usr/local/share/metainfo/net.sourceforge.drumstick-drumgrid.metainfo.xml
+-- Installing: /usr/local/bin/drumstick-playsmf
+-- Set runtime path of "/usr/local/bin/drumstick-playsmf" to ""
+-- Installing: /usr/local/share/drumstick/drumstick-guiplayer_cs.qm
+-- Installing: /usr/local/share/drumstick/drumstick-guiplayer_es.qm
+-- Installing: /usr/local/share/drumstick/drumstick-guiplayer_ru.qm
+-- Installing: /usr/local/bin/drumstick-guiplayer
+-- Set runtime path of "/usr/local/bin/drumstick-guiplayer" to ""
+-- Installing: /usr/local/share/applications/net.sourceforge.drumstick-guiplayer.desktop
+-- Installing: /usr/local/share/metainfo/net.sourceforge.drumstick-guiplayer.metainfo.xml
+-- Installing: /usr/local/share/drumstick/drumstick-vpiano_en.qm
+-- Installing: /usr/local/share/drumstick/drumstick-vpiano_es.qm
+-- Installing: /usr/local/bin/drumstick-vpiano
+-- Set runtime path of "/usr/local/bin/drumstick-vpiano" to ""
+-- Installing: /usr/local/share/applications/net.sourceforge.drumstick-vpiano.desktop
+-- Installing: /usr/local/share/metainfo/net.sourceforge.drumstick-vpiano.metainfo.xml
+-- Installing: /usr/local/share/icons/hicolor/16x16/apps/drumstick.png
+-- Installing: /usr/local/share/icons/hicolor/32x32/apps/drumstick.png
+-- Installing: /usr/local/share/icons/hicolor/48x48/apps/drumstick.png
+-- Installing: /usr/local/share/icons/hicolor/64x64/apps/drumstick.png
+-- Installing: /usr/local/share/icons/hicolor/scalable/apps/drumstick.svgz
+-- Installing: /usr/local/share/man/man1/drumstick-drumgrid.1
+-- Installing: /usr/local/share/man/man1/drumstick-dumpmid.1
+-- Installing: /usr/local/share/man/man1/drumstick-dumpsmf.1
+-- Installing: /usr/local/share/man/man1/drumstick-dumprmi.1
+-- Installing: /usr/local/share/man/man1/drumstick-dumpwrk.1
+-- Installing: /usr/local/share/man/man1/drumstick-metronome.1
+-- Installing: /usr/local/share/man/man1/drumstick-playsmf.1
+-- Installing: /usr/local/share/man/man1/drumstick-guiplayer.1
+-- Installing: /usr/local/share/man/man1/drumstick-sysinfo.1
+-- Installing: /usr/local/share/man/man1/drumstick-vpiano.1
+-- Installing: /usr/local/lib/pkgconfig/drumstick-alsa.pc
+-- Installing: /usr/local/share/mime/packages/drumstick.xml
+-- Installing: /usr/local/lib/pkgconfig/drumstick-file.pc
+-- Installing: /usr/local/lib/pkgconfig/drumstick-rt.pc
+-- Installing: /usr/local/lib/pkgconfig/drumstick-widgets.pc
+

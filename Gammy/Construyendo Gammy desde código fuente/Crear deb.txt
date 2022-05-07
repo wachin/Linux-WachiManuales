@@ -1,0 +1,47 @@
+
+
+Linux
+
+Requerimientos:
+
+g++ o Clang compilador con soporte C++17. Para Ubuntu/Debian paquetes instalar lo siguiente desde una terminal:
+
+sudo apt install build-essential libgl1-mesa-dev libxxf86vm-dev libxext-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+
+
+
+
+Pasos
+
+Descargar el código fuente desde:
+
+https://github.com/Fushko/gammy/releases
+
+con el paso del tiempo irán creando más y más versiones, descargue la más actual y pongalo dentro de una carpeta a la cual por ejemplo pongale el nombre "gammy-releases". A esta fecha de hacer este tutorial yo descargué el archivo de la versión:
+
+gammy-0.9.64.tar.gz
+
+luego descomprímalo y entre en esa carpeta con abrir terminal aquí o navegando desde la terminal con cd
+
+Ahora en esa ruta en la terminal debe poner lo siguiente:
+
+dh_make -s -c gpl -e yourEmailAddress --createorig
+
+pero colocando su dirección de correo, en mi caso queda así:
+
+dh_make -s -c gpl -e wachin.id@gmail.com --createorig
+
+luego ponga:
+
+dpkg-buildpackage
+
+El deb se creará en la carpeta anterior
+
+
+CONSULTA:
+
+Make a Debian Package (.deb) from a Qt Project - Ask Ubuntu
+https://askubuntu.com/questions/274311/make-a-debian-package-deb-from-a-qt-project
+
+
+

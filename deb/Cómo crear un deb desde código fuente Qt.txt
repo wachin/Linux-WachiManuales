@@ -1,0 +1,16 @@
+
+
+
+how to create deb from qt source
+
+Cómo crear un deb desde código fuente Qt
+
+
+dh_make -s -c gpl -e wachin.id@gmail.com --createorig
+
+dpkg-buildpackage
+
+
+Make a Debian Package (.deb) from a Qt Project - Ask Ubuntu
+https://askubuntu.com/questions/274311/make-a-debian-package-deb-from-a-qt-project
+https://askubuntu.com/a/320468

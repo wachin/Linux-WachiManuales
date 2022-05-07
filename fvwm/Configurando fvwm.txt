@@ -1,0 +1,29 @@
+
+configuration - fvwm confguration - Ask Ubuntu
+https://askubuntu.com/questions/851316/fvwm-confguration
+
+
+
+Did adding the word Test to line 591 of your configuration fix the swallowing issue with Stalonetray?
+
+If you want stalonetray to show a battery icon, you can sudo apt-get install fdpowermon, it will go in your tray and provide you with a battery icon.
+
+For volume, if you use pulse audio, you could sudo apt-get install pasystray.
+
+For the position of the tray, the geometry string controls where the FvwmButtons window will be. So -0-0 would get you the bottom right, as opposed to your current -0+0 which is top right (line 573). So try this for line 573:
+
+*RightPanel: Geometry 120x$[vp.height]-0-0
+
+Make sure you update your fvwm config to launch pasystray and fdpowermon if you want them. For example:
+
+AddToFunc StartFunction
++ I Exec exec pasystray
++ I Exec exec fdpowermon
+
+
+
+Para ponerlo a la izquierda:
+
+*RightPanel: Geometry 120x$[vp.height]+0-0
+
+

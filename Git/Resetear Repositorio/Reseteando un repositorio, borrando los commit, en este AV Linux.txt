@@ -1,0 +1,15 @@
+
+
+
+git remote add origin https://github.com/wachin/linux
+
+
+
+
+gitpod /workspace/linux (avl) $ git status
+Refresh index: 100% (52330/52330), done.
+On branch avl
+Your branch is up to date with 'origin/avl'.
+
+nothing to commit, working tree clean
+gitpod /workspace/linux (avl) $ 

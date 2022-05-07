@@ -1,0 +1,6 @@
+
+Contabilidad en Linux
+kmymoney
+https://sourceforge.net/projects/xendra/
+skrooge
+

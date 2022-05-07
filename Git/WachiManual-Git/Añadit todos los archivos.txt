@@ -1,0 +1,7 @@
+
+
+git add .
+
+o en gitlab
+
+git add -A

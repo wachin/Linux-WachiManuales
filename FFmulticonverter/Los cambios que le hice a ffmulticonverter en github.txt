@@ -1,0 +1,24 @@
+
+
+
+tmpdir/usr/lib/python3/dist-packages/ffmulticonverter/config.py
+
+
+
+document_formats = {
+        'doc' : ['odt', 'pdf', 'txt'],
+        'docx' : ['odt', 'pdf', 'txt'],
+        'html' : ['odt'],
+        'odp' : ['pdf', 'ppt', 'pptx'],
+        'ods' : ['pdf'],
+        'odt' : ['doc', 'docx', 'html', 'pdf', 'rtf', 'sxw', 'txt','xml'],
+        'ppt' : ['odp'],
+        'pptx' : ['odp'],
+        'rtf' : ['odt'],
+        'sdw' : ['odt'],
+        'sxw' : ['odt'],
+        'txt' : ['odt'],
+        'xls' : ['ods'],
+        'xlsx' : ['ods'],
+        'xml' : ['doc', 'doc', 'odt', 'pdf']
+        }

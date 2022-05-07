@@ -1,0 +1,62 @@
+
+
+
+Drumstick Libraries - Browse Files at SourceForge.net
+https://sourceforge.net/projects/drumstick/files/
+
+Descargar codigo fuente:
+
+https://sourceforge.net/projects/drumstick/files/2.4.1/
+
+o 
+
+https://sourceforge.net/projects/drumstick/files/2.6.0/
+
+
+DEPENDENCIAS
+
+sudo apt install libasound2-dev doxygen libpulse-dev libfluidsynth-dev qttools5-dev cmake
+
+
+Nota: En mi sistema MX Linux 21 tenía instalado algunas otras librerías de desarrollo por lo que deben faltar aquí en las dependencias, pero usted podrá verlas al momento de intentar compilar pues allí saldrán mensajes de error y buscando en Google debería encontrar las faltantes
+
+Compilación
+
+$ cd drumstick-x.x.x
+$ mkdir -p build
+$ cd build
+$ cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..
+$ make
+$ sudo make install
+
+Lanzadores instalados
+
+Install the project...
+-- Installing: /usr/bin/drumstick-dumprmi
+-- Installing: /usr/bin/drumstick-dumpwrk
+-- Installing: /usr/bin/drumstick-dumpmid
+-- Installing: /usr/bin/drumstick-sysinfo
+-- Installing: /usr/bin/drumstick-metronome
+-- Installing: /usr/bin/drumstick-drumgrid
+-- Installing: /usr/bin/drumstick-playsmf
+-- Installing: /usr/bin/drumstick-guiplayer
+-- Installing: /usr/bin/drumstick-vpiano
+
+
+para desinstalar:
+
+$ sudo make uninstall
+
+
+
+Nota: Si la configuración en cmake se la deja como está en el tutorial "cmake .." se instalará en "/usr/local/" y aparece el siguente error y no se pueden abrir las aplicaciones:
+
+$ /usr/local/bin/drumstick-guiplayer
+/usr/local/bin/drumstick-guiplayer: error while loading shared libraries: libdrumstick-file.so.2: cannot open shared object file: No such file or directory
+
+
+CONSULTAS
+
+Ubuntu 20.04: Cmake error : Could NOT find ALSA (missing: ALSA_LIBRARY ALSA_INCLUDE_DIR) - Ask Ubuntu
+https://askubuntu.com/questions/1273262/ubuntu-20-04-cmake-error-could-not-find-alsa-missing-alsa-library-alsa-incl
+https://askubuntu.com/a/1356899/145772

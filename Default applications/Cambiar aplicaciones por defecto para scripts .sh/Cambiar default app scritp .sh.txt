@@ -1,0 +1,50 @@
+
+how to Opening .sh files in a bash from terminal
+
+how to Opening .sh files in a editor
+
+
+
+ xdg-mime query filetype /home/wachin/Dev-wachin/ffmpeg-screencast/rec.sh
+ 
+ 
+text/x-shellscript
+
+pero en lo siguiente no hay bas.desktop en usr/share/applications
+
+xdg-mime default bash.desktop text/x-shellscript
+
+
+
+
+you need to specify the desktop file to open files of the specified mime type. To check the mime-type of a given file, use
+1
+	
+file -ib filename
+
+
+
+*************************
+
+Btw my system reports shellscripts as text/x-shellscript.
+Edit: Seems like it depends
+
+$ file --mime-type bla.sh 
+bla.sh: text/x-shellscript
+$ xdg-mime query filetype bla.sh 
+application/x-shellscript
+
+
+ Opening .sh files in a editor #291 
+https://github.com/albertlauncher/albert/issues/291#issuecomment-264431331
+
+
+****************************
+
+
+
+Set default application using `xdg-mime`
+https://www.guyrutenberg.com/2018/01/20/set-default-application-using-xdg-mime/
+
+
+
