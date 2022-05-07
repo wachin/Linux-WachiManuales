@@ -1,0 +1,21 @@
+
+
+
+mc
+Midnight Commander - a powerful file manager 
+sólo este ejecuta scripts
+
+lfm
+simple but powerful file manager for the UNIX console
+
+
+fd
+fdclone
+gestor de archivos ligero basado en terminal
+
+nnn
+Free, fast, friendly file manager
+
+
+ytree
+File manager for terminals
