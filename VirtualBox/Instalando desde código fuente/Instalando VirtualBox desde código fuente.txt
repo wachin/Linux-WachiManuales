@@ -1,0 +1,157 @@
+
+
+Instrucciones de compilación de Linux
+
+Si bien tratamos de no favorecer ninguna distribución, solo construimos con ciertas distribuciones. Estos incluyen Debian, Ubuntu y Oracle Linux. Sin embargo, las cosas no deberían ser muy diferentes para otras distribuciones. Si desea proporcionar instrucciones de compilación específicas (especialmente nombres de paquetes) para otras distribuciones, comuníquese con el equipo de VirtualBox.
+
+Adiciones de invitados
+
+Estas instrucciones también construirán las adiciones de invitados, solo las partes de Linux, y para el recuento de bits que está usando su sistema host. Para compilar solo las adiciones (esto requiere muchas menos dependencias, aunque, lamentablemente, configure no lo sabe) agregue el parámetro de archivo make VBOX_ONLY_ADDITIONS = 1 a la línea de comando kmk. Para crear un instalador de imagen de disco de Additions, haga una segunda ejecución de kmk con empaque en la línea de comando. Y para hacer una compilación de 32 bits en un host de 64 bits, agregue el parámetro KBUILD_TARGET_ARCH = x86. La salida va a la carpeta out / linux. * / * / Bin / addeds. Las adiciones compiladas generalmente no funcionarán en un sistema anterior al que fueron construidas (por ejemplo, una compilación en Ubuntu 16.10 causará problemas en un huésped de Ubuntu 14.04). Construya en un entorno chroot o en la máquina virtual de destino para resolver esto.
+
+
+
+
+sudo apt-get install acpica-tools chrpath doxygen g++-multilib libasound2-dev libcap-dev \
+        libcurl4-openssl-dev libdevmapper-dev libidl-dev libopus-dev libpam0g-dev \
+        libpulse-dev libqt5opengl5-dev libqt5x11extras5-dev qttools5-dev libsdl1.2-dev libsdl-ttf2.0-dev \
+        libssl-dev libvpx-dev libxcursor-dev libxinerama-dev libxml2-dev libxml2-utils \
+        libxmu-dev libxrandr-dev make nasm python3-dev python3-dev qttools5-dev-tools \
+        texlive texlive-fonts-extra texlive-latex-extra unzip xsltproc \
+        \
+        default-jdk libstdc++5 libxslt1-dev makeself \
+        mesa-common-dev subversion yasm zlib1g-dev
+        
+ en otro lado se suguiere instalar:
+ 
+automake       
+        
+        
+        
+sudo apt-get install linux-headers-$(uname -r)
+
+
+    On 64-bit Debian-based systems, the following command should install the required additional packages:
+
+    apt-get install ia32-libs libc6-dev-i386 lib32gcc1 lib32stdc++6
+
+    For python hacking:
+
+    apt-get install pylint python3-psycopg2 python3-willow  python-psycopg2 python-pil
+
+
+
+
+
+Building VirtualBox
+
+    Change to the root directory of the sources and execute the configure script:
+
+    ./configure --disable-hardening
+    
+Nota, en la siguiente página encontré:
+
+Сборка VirtualBox v5.2.42 (32bit) на Debian 10 (Buster) x86 (i686) платформе
+https://remoteshaman.com/virtualization/virtualbox/build-virtualbox-5-on-32bit-debian-buster-x86
+
+allí dice:
+
+./configure --disable-java --disable-hardening
+    
+
+    If it finds everything it needs, it will create a file called 'AutoConfig.kmk' containing paths to the various tools on your system. Also, it will create an environment setup script called env.sh. This step only has to be done once (if something changes in your build tool setup, you might have to repeat it but keep in mind that both output files will be overwritten). 
+
+    The switch --disable-hardening should not be used for building packages for redistribution or for production use.
+
+    Whenever you want to build VirtualBox, you have to open a shell and source the generated environment setup script 'env.sh', i.e. do
+
+Si encuentra todo lo que necesita, creará un archivo llamado 'AutoConfig.kmk' que contiene rutas a las diversas herramientas de su sistema. Además, creará un script de configuración de entorno llamado env.sh. Este paso solo debe realizarse una vez (si algo cambia en la configuración de la herramienta de compilación, es posible que deba repetirlo, pero tenga en cuenta que ambos archivos de salida se sobrescribirán).
+
+     El interruptor --disable-hardening no debe usarse para construir paquetes para redistribución o para uso de producción.
+
+     Siempre que desee construir VirtualBox, debe abrir un shell y obtener el script de configuración del entorno generado 'env.sh', es decir, hacer
+
+
+
+    source ./env.sh
+
+    To build a release package, type
+
+    kmk all
+
+    This produces the required binaries in out/linux.x86/release/bin/. If you want to build a debug version, type
+
+    kmk BUILD_TYPE=debug
+
+    In case you have more than one CPU core, kmk will automatically do a parallel build. 
+
+    Running a hardened build from the bin/ directory will not work because all hardened binaries do explicit link against libraries from /opt/VirtualBox (fixed path). 
+
+Building VirtualBox packages for distribution
+
+Never disable hardening (see previous section) when creating packages for redistribution.
+
+To be more LSB-compliant, change the default pathes which are used by the VirtualBox binaries to find their components. Add the following build variables to LocalConfig.kmk:
+
+VBOX_PATH_APP_PRIVATE_ARCH := /usr/lib/virtualbox
+    This is the application's private directory, architecture-dependent. 
+VBOX_PATH_SHARED_LIBS := $(VBOX_PATH_APP_PRIVATE_ARCH)
+    Where to put the shared libraries, usually the same directory as the private path as the VirtualBox shared libraries are normally not used by any other application. 
+VBOX_WITH_ORIGIN :=
+    Disable RPATH=$ORIGIN and use a fixed RUNPATH. 
+VBOX_WITH_RUNPATH := $(VBOX_PATH_APP_PRIVATE_ARCH)
+    Set RUNPATH to the directory where our shared libraries can be found. 
+VBOX_PATH_APP_PRIVATE := /usr/share/virtualbox
+    This is the applications's private directory, not architecture-dependent. 
+VBOX_PATH_APP_DOCS := /usr/share/doc/virtualbox
+    Set the directory containing the documentation. The file VirtualBox.chm and UserManual.pdf are searched within this directory. 
+VBOX_WITH_TESTCASES :=
+    Save compile time by not building the testcases. 
+VBOX_WITH_TESTSUITE :=
+    Save compile time by not building the testsuite.
+
+Running your build
+
+You can run VirtualBox directly from the build target directory (out/linux.x86/release/bin/) if the build was not hardened. But first of all, you must build and install the VirtualBox kernel module, whose sources will have been copied to the build target directory.
+
+So, issue the following:
+
+cd out/linux.x86/release/bin/src
+make
+sudo make install
+cd ..
+
+Then it should have been installed to your modules directory and you can load it using modprobe vboxdrv. Make sure you give yourself read and write access to /dev/vboxdrv.
+
+Finally, you can start one of the frontends, e.g.
+
+./VirtualBox
+
+
+
+**********************
+
+Ver lo siguiente:
+
+virtualbox.org • View topic - Building VirtualBox from SVN using Fedora x86_64
+https://forums.virtualbox.org/viewtopic.php?f=31&t=35892
+
+*********************
+
+
+Сборка VirtualBox v5.2.42 (32bit) на Debian 10 (Buster) x86 (i686) платформе
+https://remoteshaman.com/virtualization/virtualbox/build-virtualbox-5-on-32bit-debian-buster-x86
+según este faltaba instalar:
+
+python3-psycopg2 python3-pil
+
+
++++++++++++++++++++++++++
+
+
+
+Linux build instructions – Oracle VM VirtualBox
+https://www.virtualbox.org/wiki/Linux%20build%20instructions
+
+
+kernel-headers location (solved) - Debian User Forums
+https://forums.debian.net/viewtopic.php?t=45054

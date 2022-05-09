@@ -1,0 +1,44 @@
+Activa Wi-fi en tu Notebook Dell Inspiron Ubuntu 12.10 - taringa.net
+https://www.taringa.net/+linux/activa-wi-fi-en-tu-notebook-dell-inspiron-ubuntu-12-10_13cg2u
+
+gamification avatar frame
+Juankxtreme
+29 aug. 2012
+184
+
+
+Hola mi gente de la Comunidad...
+
+Buscando por internet encontré una solución muuuuy práctica para activar el Wi-fi de las computadoras que tengan tarjeta Broadcom BCM 4311 y similares, mayormente integradas en las Dell Inspiron 1520 y otras.
+
+
+
+Bueno, pues cada vez que instalaba una distro (Ubuntu, LinuxMint, etc.), el problema del Driver y la conectividad vía inhalambrica era todo un lío en procedimiento, y variando de tanto para las versiones de 64bit...
+
+Pero ahora con un simple comando en terminal podemos activarla:
+
+Abrimos terminal y escribimos
+
+    sudo apt-get update
+
+
+
+Luego desinstalamos nuestro Controlador genérico que no funciona:
+
+    sudo apt-get remove bcmwl-kernel-source
+
+
+Descargamos el controlador que si nos vá a funcionar:
+
+    sudo apt-get install firmware-b43-installer
+
+
+...y por último reiniciamos la compu con el comando:
+
+    sudo reboot
+
+
+
+Listo!!!
+
+Comprobado funcionamiento correcto en Dell Inspiron 1521, Dell Inspiron 1501, Dell Inspiron 1520, lenovo 3000 N100, Compaq CQ40-705LA y Acer travelmate 2490...
