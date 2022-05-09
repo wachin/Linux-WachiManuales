@@ -1,0 +1,21 @@
+
+
+En MX Linux aplicaciones como Kate, Ksnip al momento de yo querer guardar algún archivo no me aparecen las particiones como marcadores, así que quiero crear enlaces simbólicos a HOME de esas carpetas en particiones que son exFAT en las cuales sólo el administrador de archivos Dolphin las puede crear pero no Thunar, y otros
+
+Solución
+
+primero debo crear una carpeta en mi home, ejemplo:
+
+a-enlaces
+
+y ahora sí según:
+
+ln -s (Lugar donde existe físicamente el objetivo o blanco) (Destino, nombre del enlace simbólico a crear)
+
+poner en la terminal:
+
+ln -s /media/wachin/exFAT/github-2-wid/  $HOME/a-enlaces/github-2-wid
+ln -s /media/wachin/Contenedor/ $HOME/a-enlaces/Contenedor
+ln -s /media/wachin/homeMX/SoundFonts/ $HOME/a-enlaces/SoundFonts
+ln -s 
+ln -s 

@@ -1,0 +1,47 @@
+
+
+Cuando usted haya descargado alguna ISO de algún Sistema Operativo Linux como ejemplo AV Linux descomprima la ISO con clic derecho
+
+En seguida copie toda la ruta y el nombre del archivo squashfs, en este ejemplo la ruta es:
+
+/media/wachin/homeMX/Dev/AVL-MXE-2021.05.22-xfce4-openbox-i386/antiX/
+
+y el nombre de archivo es:
+
+linuxfs
+
+y unidos los dos son:
+
+/media/wachin/homeMX/Dev/AVL-MXE-2021.05.22-xfce4-openbox-i386/antiX/linuxfs
+
+
+Ahora hay que montar el archivo squashfs desde la terminal con el siguiente comando:
+
+sudo mount -t squashfs ruta-y-nombre/donde/esta/el-archivo-squashfs /mnt
+
+donde hay que reemplazar por los valores que tenemos así en este ejemplo quedará así:
+
+sudo mount -t squashfs /media/wachin/homeMX/Dev/AVL-MXE-2021.05.22-xfce4-openbox-i386/antiX/linuxfs /mnt
+
+
+Luego hay que copiar a alguna carpeta los archivos que fueron montados, esto hacerlo con algun administrador de archivos a alguna carpeta creada para tal efecto
+
+
+    
+
+BASADO EN:
+
+Extract A Squashfs To An Existing Directory
+https://askubuntu.com/a/437883/145772
+
+Falta el tomar en cuenta la opción:
+
+Unmount the squashfs FILE.SQUASHFS :
+
+sudo umount /mnt
+
+eso es para desmontar, pero para no enrredarnos más simplemente reiniciar el ordenador.
+
+
+Dios les bendiga
+

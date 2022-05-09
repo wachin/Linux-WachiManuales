@@ -1,0 +1,29 @@
+entrando en:
+
+gedit~/.bashrc
+
+borré todo el siguiente código(que puede servir para poner un texto): 
+
+function setTextStyle() { echo -en "$1"; }
+
+setTextStyle $BROWN
+cat /opt/ASCII/AVL-MXE-Small.txt
+setTextStyle $BOLD_WHITE
+echo " AV Linux MX Edition"
+setTextStyle $DEFAULT_TEXT
+
+
+
+############
+
+El archivo:
+
+/opt/ASCII/AVL-MXE-Small.txt
+
+tiene el siguiente contenido:
+
+
+    ___   ___       __  ____  _____ 
+   /_\ \ / / |  ___|  \/  \ \/ / __|
+  / _ \ V /| |_|___| |\/| |>  <| _| 
+ /_/ \_\_/ |____|  |_|  |_/_/\_\___|
