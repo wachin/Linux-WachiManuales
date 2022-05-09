@@ -1,9 +1,0 @@
-
-
-Nota. Si ya antes habias instalado jwm debes borrar el archivo
-
-.jwmrc
-
-y reinstalar
-
-torios-desktop 

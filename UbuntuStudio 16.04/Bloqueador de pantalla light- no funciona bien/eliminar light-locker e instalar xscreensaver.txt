@@ -1,8 +1,0 @@
-
-
-
-sudo apt-get remove light-locker
-
-sudo apt-get install xscreensaver
-
-eliminar light-locker e instalar xscreensaver

@@ -1,4 +1,0 @@
-
-xfce4-xkb-plugin
-xfce4-clipman-plugin
-xfce4-notes-plugin (se lanza conxfce4-notes)

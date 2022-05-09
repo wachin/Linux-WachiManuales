@@ -1,2 +1,0 @@
-
-http://packages.deepin.com/deepin/pool/non-free/t/ttf-wps-fonts/ 

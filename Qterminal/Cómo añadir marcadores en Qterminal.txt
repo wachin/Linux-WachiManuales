@@ -1,7 +1,0 @@
-
-
-
-/home/wachin/.config/qterminal.org/
-
-
-

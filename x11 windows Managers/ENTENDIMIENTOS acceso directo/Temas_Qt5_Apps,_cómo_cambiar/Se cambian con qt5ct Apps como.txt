@@ -1,7 +1,0 @@
-Una vez instalado, ver el tutorial 
-
-
-Aplicaciones que en iceWM cambian sus iconos
-
-kate
-gwenview

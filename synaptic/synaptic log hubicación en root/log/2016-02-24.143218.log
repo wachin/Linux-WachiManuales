@@ -1,8 +1,0 @@
-Commit Log for Wed Feb 24 14:32:18 2016
-
-
-Quitó completamente los siguientes paquetes:
-easymp3gain-gtk
-
-Instaló los siguientes paquetes:
-easymp3gain-qt (0.5.0+svn135-6)

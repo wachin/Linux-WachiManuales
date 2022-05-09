@@ -1,5 +1,0 @@
-
-
-gedit ~/.local/share/applications/mimeapps.list
-
-tiene que ir el semicolon

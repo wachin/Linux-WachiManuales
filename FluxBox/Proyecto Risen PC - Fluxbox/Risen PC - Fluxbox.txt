@@ -42,6 +42,25 @@ Los iconos de aplicaciones KDE no se muestran en la barra de tareas, solución q
 
 Ciertos programas como Konsole no muestran sus iconos en la barra de tareas, es necesario cambiar el tema de iconos en QT5CT en la pestaña "Icon Theme" y escoger por ejemplo: Oxygen o Brisa
 
+
+
+
+
+# Keys
+
+# Abrir AppFinder con atajo de teclado
+# Esto significa que la Tecla de Windows (Mod4) y la tecla A activarán a xfce4-appfinder
+Mod4 a :Exec xfce4-appfinder
+
+# Abrir el menu de aplicaciones con atajo de teclado (en el lugar donde esté el cursor)
+# Esto significa que la tecla de Windows (Mod4) y la tecla M abrirán el menú de las aplicaciones
+Mod4 m :RootMenu
+
+# Cómo poner una ventana siempre encima en Fluxbox
+# Esto significa que la tecla Alt (Mod1) y la tecla A harán que la ventana que esté primero abiera se quedará allí
+# https://linux.byexamples.com/archives/306/makes-your-windows-stay-on-top-toggle-it/
+Mod1 a :ToggleCmd {MacroCmd {RaiseLayer} {RaiseLayer}} {MacroCmd {LowerLayer} {LowerLayer}}
+
 ##############################################
 Control de brillo para evitar cansancio ocular
 ##############################################

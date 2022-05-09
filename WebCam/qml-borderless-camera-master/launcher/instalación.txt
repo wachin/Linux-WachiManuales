@@ -1,4 +1,0 @@
-
-poner este archivo en:
-
-/home/wachin/.local/share/applications/ 

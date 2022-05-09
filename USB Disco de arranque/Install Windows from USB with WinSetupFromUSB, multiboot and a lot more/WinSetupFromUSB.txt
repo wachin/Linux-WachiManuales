@@ -1,5 +1,0 @@
-
-
-Requerimientos del programa WinSetupFromUSB
-- Sólo se puede instalar en Windows (no tiene versión para Linux)
-http://www.winsetupfromusb.com/downloads/ 

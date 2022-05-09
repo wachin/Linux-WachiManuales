@@ -1,7 +1,0 @@
-
-
-
-sudo touch /etc/apt/sources.list.d/antix.list
-
-
-touch /etc/apt/sources.list.d/antix.list

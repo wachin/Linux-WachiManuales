@@ -1,5 +1,0 @@
-
-Caja instala esto y está en el fondo
-
-gvfs
-gvfs-daemons 

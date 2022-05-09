@@ -1,7 +1,0 @@
-
-
-Al abrir nautilus en UbuntuStudio quita los iconos del escritorio SOLUCIÓN
-
-crear un lanzador con esto:
-
-nautilus --no-desktop

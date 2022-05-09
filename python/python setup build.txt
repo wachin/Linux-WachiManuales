@@ -1,7 +1,0 @@
-
-
-python setup.py build
-
-
-Installing Python Modules (Legacy version) — Python 2.7.18 documentation
-https://docs.python.org/2/install/

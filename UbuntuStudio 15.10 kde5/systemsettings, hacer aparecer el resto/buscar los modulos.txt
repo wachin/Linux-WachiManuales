@@ -1,5 +1,0 @@
-
-
-kde-config-gtk-style
-
-KDE configuration module 

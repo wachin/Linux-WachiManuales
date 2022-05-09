@@ -1,3 +1,0 @@
-opensuse Tumbleweed
-
-https://es.opensuse.org/openSUSE:Instalaci%C3%B3n_de_Tumbleweed
