@@ -5,3 +5,10 @@ http://facilitarelsoftwarelibre.blogspot.com/2016/07/cambiar-la-distribucion-del
 setxkbmap -layout latam
 
 setxkbmap -layout us
+
+
+
+
+
+
+
