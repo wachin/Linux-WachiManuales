@@ -1,0 +1,25 @@
+#!/bin/bash
+
+konsole &
+
+setxkbmap -layout latam &
+
+numlockx on &
+
+alarm-clock-applet --hidden &
+
+goldendict &
+
+xfce4-notes &
+
+dolphin /home/wachin/ /home/wachin/Dropbox/UbuntuManuales/ /home/wachin/Imágenes/ /home/wachin/Dropbox/ /home/wachin/EasyJoin/ &
+
+chromium &
+
+/home/wachin/github/ksnip-1.5.0/build/src/ksnip &
+
+redshift -p; redshift-gtk &
+
+/usr/lib/i386-linux-gnu/libexec/kdeconnectd &
+
+sleep 20; dropbox start -i &

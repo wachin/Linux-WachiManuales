@@ -1,0 +1,6 @@
+
+
+
+el paquete instala este script el cual se puede añadir:
+
+/usr/local/bin/screenlight-menu.sh 

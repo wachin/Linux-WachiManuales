@@ -1,0 +1,49 @@
+
+
+http://www.geeqie.org/
+
+http://www.geeqie.org/geeqie-1.6.tar.xz
+
+
+descomprimir en:
+
+/home/wachin/build/geeqie/1.6/
+
+Nota: En el README.md no dice nada de qué instalar para las dependencias, pero como en mi sistema tengo instalado todo lo necesario pues funcionó
+
+cd geeqie-1.6
+./autogen.sh
+make
+sudo make install
+
+
+
+CREAR EL deb
+
+Ir al directorio anterior:
+
+cd ..
+
+el archivo:
+
+geeqie-1.6.tar.xz
+
+descomprimirlo en una carpeta a parte y volverlo a comprimir pero como:
+
+geeqie-1.6.tar.gz
+
+Estando en el directorio /geeqie-1.6 poner:
+
+dh_make -e wachin.id@gmail.com -f ../geeqie-1.6.tar.gz
+
+y poner s y y
+
+sudo dpkg-buildpackage -rfakeroot -b -uc -us
+
+
+
+
+
+
+
+

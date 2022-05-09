@@ -1,0 +1,16 @@
+
+
+En synaptic revisé al programa "kdeconnect" y en los archivos instalados estaba este:
+
+/etc/xdg/autostart/kdeconnectd.desktop
+
+
+lo abrí y allí dentro estaba esta línea:
+
+/usr/lib/i386-linux-gnu/libexec/kdeconnectd
+
+y esa es la que he añadido en el "Centro de Control" de antiX en el escritorio en iceWM, pero añadiendo así al final:
+
+/usr/lib/i386-linux-gnu/libexec/kdeconnectd &
+
+

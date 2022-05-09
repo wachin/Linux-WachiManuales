@@ -1,0 +1,65 @@
+
+
+https://mxlinux.org/wiki/system/repos-mx-19/
+
+
+Repos – MX-19
+
+    Jerry3904
+
+    October 22, 2019
+
+    Version: MX-19
+
+    Section: System	
+
+Default repositories
+
+Sources of software packages are listed in files contained in /etc/apt/sources.list.d/. Note that users may see minor changes due to localization (e.g., http://ftp.uk.debian.org/debian/ instead of http://ftp.us.debian.org/debian/) or choice of mirror.
+
+mx.list
+
+# MX Community Main and Test Repos
+
+deb http://mxrepo.com/mx/repo/ buster main non-free
+
+#deb http://mxrepo.com/mx/testrepo/ buster test
+
+#deb http://mxrepo.com/mx/repo/ buster ahs
+
+debian-stable-updates.list
+
+# Debian buster Updates
+
+deb http://deb.debian.org/debian/ buster-updates main contrib non-free
+
+debian.list
+
+# Debian Stable.
+
+deb http://deb.debian.org/debian buster main contrib non-free
+
+deb http://deb.debian.org/debian-security buster/updates main contrib non-free/ buster/updates main contrib non-free
+
+#deb-src http://deb.debian.org/debian/ buster main contrib non-free
+
+# Multimedia Stable.
+
+# Use to install libdvdcss2 and codecs.
+
+#deb http://www.deb-multimedia.org buster main non-free
+
+#buster backports
+
+#deb http://deb.debian.org/debian buster-backports main
+
+various.list
+
+# opera
+
+#deb http://deb.opera.com/opera/ stable non-free
+
+# virtualbox
+
+#deb http://download.virtualbox.org/virtualbox/debian buster contrib
+ 

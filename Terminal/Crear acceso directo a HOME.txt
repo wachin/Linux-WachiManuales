@@ -1,0 +1,8 @@
+
+
+
+
+ln -s $HOME/ /home/wachin/Documentos/
+
+
+ln -s $HOME/ /home/wachin/Documentos/wachin/Escritorio/

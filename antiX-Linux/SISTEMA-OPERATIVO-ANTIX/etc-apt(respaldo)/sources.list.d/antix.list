@@ -1,0 +1,13 @@
+# Use with Debian Stable/buster repositories. Set as default for antiX-19.
+deb http://mirror.cedia.org.ec/mx-workspace/antix/buster/ buster main nonfree 
+# deb-src http://mirror.cedia.org.ec/mx-workspace/antix/buster/ buster main nonfree 
+
+# Use with Debian Testing/'rolling' repositories.
+# deb http://mirror.cedia.org.ec/mx-workspace/antix/testing/ testing main nonfree 
+# deb-src http://mirror.cedia.org.ec/mx-workspace/antix/testing/ testing main nonfree 
+
+# Use with Debian Sid repositories. 
+# deb http://mirror.cedia.org.ec/mx-workspace/antix/sid/ sid main nonfree 
+# deb-src http://mirror.cedia.org.ec/mx-workspace/antix/sid/ sid main nonfree 
+
+

@@ -1,0 +1,26 @@
+
+
+
+
+
+How to Store Images for Use in README.md on GitHub
+https://medium.com/@minamimunakata/how-to-store-images-for-use-in-readme-md-on-github-9fb54256e951
+
+
+GitHub(https://help.github.com/articles/about-readmes/) recommend that you use relative links with the ?raw=true instead of the absolute paths to ensure forked repo works correctly.
+
+![alt text](../media/XXXX.png?raw=true) 
+
+ejemplo, el siguiente enlace no se muestra en Remarkable:
+
+![w](https://github.com/wachin/wps-office-all-mui-windows-version/blob/master/imagenes/20200411-075606_nombre_sin_espacios.png  "d")
+
+
+pero le añado "?raw=true" después del .png y funciona, se vé en Remarkable:
+
+
+![w](https://github.com/wachin/wps-office-all-mui-windows-version/blob/master/imagenes/20200411-075606_nombre_sin_espacios.png?raw=true  "d")
+
+otro ejemplo:
+
+![w](https://github.com/wachin/wps-office-all-mui-win-language/blob/master/imagenes/20200411-202755 creado acceso a WPS.png?raw=true  "d")

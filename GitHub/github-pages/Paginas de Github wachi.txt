@@ -1,0 +1,72 @@
+
+############################################
+
+Tipo un solo producto
+https://github.com/wachin/indacochea.github.io
+for de: https://github.com/UNStats/website-statsday/
+lleva a: https://worldstatisticsday.org/
+la cual es una pagina como para un solo producto
+
+############################################
+
+Tipo un solo producto
+https://github.com/wachin/jorigamy.github.io
+fork de: https://github.com/jorigamy/jorigamy.github.io
+lleva a: https://jorigamy.github.io/
+la cual es una pagina como para un solo producto
+
+############################################
+
+Tipo Documentacion
+https://github.com/pmarsceill/just-the-docs
+bueno para hacer tutoriales
+redirecciona a:
+pmarsceill.github.io/just-the-docs/
+
+FORK WACHIN
+https://github.com/wachin/just-the-docs
+y para hacerlo una github-pages lo renombré a:
+https://github.com/wachin/wachin.github.io
+(porque ese nombre está grabado para ser el único primer página para github, eso en mi cuenta)
+
+FORK CRISPYFALAFEL
+usuario hizo buen fork: https://github.com/crispyfalafel/zoom-guide
+redirige a: https://crispyfalafel.github.io/zoom-guide/
+  hacer un fork directamente del usuario crispyfalafel no se puede, para eso habría que clonarlo y reemplazar con el código de el mi fork de pmarsceill que lo tengo en: https://github.com/wachin/wachin.github.io
+  
+FORK SHANGLL123
+usuario hizo buen fork de su currículum: https://github.com/shangll123/shangll123.github.io
+
+############################################
+
+Tipo blog, hay que probarlo:
+https://github.com/yulijia/freshman21
+direcciona a: http://yulijia.net/freshman21/
+
+al hacer un fork me direcciona al fork siguiente:
+
+Fork por Jevy Wang arreglado pero le quitó algunas cosas y le puso Read More
+usuario hizo fork bueno: https://github.com/jevy-wangfei/backup-jevy-wangfei.github.io
+direcciona a: http://jevy.wang/
+mi fork: https://github.com/wachin/backup-jevy-wangfei.github.io
+
+
+############################################
+
+Tipo pagina web
+https://github.com/jevy-wangfei/backup_2021_jevy-wangfei.github.io
+envia a: https://geektutu.com/
+Jevi Wangfei rescató el código que había borrado: from geektutu/hexo-theme-geektutu
+hice un fork: https://github.com/wachin/backup_2021_jevy-wangfei.github.io
+
+
+
+############################################
+
+un tema tipo instagram para imagenes
+jevy-wangfei/ZhiHuDaily-React-Native: A Zhihu Daily(http://daily.zhihu.com/) App client implemented using React Native (Android and iOS).
+https://github.com/jevy-wangfei/ZhiHuDaily-React-Native
+hice un fork: https://github.com/wachin/ZhiHuDaily-React-Native
+direcciona a: http://daily.zhihu.com/
+
+

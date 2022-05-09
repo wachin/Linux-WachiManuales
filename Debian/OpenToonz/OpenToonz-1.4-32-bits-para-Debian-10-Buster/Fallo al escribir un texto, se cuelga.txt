@@ -1,0 +1,20 @@
+
+
+
+wachin@antix19:~$ opentoonz
+qt5ct: using qt5ct plugin
+plugin search directory:/home/wachin/.config/OpenToonz/stuff/plugins
+walkDirectory_: /home/wachin/.config/OpenToonz/stuff/plugins
+===== PluginLoadController::finished() =====
+qt5ct: D-Bus global menu: no
+plugin search directory:/home/wachin/.config/OpenToonz/stuff/plugins
+walkDictionary: /home/wachin/.config/OpenToonz/stuff/plugins [dry]
+QFileSystemWatcher::addPath: path is empty
+create context:0x340bdec [thread:0xafd417c0]
+QCursor: Cannot create bitmap cursor; invalid bitmap(s)
+QCursor: Cannot create bitmap cursor; invalid bitmap(s)
+QCursor: Cannot create bitmap cursor; invalid bitmap(s)
+QCursor: Cannot create bitmap cursor; invalid bitmap(s)
+terminate called after throwing an instance of 'TException'
+Abortado
+ 

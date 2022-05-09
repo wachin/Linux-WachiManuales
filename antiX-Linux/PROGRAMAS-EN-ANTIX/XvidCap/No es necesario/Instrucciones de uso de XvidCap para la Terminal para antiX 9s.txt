@@ -1,0 +1,124 @@
+
+XvidCap para grabe video con audio en Debian 10 Buster y derivados como antiX 9
+
+Descargarlo desde:
+
+https://sourceforge.net/projects/xvidcap/files/xvidcap/1.1.7/
+
+la versión para Jaunty
+
+Para que grabe sonido hay que poner en la terminal padsp antes de los comandos de trabajo en la terminal, así
+
+
+
+TRATANDO DE QUE USE OSS
+
+funciona en antiX 9
+
+http://ubuntu.hu/node/37753
+
+sudo apt-get install oss-compat
+sudo apt-get install alsa-oss
+sudo update-initramfs -uk all
+
+cuando la reinicié no me quizo dar sonido, pero le puse así:
+
+alsactl --file ~/.asound.state store
+
+y después de eso si ya funcionó como debía ser:
+
+
+pero hay que abrir el mixer de alsa-mixer y allí bajarle al "Mic Boost" a cero y funciona correctamente
+
+aoss /usr/bin/xvidcap --audio yes --audio_bits 192 --cap_geometry 854x480[+200+200] --fps 30 --quality 100 --file "Su video.mpg"
+
+aoss /usr/bin/xvidcap --audio yes --audio_bits 192 --cap_geometry 854x480[+200+200] --fps 30 --quality 100 --file "Su video.avi"
+
+
+
+***********                    
+720p 30 fps 
+***********
+                    
+Con audio a 30 fps, calidad 100% y 720p en MOV
+
+aoss /usr/bin/xvidcap --audio yes --cap_geometry 1280x720[+200+200] --fps 30 --quality 100 --file "Su video.mov"
+
+Con audio a 30 fps, calidad 100% y 720p en MPG
+
+aoss /usr/bin/xvidcap --audio yes --cap_geometry 1280x720[+200+200] --fps 30 --quality 100 --file "Su video.mpg"
+
+Con audio a 30 fps, calidad 100% y 720p en AVI
+
+aoss /usr/bin/xvidcap --audio yes --cap_geometry 1280x720[+200+200] --fps 30 --quality 100 --file "Su video.avi"
+
+
+
+***********                    
+480p 30 fps 
+***********
+                    
+Con audio a 30 fps, calidad 100% y 480p en MOV
+
+aoss /usr/bin/xvidcap --audio yes --cap_geometry 854x480[+200+200] --fps 30 --quality 100 --file "Su video.mov"
+
+Con audio a 30 fps, calidad 100% y 480p en MPG
+
+aoss /usr/bin/xvidcap --audio yes --cap_geometry 854x480[+200+200] --fps 30 --quality 100 --file "Su video.mpg"
+
+Con audio a 30 fps, calidad 100% y 480p en AVI
+
+aoss /usr/bin/xvidcap --audio yes --cap_geometry 854x480[+200+200] --fps 30 --quality 100 --file "Su video.avi"
+
+
+***********                    
+360p 30 fps 
+***********
+
+Esta configuración yo la uso para hacer Gif para mis videos los cuales videos los convierto con ezgif.com 
+
+Con audio a 30 fps, calidad 100% y 360p en MOV
+
+aoss /usr/bin/xvidcap --audio yes --cap_geometry 640x360[+200+200] --fps 30 --quality 100 --file "Su video.mov"
+
+Con audio a 30 fps, calidad 100% y 360p en MPG
+
+aoss /usr/bin/xvidcap --audio yes --cap_geometry 640x360[+200+200] --fps 30 --quality 100 --file "Su video.mpg"
+
+Con audio a 30 fps, calidad 100% y 360p en AVI
+
+aoss /usr/bin/xvidcap --audio yes --cap_geometry 640x360[+200+200] --fps 30 --quality 100 --file "Su video.avi"
+
+
+
+Sin audio
+
+aoss /usr/bin/xvidcap --audio no --cap_geometry 1024x768[+0+0] --rescale 50 --file test.mpg
+
+
+Ver también en la ayuda del programa, poner en la terminal:
+
+xvidcap --help
+
+
+
+
+
+la siguiente resolución también funciona
+
+680x470
+
+
+CONSULTAS:
+
+Record Your Screen With XVidCap
+http://tombuntu.com/index.php/2007/11/06/record-your-screen-with-xvidcap/
+
+CREATE SCREENCAST USING XVIDCAP
+http://linux.byexamples.com/archives/231/create-screencast-using-xvidcap/
+
+aslactl storing / restoring issues
+https://askubuntu.com/a/648648/145772
+
+alsa-oss - Community Help Wiki
+https://help.ubuntu.com/community/alsa-oss

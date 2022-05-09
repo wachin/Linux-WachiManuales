@@ -1,0 +1,14 @@
+
+
+https://askubuntu.com/questions/55868/installing-broadcom-wireless-drivers
+
+poner en la terminal:
+
+lspci -vnn | grep Network
+
+a mi me devuelve:
+
+0c:00.0 Network controller [0280]: Broadcom Inc. and subsidiaries BCM4312 802.11b/g LP-PHY [14e4:4315] (rev 01)
+
+
+

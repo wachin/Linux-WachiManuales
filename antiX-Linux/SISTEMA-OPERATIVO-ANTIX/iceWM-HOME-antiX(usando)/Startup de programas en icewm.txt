@@ -1,0 +1,20 @@
+
+
+En el panel de control allí clic en "Editar los ajustes de iceWM" y allí en la pestaña ""startup" poner esto:
+
+
+konsole &
+
+dolphin /home/wachin/ /home/wachin/Dropbox/UbuntuManuales/ /home/wachin/Imágenes/ /home/wachin/Dropbox/ /home/wachin/easyjoin-linux-v2_0/ &
+
+setxkbmap -layout latam &
+
+numlockx on &
+
+alarm-clock-applet --hidden &
+
+redshift -p; redshift-gtk &
+
+goldendict &
+
+xfce4-notes & 

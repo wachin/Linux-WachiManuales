@@ -1,0 +1,219 @@
+
+Instalar OpenToonz 1.4.0 (32 y 64 bits) desde código fuente para MX Linux 19, antiX 19, Linux Mint Debbie 4 (basados en Debian 10 Buster)
+
+
+INTRODUCCIÓN:
+Para Linux 32 bits la última versión disponible está en Flatpak y es la 1.2.1 del 2018:
+
+Instalar OpenToonz 1.2.1 de 32 bits desde Flatpak para MX Linux 19.3
+https://facilitarelsoftwarelibre.blogspot.com/2021/03/opentoonz-en-linux-32bits-con-flatpak.html
+
+Nota: En 64 bits en Flatpak debe estar disponible una versión más actual.
+
+Para 64 bits también se puede instalar desde Snap:
+
+Install OpenToonz on Ubuntu using the Snap Store | Snapcraft
+https://snapcraft.io/install/opentoonz/ubuntu
+
+
+INFO DE LA INSTALACIÓN
+Esta instalación fue hecha en:
+
+Sistema Operativo
+MX Linux 19.3 de 32 bits
+Nota: Estas instrucciones sirven para 32 o 64 bits.
+
+Código Fuente
+OpenToonz 1.4.0 del 2021
+
+
+
+REQUERIMIENTOS
+Para compilar OpenToonz desde código fuente se necesitan las siguientes dependencias:
+
+    Git
+    GCC or Clang
+    CMake (3.4.1 or newer).
+    Qt5 (5.9 or newer)
+    Boost (1.55 or newer)
+    LibPNG
+    SuperLU
+    Lzo2
+    FreeType
+    LibMyPaint (1.3 or newer)
+
+
+
+INSTALACIÓN DE DEPENDENCIAS:
+
+sudo apt-get install build-essential git cmake pkg-config libboost-all-dev qt5-default \
+     qtbase5-dev libqt5svg5-dev qtscript5-dev qttools5-dev qttools5-dev-tools \
+     libqt5opengl5-dev qtmultimedia5-dev libsuperlu-dev liblz4-dev libusb-1.0-0-dev \
+     liblzo2-dev libpng-dev libjpeg-dev libglew-dev freeglut3-dev libfreetype6-dev \
+     libjson-c-dev qtwayland5 libmypaint-dev libgsl23 libopenblas-dev
+
+
+INSTRUCCIONES DE INSTALACIÓN
+Le recomiendo que cree una carpeta que usted sepa que es para tener instalados allí programas desde código fuente, la puede crear manualmente, ejemplo que tenga el siguiente nombre:
+
+github
+
+usted puede poner otro nombre, además puede crear una sub-carpeta si de pronto va a compilar alguna de las otras versiones.
+
+
+DESCARGAR 
+Necesitamos exactamente la versión 1.4.0, diríjase a la siguiente dirección:
+
+https://github.com/opentoonz/opentoonz/releases/tag/v1.4.0
+
+allí al final donde dice:
+
+Assets
+
+descargue el archivo que se llama:
+
+Source code (tar.gz)
+
+después de que lo haya descargado descomprímalo con clic derecho y "Extraer aquí"
+
+
+COPIANDO LA CARPETA 'stuff'
+Entre en esa carpeta: 
+
+opentoonz-1.4.0
+
+Estando en esa ruta /opentoonz-1.4.0 allí dentro abra una terminal y ponga una por una las siguientes dos líneas ejecutandolas:
+
+mkdir -p $HOME/.config/OpenToonz
+cp -r stuff $HOME/.config/OpenToonz/
+
+Eso es para copiar los archivos de configuración que están en al carpeta "stuff" a la carpeta oculta que hemos creado: .config/OpenToonz que es el lugar donde están las configuraciones. Es necesario hacer eso para el programa para esta versión.
+
+
+CREANDO SystemVar.ini
+Lo siguiente es para corregir una parte del código. Lo siguiente se puede hacer en cualquier ruta en una terminal, ponga en la terminal de una sola vez las siguientes 13 líneas y de ENTER:
+
+cat << EOF > $HOME/.config/OpenToonz/SystemVar.ini
+[General]
+OPENTOONZROOT="$HOME/.config/OpenToonz/stuff"
+OpenToonzPROFILES="$HOME/.config/OpenToonz/stuff/profiles"
+TOONZCACHEROOT="$HOME/.config/OpenToonz/stuff/cache"
+TOONZCONFIG="$HOME/.config/OpenToonz/stuff/config"
+TOONZFXPRESETS="$HOME/.config/OpenToonz/stuff/projects/fxs"
+TOONZLIBRARY="$HOME/.config/OpenToonz/stuff/projects/library"
+TOONZPROFILES="$HOME/.config/OpenToonz/stuff/profiles"
+TOONZPROJECTS="$HOME/.config/OpenToonz/stuff/projects"
+TOONZROOT="$HOME/.config/OpenToonz/stuff"
+TOONZSTUDIOPALETTE="$HOME/.config/OpenToonz/stuff/studiopalette"
+EOF
+
+
+
+
+CONSTRUYENDO LIFF-4.0.3
+Estando en esa ruta /opentoonz-1.4.0 ponga una por una las siguientes cuatro lineas ejecutándolas:
+
+
+cd thirdparty/tiff-4.0.3
+./configure --with-pic --disable-jbig
+make -j$(nproc)
+cd ../../
+
+Nota: El ultimo comando nos devuelve al directorio /opentoonz-1.4.0
+
+
+COMPILANDO OPENTOONZ
+Estando en esa ruta /opentoonz-1.4.0 ponga en la terminal una por una las siguientes 5 líneas ejecutándolas:
+
+cd toonz
+mkdir build
+cd build
+cmake ../sources
+make -j$(nproc)
+
+Nota: Esto puede demorar media hora, y quedamos en la ruta /build
+
+
+LANZANDO LA APLICACIÓN SIN INSTALAR (OPCIONAL)
+Estando en esa ruta /build ponga la siguiente línea:
+
+LD_LIBRARY_PATH=./lib/opentoonz:$LD_LIBRARY_PATH && ./bin/OpenToonz
+
+y se abrirá OpenToonz.
+
+
+INSTALANDO OPENTOONZ
+Estando en esa ruta /build ponga lo siguiente:
+
+sudo make install
+
+Espere un poco y quedará instalado OpenToonz
+
+Nota: Por defecto quedará instalado en la raíz del sistema en: /opt/opentoonz
+
+
+LANZANDO OPENTOONZ
+Ponga en la terminal la siguiente línea:
+
+/opt/opentoonz/bin/opentoonz
+
+
+ACTIVANDO EL ICONO DEL PROGRAMA
+Lo siguiente se puede hacer en cualquier ruta en una terminal. Ponga en la terminal lo siguiente:
+
+touch $HOME/.local/share/applications/OpenToonz.desktop
+
+y luego poner de una sola vez las siguientes 11 líneas y de ENTER:
+
+cat << EOF > $HOME/.local/share/applications/OpenToonz.desktop
+[Desktop Entry]
+Name=OpenToonz
+Comment=2D animation
+Exec=/opt/opentoonz/bin/opentoonz
+Type=Application
+Icon=/opt/opentoonz/share/icons/hicolor/256x256/apps/io.github.OpenToonz.png
+StartupWMClass=OpenToonz
+Terminal=false
+Categories=Qt;KDE;Graphics;X-KDE-More;
+EOF
+
+Nota: Estas instrucciones habilitan el icono para buscarlo entre nuestras aplicaciones, pero probándolo en XFCE y OpenBox el icono en la barra de tareas (https://es.wikipedia.org/wiki/Barra_de_tareas) no aparece y desconozco como se pueda arreglar, pero es una pequeñez.
+
+
+
+PONER EN ESPAÑOL U OTRO IDIOMA
+Con el programa abierto de clic en:
+
+File / Preferences / Interface / Language /
+
+allí escoger español u otro. Cerrar la ventana y el programa y volverlo a abrir
+
+
+
+PARA DESINSTALAR:
+Ponga en la terminal lo siguiente:
+
+rm $HOME/.local/share/applications/OpenToonz.desktop
+rm -fr $HOME/.config/OpenToonz/
+sudo rm -fr /opt/opentoonz/
+
+
+¿Y EL deb?
+Tal vez alguno de ustedes se pregunte si pude generar el deb, pero no, no pude, si intenté con las instrucciones para Inkscape:
+
+Cómo crear deb con dpkg-buildpackage -rfakeroot (desde un programa compilado previamente desde código fuente)(ejemplo Inkscape 1.0)
+https://facilitarelsoftwarelibre.blogspot.com/2020/12/compilar-inkscape-1.0-deb-32-y-64-bits-mxlinux.html
+
+pero no se pudo, pues para compilarlo hay que entrar en la capeta /build y desde allí se hace el proceso y a la final esa es la razón por la que no pude, y también el archivo rules que se genera dentro de la carpeta debian parece ser que no sirve en este caso, pero si alguno lo pueda crear el deb me avisa
+
+
+BASADO EN:
+
+Setting up the development environment for GNU/Linux
+https://github.com/opentoonz/opentoonz/blob/v1.4.0/doc/how_to_build_linux.md
+
+
+
+
+
+

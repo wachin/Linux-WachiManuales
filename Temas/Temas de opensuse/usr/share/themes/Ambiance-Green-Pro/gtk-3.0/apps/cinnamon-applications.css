@@ -1,0 +1,51 @@
+@define-color nemo_sidebar_bg #F2F2F2;
+@define-color nemo_sidebar_fg #3E3E3E;
+@define-color nemo_sidebar_selected_fg #fff;
+
+/* sidebar */
+
+NemoWindow .sidebar .view {
+    -GtkWidget-focus-padding: 0;
+    -GtkWidget-focus-line-width: 1;
+    -GtkTreeView-vertical-separator: 0;
+    background-color: @nemo_sidebar_bg;
+    color: @nemo_sidebar_fg;
+    text-shadow: none;
+    icon-shadow: none;
+}
+
+NemoWindow .sidebar .view:selected {
+    border-color: @nemo_sidebar_bg;
+    color: @nemo_sidebar_selected_fg;
+    text-shadow: 1px 1px alpha(black, 0.2);
+    icon-shadow: 1px 1px alpha(black, 0.2);
+}
+
+
+NemoWindow .sidebar .expander:selected {
+    border-color: @nemo_sidebar_selected_fg;
+    color: @nemo_sidebar_selected_fg;
+}
+
+NemoWindow .sidebar .frame {
+    border-color: #C1C1C1;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+}
+
+NemoPlacesTreeView {
+    -NemoPlacesTreeView-disk-full-bg-color: shade(@theme_base_color, 0.85);
+    -NemoPlacesTreeView-disk-full-fg-color: shade(@theme_selected_bg_color, 0.9);
+    -NemoPlacesTreeView-disk-full-bar-width: 2px;
+    -NemoPlacesTreeView-disk-full-bar-radius: 1px;
+    -NemoPlacesTreeView-disk-full-bottom-padding: 2px;
+}
+
+NemoPlacesTreeView:selected {
+    -NemoPlacesTreeView-disk-full-bg-color: shade(@theme_selected_fg_color, 1.1);
+    -NemoPlacesTreeView-disk-full-fg-color: @theme_selected_bg_color;
+}
+
+NemoWindow .sidebar .scrollbar {
+    -GtkRange-slider-width: 10;
+}

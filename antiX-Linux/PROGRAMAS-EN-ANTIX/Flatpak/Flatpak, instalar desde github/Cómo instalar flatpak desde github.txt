@@ -1,0 +1,32 @@
+
+
+
+en antiX 17.4.1 dice en la terminal que necesita flatpak 0.11.4 y lo encontré aquí
+
+https://github.com/flatpak/flatpak/releases/tag/0.11.4
+
+
+sudo apt-get install dh-autoreconf libcap-dev libarchive-dev libsoup2.4-dev libpolkit-gobject-1-dev libjson-glib-dev libappstream-glib-dev libseccomp-dev xsltproc docbook-xsl
+
+./configure
+
+aquí me sale un error grande:
+
+configure: error: Package requirements (ostree-1 >= 2017.14) were not met:
+
+debo buscar ese paquete de esa fecha porque en synaptic dice que el que está instalado es del 2016
+
+lo encontré "libostree-dev" aquí (se instala en ese orden):
+
+
+https://packages.debian.org/stretch-backports/libostree-1-1
+
+https://packages.debian.org/stretch-backports/ostree
+
+https://packages.debian.org/stretch-backports/i386/gir1.2-ostree-1.0/
+
+https://packages.debian.org/stretch-backports/libostree-dev
+
+
+
+

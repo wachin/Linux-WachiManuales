@@ -1,0 +1,7 @@
+
+
+ qt5ct
+Configuration path: "/home/wachin/.config/qt5ct"
+Shared QSS paths: ("/home/wachin/.local/share/qt5ct/qss", "/home/wachin/.local/share/flatpak/exports/share/qt5ct/qss", "/var/lib/flatpak/exports/share/qt5ct/qss", "/usr/local/share/qt5ct/qss", "/usr/share/qt5ct/qss")
+Shared color scheme paths: ("/home/wachin/.local/share/qt5ct/colors", "/home/wachin/.local/share/flatpak/exports/share/qt5ct/colors", "/var/lib/flatpak/exports/share/qt5ct/colors", "/usr/local/share/qt5ct/colors", "/usr/share/qt5ct/colors")
+

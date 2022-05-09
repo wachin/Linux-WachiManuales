@@ -1,0 +1,20 @@
+
+
+
+
+
+Escribir abajo del texto donde queremos el espacio, ejemplo:
+
+
+Mi texto donde después quiero hacer un Enter
+<br> <br/>
+
+así como muestra la figura:
+
+
+
+
+BASADO EN:
+
+Line breaks in markdown
+https://gist.github.com/shaunlebron/746476e6e7a4d698b373

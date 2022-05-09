@@ -1,0 +1,9 @@
+
+
+
+Abrir el centor de control de antiX y en "Sesión" dar clic al botón "Sesión de escritorio del usuario" se abrirá la pestaña "startup"
+
+
+allí poner:
+
+numlockx on & 

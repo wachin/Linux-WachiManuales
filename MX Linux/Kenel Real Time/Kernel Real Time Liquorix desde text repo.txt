@@ -1,0 +1,36 @@
+
+
+Añade al sources.list
+
+sudo gedit /etc/apt/sources.list
+
+las seis siguientes lineas:
+
+# http://mxrepo.com/
+deb http://mxrepo.com/mx/testrepo/ buster test
+
+# LIQUORIX (Alternative Kernels)
+deb http://liquorix.net/debian/ buster main 
+deb-src http://liquorix.net/debian/ buster main 
+
+
+
+Si deseas puedes ver qué paquetes hay
+
+http://mxrepo.com/mx/testrepo/pool/
+
+http://mxrepo.com/mx/testrepo/pool/test/l/linux-liquorix/
+
+
+Allí los mas antiguos para MX 19 son:
+
+
+linux-headers-5.1.0-20.1-liquorix-686-pae_5.1-24~mx19+1_i386.deb
+http://mxrepo.com/mx/testrepo/pool/test/l/linux-liquorix/linux-headers-5.1.0-20.1-liquorix-686-pae_5.1-24~mx19+1_i386.deb
+
+
+ linux-image-5.1.0-20.1-liquorix-686-pae_5.1-24~mx19+1_i386.deb 
+http://mxrepo.com/mx/testrepo/pool/test/l/linux-liquorix/linux-image-5.1.0-20.1-liquorix-686-pae_5.1-24~mx19+1_i386.deb
+
+
+ 

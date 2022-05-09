@@ -1,0 +1,51 @@
+
+
+
+desinstalé el kernel que trajo antix 9
+
+sudo apt-get remove linux-headers-4.9.193-antix.1-486-smp linux-image-4.9.193-antix.1-486-smp
+
+sudo update-grub2
+
+lo desinstalé porque instalé el kernel de realtime y luego estaba yo suando el que salió en antiX y usé QjackCtl y luego al siguiente día no tenía audio ese kernel, por eso lo desinstalé, pero cuando lo volví a instalar me dió este mesnaje en el kernel:
+
+sudo apt-get install linux-headers-4.9.193-antix.1-486-smp linux-image-4.9.193-antix.1-486-smp
+
+sudo update-grub2
+
+WARNING: The initramfs image may not contain cryptsetup binaries nor crypto modules. If that's on purpose, you may want to uninstall the 'cryptsetup-initramfs' package in order to disable the cryptsetup initramfs integration and avoid this warning.
+
+
+Busque alguna solución y me parece que la mejor es esta:
+
+
+
+Problems with cryptsetup during update - Ask Ubuntu
+https://askubuntu.com/questions/316486/problems-with-cryptsetup-during-update
+
+I think I was installing a bunch of updates, and after what seemed like an hour or so, I finally got this message in the Terminal window:
+
+cryptsetup: WARNING: failed to detect canonical device of overlayfs
+cryptsetup: WARNING: could not determine root device from /etc/fstab
+What does this mean, and how do I fix it?
+
+
+answered Sep 27 '13 at 22:50
+
+cgili
+
+If you are not using enCRYPTED volumes or swap, then you don't need cryptsetup, just uninstall it and reboot using the following commands:
+
+sudo apt-get remove cryptsetup
+# it's better to update and reinstall GRUB before rebooting
+sudo update-grub
+sudo grub-install /dev/<your_device_id>
+sudo reboot
+To find your device id, run:
+
+sudo blkid
+To make sure you are not using crypted filesystems please check /etc/fstab, if you see the option 'crypt' anywhere, then you require cryptsetup and what you need is to configure it properly.
+
+
+
+

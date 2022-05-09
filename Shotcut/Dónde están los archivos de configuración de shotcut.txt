@@ -1,0 +1,11 @@
+
+
+
+/home/wachin/.config/Meltytech/
+/home/wachin/.local/share/Meltytech/
+
+los vi al ejecutar shotcut desde la terminal con:
+
+shotcut
+
+

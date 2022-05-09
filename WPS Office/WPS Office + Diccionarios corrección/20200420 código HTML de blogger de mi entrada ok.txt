@@ -1,0 +1,266 @@
+
+<span style="color: red;"><span style="font-size: large; font-weight: bold;">Comunicado Importante.-</span> <b>A esta fecha 14 de Abril del 2020 la versión </b></span><span style="color: red;"><b><span style="color: red;"><b>11.1.0.</b></span>9505 y los que tengan la anterior 11.1.0.9126 y quieran corregir varios idiomas en un mismo documento no usen esas versiones.</b></span><br />
+<span style="color: red;"><b>WPS Office la versión de los repositorios de Deepin Linux tiene la habilidad de poder (sin necesidad de reiniciar el programa) reconocer varios idiomas para corrección ortográfica (claro que hay que seleccionar los diccionarios correspondientes) así como explico en la siguiente imagen:</b></span><br />
+<span style="color: red;"><b><br /></b></span>
+<span style="color: red;"><b><a href="http://3.bp.blogspot.com/-7I40dIH42SE/XpoM5CBmoRI/AAAAAAAAbSk/QDRXwFTF1QcxWQYymvOOLDABuWVWhJoQwCK4BGAYYCw/s1600/Explicaci%25C3%25B3n.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-7I40dIH42SE/XpoM5CBmoRI/AAAAAAAAbSk/QDRXwFTF1QcxWQYymvOOLDABuWVWhJoQwCK4BGAYYCw/s1600/Explicaci%25C3%25B3n.png" /></a></b></span><br />
+<br />
+<br />
+<br />
+<br />
+<span style="color: red;"><b>Con más detalles les explico en el siguiente video para usar el corrector Inglés, Francés y Fspañol en
+ un texto que tiene esos tres idiomas: Inglés, Francés y español :</b></span> <br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/glfvWRhKgyk/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/glfvWRhKgyk?feature=player_embedded" width="320"></iframe></div>
+<br />
+hay que esperar hasta que arreglen eso en: <a href="https://linux.wps.com/" target="_blank">https://linux.wps.com/</a> en alguna de las siguientes versiones.<br />
+<br />
+La <span style="font-size: large;"><b>solución</b></span> por el momento es instalarlo desde los repositorios de Deepin Linux, en la siguiente descarga:<br />
+<br />
+<b><span style="color: red; font-size: large;">DESCARGAR WPS Office 2019 versión 11.1.0.8392 de </span><span style="color: blue; font-size: large;">32</span><span style="color: red; font-size: large;"> y </span><span style="color: blue; font-size: large;">64</span><span style="color: red; font-size: large;"> </span><span style="color: blue; font-size: large;">bits </span><span style="color: red; font-size: large;">DEB</span></b><br />
+<br />
+<a href="http://packages.deepin.com/deepin/pool/non-free/w/wps-office-2019/" target="_blank">http://packages.deepin.com/deepin/pool/non-free/w/wps-office-2019/</a><br />
+<br />
+y un espejo por si se cae algún día el enlace de arriba:<br />
+<br />
+<a href="https://mirror.yandex.ru/mirrors/deepin/packages/pool/non-free/w/wps-office-2019/" target="_blank">https://mirror.yandex.ru/mirrors/deepin/packages/pool/non-free/w/wps-office-2019/</a> <br />
+<br />
+y mi propio espejo en mi cuenta de MEGA:<br />
+<br />
+<a href="https://mega.nz/folder/WhdGUCbD#AScUhE8HB_GI457CW2n3FQ" target="_blank">https://mega.nz/folder/WhdGUCbD#AScUhE8HB_GI457CW2n3FQ</a><br />
+<br />
+<br />
+<br />
+<b><span style="color: red; font-size: large;">DESCARGAR WPS Office 2019 versión 11.1.0.8392 de&nbsp;</span><span style="color: blue; font-size: large;">32</span><span style="color: red; font-size: large;">&nbsp;y&nbsp;</span><span style="color: blue; font-size: large;">64</span><span style="color: red; font-size: large;">&nbsp;</span><span style="color: blue; font-size: large;">bits&nbsp;</span><span style="color: red; font-size: large;">RPM</span></b><br />
+He convertido con Alien desde DEB a RPM la versión&nbsp;<b>11.1.0.8392</b> para los usuarios de Fedora, Red Hat, CentOS, OpenSUSE y otros. Pueden descargar del siguiente enlace de mi cuenta de MEGA:<br />
+<br />
+<a href="https://mega.nz/folder/mpMgwSRC#nqRrdeM5tuJxiz1i6SCUlg" target="_blank">https://mega.nz/folder/mpMgwSRC#nqRrdeM5tuJxiz1i6SCUlg</a><br />
+<br />
+<b>Nota:</b> En los RPM, el que tiene <b>i386</b> es el de <b>32 bits</b>, y el que tiene <b>x86_64 </b>es el de <b>64 bits. </b>Estos los convertí de los DEB de arriba a RPM con <a href="https://lamiradadelreplicante.com/2011/10/20/convertir-deb-a-rpm-con-alien-y-viceversa/" target="_blank">Alien</a>.<br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-family: inherit;"><b></b></span>
+<span style="font-family: inherit;"><b>TUTORIAL APLICABLE A:</b></span><br />
+-&nbsp;<a href="https://distrowatch.com/table.php?distribution=ubuntu" target="_blank">Ubuntu</a>&nbsp;y todos sus&nbsp;<a href="https://www.ubuntu.com/about/about-ubuntu/flavours" target="_blank">sabores o derivados oficiales</a>:&nbsp;<a href="https://www.kubuntu.org/" target="_blank">Kubuntu</a>,&nbsp;<a href="http://lubuntu.me/" target="_blank">Lubuntu</a>,&nbsp;<a href="https://ubuntubudgie.org/" target="_blank">Ubuntu Budgie</a>,&nbsp;<a href="http://www.ubuntukylin.com/" target="_blank">Ubuntu Kylin</a>,&nbsp;<a href="https://ubuntu-mate.org/" target="_blank">Ubuntu MATE</a>,&nbsp;<a href="http://ubuntustudio.org/" target="_blank">Ubuntu Studio</a>,&nbsp;<a href="https://xubuntu.org/" target="_blank">Xubuntu</a>&nbsp;y no oficiales como:&nbsp;<a href="https://distrowatch.com/table.php?distribution=mint" target="_blank">Linux Mint</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=trisquel" target="_blank">Trisquel</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=elementary" target="_blank">Elementary OS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=zorin" target="_blank">Zorin OS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=kdeneon" target="_blank">KDE Neon</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=popos" target="_blank">Pop!_OS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=lite" target="_blank">Linux Lite</a>,&nbsp;<a href="https://trisquel.info/" target="_blank">Trisquel</a>,&nbsp;etc y Sistemas Operativos basados en&nbsp;<a href="https://distrowatch.com/table.php?distribution=debian" target="_blank">Debian</a>&nbsp;como son:&nbsp;<a href="https://distrowatch.com/table.php?distribution=mx" target="_blank">MX Linux</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=deepin" target="_blank">Deepin</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=antix" target="_blank">antiX</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=kali" target="_blank">Kali</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=sparky" target="_blank">Sparky</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=parrot" target="_blank">Parrot</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=tails" target="_blank">Tails</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=q4os" target="_blank">Q4OS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=pureos" target="_blank">PureOS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=voyager" target="_blank">Voyager Live</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=volumio" target="_blank">Volumio</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=raspbian" target="_blank">Raspbian</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=whonix" target="_blank">Whonix</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=slax" target="_blank">Slax</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=steamos" target="_blank">SteamOS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=avlinux" target="_blank">AV Linux</a>,&nbsp;&nbsp;<a href="https://distrowatch.com/table.php?distribution=solydxk" target="_blank">SolydXK</a>,&nbsp;&nbsp;<a href="https://distrowatch.com/table.php?distribution=pardus" target="_blank">Pardus</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=proxmox" target="_blank">Proxmox</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=academix" target="_blank">Academic GNU/Linux</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=univention" target="_blank">Univention Corporate Server</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=skolelinux" target="_blank">Debian Edu/Skolelinux</a>, etc, los cuales usan la administración de paquetes&nbsp;<a href="https://es.wikipedia.org/wiki/Deb" target="_blank">DEB</a><br />
+<br />
+<b>y debería de funcionar en:</b><br />
+distribuciones que usan la administración de paquetes&nbsp;<a href="https://es.wikipedia.org/wiki/RPM_Package_Manager" target="_blank">RPM</a>&nbsp;como&nbsp;<a href="https://distrowatch.com/table.php?distribution=fedora" target="_blank">Fedora</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=redhat" target="_blank">Red Hat</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=opensuse" target="_blank">OpenSUSE</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=centos" target="_blank">CentOS</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=scientific" target="_blank">Scientific</a>, etc<br />
+<span style="font-family: inherit;"></span><br />
+<span style="font-family: inherit;">- y otras distribuciones independientes de Linux como:&nbsp;</span><a href="https://distrowatch.com/table.php?distribution=gentoo" target="_blank">Gentoo</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=mageia" target="_blank">Mageia</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=quirky" target="_blank">Quirky</a>,&nbsp;<a href="https://distrowatch.com/table.php?distribution=solus" target="_blank">Solus</a>, etc.&nbsp;<b><i>Pero allí se usan otros comandos para instalar aplicaciones los cuales usted deberá de buscar.</i></b><br />
+<b><i><br /></i></b>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<br />
+<b><span style="color: red; font-size: large;">DESCARGA INTERFAZ GRÁFICA EN ESPAÑOL</span></b><br />
+La siguiente descarga es de la interfáz gráfica de la versión de Windows de WPS Office la cual está mejor traducida que la versión de Linux y si funcionan en Linux esos archivos. Clic en el siguiente enlace:<br />
+<b><br /></b><a href="https://github.com/wachin/wps-office-all-mui-win-language/releases/tag/11.2.0.9255" target="_blank">https://github.com/wachin/wps-office-all-mui-win-language/releases/tag/11.2.0.9255</a><br />
+<br />
+<br />
+<a href="http://4.bp.blogspot.com/-ozb6V7A5JyA/XpZXzHkDNmI/AAAAAAAAbIY/nG1lrBUCN94aEp3bNRUek35A1ckgp3EhgCK4BGAYYCw/s1600/20200414-193748.png" imageanchor="1"><img border="0" src="https://4.bp.blogspot.com/-ozb6V7A5JyA/XpZXzHkDNmI/AAAAAAAAbIY/nG1lrBUCN94aEp3bNRUek35A1ckgp3EhgCK4BGAYYCw/s1600/20200414-193748.png" /></a><br />
+<br />
+<!--more--><br />
+<br />
+<b>Nota: </b>Si no se le abre la lista de clic en "<b>Assets</b>".<br />
+<br />
+De clic en <b>dicts.7z</b> y como verá en la siguiente imágen yo tengo a Firefox configurado para que me pregunte dónde deseo guardar:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-L_JU11Abx5E/XpZX0fPBujI/AAAAAAAAbIg/E9tqPfKbC64rZxFg0LXhD_TxToDAI6WGQCK4BGAYYCw/s1600/20200414-193820.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-L_JU11Abx5E/XpZX0fPBujI/AAAAAAAAbIg/E9tqPfKbC64rZxFg0LXhD_TxToDAI6WGQCK4BGAYYCw/s1600/20200414-193820.png" /></a><br />
+y guarde:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-_IjInbkssiU/XpZX1aLzzPI/AAAAAAAAbIo/xR7uDLG36Gk16qqTBvhQESMqnbDqYWwtQCK4BGAYYCw/s1600/20200414-193905.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-_IjInbkssiU/XpZX1aLzzPI/AAAAAAAAbIo/xR7uDLG36Gk16qqTBvhQESMqnbDqYWwtQCK4BGAYYCw/s1600/20200414-193905.png" /></a><br />
+<br />
+y si su Navegador Web no está configurado así pues se guardarán por defecto en la carpeta Descargas<br />
+<br />
+lo mismo haga con <b>mui.7z </b><a href="https://es.wikipedia.org/wiki/Interfaz_de_Usuario_Multiling%C3%BCe" target="_blank">(Multilingual User Interface = Interfaz de Usuario Multilenguaje)</a>  <br />
+<br />
+<br />
+<br />
+<b>INSTRUCCIONES DE HUBICACIÓN DE LOS ARCHIVOS</b>.- Para esto vamos a usar nautilus, sino lo tenía instalado instálelo (o si desea puede usar otro administrador de archivos):<br />
+<br />
+<pre class="linux-code" style="background: url(&quot;https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif&quot;) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; line-height: 22.4px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><span style="font-size: medium;"><code>sudo apt install nautilus</code></span></pre>
+<br />
+Lance nautilus poniendo en la terminal:<br />
+<br />
+<pre class="linux-code" style="background: url(&quot;https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif&quot;) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; line-height: 22.4px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;"><span style="font-size: medium;"><code>nautilus</code></span></pre>
+<br />
+<br />
+Ahora abra una nueva pestaña con "Ctrl + T" y aplaste "Ctrl + H" (<i>este atajo es para administradores de archivos como Nautilus, Thunar y otros, pero para Dolphin es "Alt + ."</i>) para ver los archivos ocultos, de clic en su "<b>Carpeta personal</b>" o también llamada HOME (CASA) y busque la carpeta:<br />
+<br />
+<b>.local</b><br />
+<br />
+&nbsp;<a href="http://1.bp.blogspot.com/-30EXIAfmPRM/Xg9EFpCpcXI/AAAAAAAAXNM/SefpmFl4Ov87-wZEeRu5SaRwcR6ABjK2wCK4BGAYYCw/s1600/ksnip_20200103-083857.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-30EXIAfmPRM/Xg9EFpCpcXI/AAAAAAAAXNM/SefpmFl4Ov87-wZEeRu5SaRwcR6ABjK2wCK4BGAYYCw/s1600/ksnip_20200103-083857.png" /></a><br />
+<br />
+<br />
+&nbsp;entre allí y siga la siguiente ruta(path): <br />
+<br />
+<b>.local/share/Kingsoft/office6/</b><br />
+<br />
+por todo aquí le pongo una imagen para que vea donde debe de llegar:<br />
+<br />
+&nbsp;<a href="http://2.bp.blogspot.com/-RhQ6dibNhqU/Xg9FZCFU85I/AAAAAAAAXNg/haNihUNpj5oe_aOSgPvd7TFo0pI4GDyLQCK4BGAYYCw/s1600/ksnip_20200103-084011.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-RhQ6dibNhqU/Xg9FZCFU85I/AAAAAAAAXNg/haNihUNpj5oe_aOSgPvd7TFo0pI4GDyLQCK4BGAYYCw/s1600/ksnip_20200103-084011.png" /></a><br />
+<br />
+si es la primer vez que instala WPS Office y lo habre allí no deben de estar las carpetas:<br />
+<br />
+<b>dicts</b><br />
+<b>mui </b><br />
+<br />
+pero si esas carpetas estuvieran, borrelas (también si había instalado antes la versión anterior bórre esas carpetas). Debe quedar así:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-t6KXa_9Cpac/XpZcmZAbGoI/AAAAAAAAbI8/n0MjfN-tQcoxxZq6651uSTSJQ4vrtM7VwCK4BGAYYCw/s1600/20200414-195934.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-t6KXa_9Cpac/XpZcmZAbGoI/AAAAAAAAbI8/n0MjfN-tQcoxxZq6651uSTSJQ4vrtM7VwCK4BGAYYCw/s1600/20200414-195934.png" /></a><br />
+<br />
+<br />
+ahora vuelva a la pestaña "<b>Descargas</b>" (no cierre la otra), seleccione los dos archivos que hemos descargado teniendo aplastada la tecla "Ctrl" y corte los dos archivos:<br />
+<br />
+<br />
+<a href="http://4.bp.blogspot.com/-kVXsCQQF-MQ/XpZtD59ECtI/AAAAAAAAbJM/AsA_DSIrkKQuhe3Y-TsdfL-h-9PMR9uWwCK4BGAYYCw/s1600/20200414-210853.png" imageanchor="1"><img border="0" src="https://4.bp.blogspot.com/-kVXsCQQF-MQ/XpZtD59ECtI/AAAAAAAAbJM/AsA_DSIrkKQuhe3Y-TsdfL-h-9PMR9uWwCK4BGAYYCw/s1600/20200414-210853.png" /></a><br />
+<br />
+Pero si quiere para que no se le complique tanto puede cortarlos uno por uno. <br />
+<br />
+<br />
+ahora regresa a la pestaña anterior y allí peguelos:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-2e6vcfky5EE/XpZte0FDMpI/AAAAAAAAbJg/a9PollzlXNs9qymmc3PWQruccvx_8cWugCK4BGAYYCw/s1600/20200414-211159.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-2e6vcfky5EE/XpZte0FDMpI/AAAAAAAAbJg/a9PollzlXNs9qymmc3PWQruccvx_8cWugCK4BGAYYCw/s1600/20200414-211159.png" /></a><br />
+<br />
+<br />
+y teniendo aplastada la tecla "Ctrl" dele clic a ambos para seleccionarlos, y clic en Extraer aquí:<br />
+<br />
+<a href="http://4.bp.blogspot.com/-Xwq7t1iMNkg/XpZuPlrZSHI/AAAAAAAAbJs/XcwAZj0UrwoprEmcQdrIcwJ86M1po2skQCK4BGAYYCw/s1600/20200414-211517.png" imageanchor="1"><img border="0" src="https://4.bp.blogspot.com/-Xwq7t1iMNkg/XpZuPlrZSHI/AAAAAAAAbJs/XcwAZj0UrwoprEmcQdrIcwJ86M1po2skQCK4BGAYYCw/s1600/20200414-211517.png" /></a><br />
+<br />
+pero si se le hace complicado puede hacerlo uno por uno. <br />
+<br />
+<br />
+deben quedarles las dos carpetas siguientes:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-uOqUNlYfogU/XpZu-Zzn7RI/AAAAAAAAbJ4/-SXLMfvrLXcu-jO2cI3Wr-38frOnGDMUgCK4BGAYYCw/s1600/20200414-211752.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-uOqUNlYfogU/XpZu-Zzn7RI/AAAAAAAAbJ4/-SXLMfvrLXcu-jO2cI3Wr-38frOnGDMUgCK4BGAYYCw/s1600/20200414-211752.png" /></a><br />
+<br />
+<br />
+<br />
+Ahora, si usted tenía abierto WPS Office cierrelo y vuélvalo a abrir, y abra un nuevo documento:<br />
+<br />
+<br />
+<a href="http://2.bp.blogspot.com/-ROk3pcOkvrc/Xg9Lne3PuoI/AAAAAAAAXPM/uu4kSWZvRvEW928aGMy1YsCE7vzw37_4ACK4BGAYYCw/s1600/ksnip_20200103-091011.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-ROk3pcOkvrc/Xg9Lne3PuoI/AAAAAAAAXPM/uu4kSWZvRvEW928aGMy1YsCE7vzw37_4ACK4BGAYYCw/s1600/ksnip_20200103-091011.png" /></a><br />
+<br />
+&nbsp;y a la derecha arriba cambie el idioma:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-tPGDv8PoT7A/Xg9LrIrHhmI/AAAAAAAAXPU/65oSqc7NwJgLY7yHzbJfYpgEffZ7P3DowCK4BGAYYCw/s1600/ksnip_20200103-091103.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-tPGDv8PoT7A/Xg9LrIrHhmI/AAAAAAAAXPU/65oSqc7NwJgLY7yHzbJfYpgEffZ7P3DowCK4BGAYYCw/s1600/ksnip_20200103-091103.png" /></a><br />
+<br />
+así:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-vGGz0ufYrWA/XpZvijMYStI/AAAAAAAAbKE/hLabHqsEhNUb8QaPQEKqHXKp6fCF9qz0gCK4BGAYYCw/s1600/20200414-212045.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-vGGz0ufYrWA/XpZvijMYStI/AAAAAAAAbKE/hLabHqsEhNUb8QaPQEKqHXKp6fCF9qz0gCK4BGAYYCw/s1600/20200414-212045.png" /></a><br />
+<br />
+<br />
+le saldrá un mensaje que dice que hay que cerrarlo y volverlo a abrir para que aparezca el idioma seleccionado:<br />
+<br />
+<br />
+<a href="http://2.bp.blogspot.com/-g3jhXRDxHa8/XpZvwkWbTdI/AAAAAAAAbKM/JmHH3saSoKcf6PzPUNloNwbuzWd3BSphACK4BGAYYCw/s1600/20200414-212141.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-g3jhXRDxHa8/XpZvwkWbTdI/AAAAAAAAbKM/JmHH3saSoKcf6PzPUNloNwbuzWd3BSphACK4BGAYYCw/s1600/20200414-212141.png" /></a><br />
+<br />
+eso hay que hacer, cerrar WPS Office y volverlo a abrir<br />
+<br />
+Ahora sí:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-Yc_xI6g5jyY/Xg9NCTdUpGI/AAAAAAAAXP8/WS8N78BHMfkU4jgAmA2-2Tan45MuoumjgCK4BGAYYCw/s1600/ksnip_20200103-091721.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-Yc_xI6g5jyY/Xg9NCTdUpGI/AAAAAAAAXP8/WS8N78BHMfkU4jgAmA2-2Tan45MuoumjgCK4BGAYYCw/s1600/ksnip_20200103-091721.png" /></a><br />
+<br />
+<br />
+<br />
+<br />
+<b><span style="color: red; font-size: large;">Diccionarios de Corrección Ortográfica</span></b><br />
+Ya han quedado varios idiomas disponibles. Seleccione el idioma de la siguiente manera:<br />
+<br />
+<a href="http://2.bp.blogspot.com/-hODoJ3c423M/Xg4TPVmE4gI/AAAAAAAAXKE/25sS80F9Ui4s1VwRuLT79u3K2Yu3yKHeACK4BGAYYCw/s1600/ksnip_20200102-105836.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-hODoJ3c423M/Xg4TPVmE4gI/AAAAAAAAXKE/25sS80F9Ui4s1VwRuLT79u3K2Yu3yKHeACK4BGAYYCw/s1600/ksnip_20200102-105836.png" /></a><br />
+<br />
+<br />
+y seleccionamos Español España y clic en Establecer predeterminado:<br />
+<br />
+<br />
+<a href="http://2.bp.blogspot.com/-znRClHRWWzY/XpcyM6fNhXI/AAAAAAAAbKc/65YN6lrEBnYX_P7aFYu0LjJx1V0F3IUzQCK4BGAYYCw/s1600/20200415-111102.png" imageanchor="1"><img border="0" src="https://2.bp.blogspot.com/-znRClHRWWzY/XpcyM6fNhXI/AAAAAAAAbKc/65YN6lrEBnYX_P7aFYu0LjJx1V0F3IUzQCK4BGAYYCw/s1600/20200415-111102.png" /></a><br />
+<br />
+y listo, ya tenemos el diccionario seleccionado. No es necesario cerrar la aplicación para que reconozca el Diccionario de Corrección Ortográfica, además usted si tiene en un documento varios idomas puede seleccionar el Diccionario de Corrección Ortográfica que necesite y usarlo pues WPS reconocerá sólo el idioma que haya seleccionado.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-size: large;"><span style="color: red;"><b>Instalando fuentes&nbsp;Symbol, Wingdings, Wingdings 2, Wingdings 3, MT Extra faltantes</b></span></span><br />
+Cuando uno abre por primera vez a WPS Office aparece este mensaje:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-BAvUXQ5SPCA/XN7USDPm8JI/AAAAAAAAORU/WAxVr4l6V0QmxBaCDCej9f1YFHR6PHiXQCK4BGAYYCw/s1600/Selecci%25C3%25B3n_668.png" imageanchor="1"><img border="0" src="https://3.bp.blogspot.com/-BAvUXQ5SPCA/XN7USDPm8JI/AAAAAAAAORU/WAxVr4l6V0QmxBaCDCej9f1YFHR6PHiXQCK4BGAYYCw/s1600/Selecci%25C3%25B3n_668.png" /></a><br />
+<br />
+si uno maximiza esa ventana el mensaje completo es este:<br />
+<br />
+<i>"Puede que algunos símbolos de fórmula no estén reproducido correctamente debido a la fuente Symbol, Wingdings, Wingdings 2, Wingdings 3, MT Extra perdida."</i><br />
+<i><br /></i>
+<i><br /></i>
+<i><b><span style="font-size: large;">DESCARGA</span></b></i><br />
+Descargue el paquete de las fuentes desde:<br />
+<br />
+<a href="http://packages.deepin.com/deepin/pool/non-free/t/ttf-wps-fonts/" target="_blank">http://packages.deepin.com/deepin/pool/non-free/t/ttf-wps-fonts/</a><br />
+<br />
+<b>Nota</b>: <a href="https://mirror.yandex.ru/mirrors/deepin/packages/pool/non-free/t/ttf-wps-fonts/" target="_blank">Aquí</a> les dejo un espejo por si algún día la otra no funciona.<br />
+<br />
+<a href="http://2.bp.blogspot.com/-iSe4M88-EKI/XN7V8jBbYBI/AAAAAAAAORg/aioCMNBcmtgTbffsF6QAwb3nKmZaJU3SQCK4BGAYYCw/s1600/Selecci%25C3%25B3n_669.png" imageanchor="1"><img border="0" height="288" src="https://2.bp.blogspot.com/-iSe4M88-EKI/XN7V8jBbYBI/AAAAAAAAORg/aioCMNBcmtgTbffsF6QAwb3nKmZaJU3SQCK4BGAYYCw/s640/Selecci%25C3%25B3n_669.png" width="640" /></a><br />
+<br />
+descarguen el .deb (si no saben instalarlo vean este tutorial que&nbsp;<a href="https://facilitarelsoftwarelibre.blogspot.com/2016/09/instalar-paquetes-deb-con-gdebi.html" target="_blank">hice</a>).<br />
+<br />
+Una vez instalado, cuando lo cierren y lo vuelvan a abrir a WPS Office ya no aparecerá esa ventana.<br />
+<br />
+<br />
+<br />
+<b><span style="color: red; font-size: large;">Para Sistemas Operativos Linux que usan RPM</span></b><br />
+He convertido el archivo deb a rpm con Alien, vean:<br />
+<br />
+<a href="https://github.com/wachin/ttf-wps-fonts/releases/tag/1.0">https://github.com/wachin/ttf-wps-fonts/releases/tag/1.0</a><br />
+<br />
+<br />
+<a href="http://4.bp.blogspot.com/-LAQ46O9VG0w/Xl0a4d8vm8I/AAAAAAAAZuk/oLRslbdUtzIerPrkCV6qRS7KQP0Nfd7ugCK4BGAYYCw/s1600/02%2Bconverti%2Bel%2Bdeb%2Ba%2Brpm.png" imageanchor="1"><img border="0" src="https://4.bp.blogspot.com/-LAQ46O9VG0w/Xl0a4d8vm8I/AAAAAAAAZuk/oLRslbdUtzIerPrkCV6qRS7KQP0Nfd7ugCK4BGAYYCw/s1600/02%2Bconverti%2Bel%2Bdeb%2Ba%2Brpm.png" /></a><br />
+<br />
+<b>Nota: </b>Allí también está el deb, esto pues lo he respaldado allí en mi repositorio de GitHub.<br />
+<br />
+Descargen el RPM e instalenlo (deben de buscar cómo instalarlo en Fedora, Red Hat, CentOS, OpenSUSE y otros que usan RPM). Una vez instalado, cuando lo cierren y lo vuelvan a abrir a WPS Office ya no aparecerá esa ventana.<br />
+<br />
+<br />
+<br />
+<b><span style="color: red; font-size: large;">Cómo instalar en WPS Office en ArchLinux</span></b><br />
+En un comentario del video en Youtube me preguntó Ricardo Velasco:<br />
+<br />
+<a href="http://3.bp.blogspot.com/-8FWDntLcrK8/XODPL1tNBgI/AAAAAAAAOSY/gjxb0zFLckQoYoqUuHBEEeMEku5hEne5ACK4BGAYYCw/s1600/Selecci%25C3%25B3n_672.png" imageanchor="1"><img border="0" height="136" src="https://3.bp.blogspot.com/-8FWDntLcrK8/XODPL1tNBgI/AAAAAAAAOSY/gjxb0zFLckQoYoqUuHBEEeMEku5hEne5ACK4BGAYYCw/s640/Selecci%25C3%25B3n_672.png" width="640" /></a><br />
+<br />
+que si se puede instalar WPS Office en ArchLinux, y si se puede, para esto las instrucciones están en:<br />
+<br />
+<a href="https://wiki.archlinux.org/index.php/WPS_Office_(Espa%C3%B1ol)" target="_blank">https://wiki.archlinux.org/index.php/WPS_Office_(Espa%C3%B1ol)</a><br />
+<br />
+Pero yo no tengo como probarlo. Espero que puedan siguiendo todas las instrucciones (allí dicen cómo instalar la interfaz en español y los diccionarios de corrección ortográfica)<br />
+<br />
+<br />
+<br />
+<span style="color: red;"><span style="font-size: large;"><b>Cómo desisntalar</b></span></span><br />
+Puede desinstalarlo con el Synaptic:<br />
+<br />
+<a href="http://1.bp.blogspot.com/-Pf0CQYsyFIc/Xp5m1s-6wZI/AAAAAAAAbXI/KwDK8kEEOcAdjKelLKAQQnfgB2AtlPKVwCK4BGAYYCw/s1600/20200420-222120.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-Pf0CQYsyFIc/Xp5m1s-6wZI/AAAAAAAAbXI/KwDK8kEEOcAdjKelLKAQQnfgB2AtlPKVwCK4BGAYYCw/s1600/20200420-222120.png" /></a><br />
+<br />
+O ponga en la terminal:<br />
+<br />
+<pre class="linux-code" style="background: url(&quot;https://lh3.googleusercontent.com/-E2WZ-k5ArbU/VnnAeX-_qmI/AAAAAAAABDU/i1aaUUYLZh8/s540-Ic42/lincodewachin.gif&quot;) 0px 0px no-repeat scroll rgb(231, 232, 233); border-color: rgb(214, 73, 55); border-style: solid; border-width: 1px 1px 1px 20px; font-family: 'UbuntuBeta Mono', 'Ubuntu Mono', 'Courier New', Courier, monospace; line-height: 22.4px; margin: 10px; max-height: 500px; min-height: 16px; overflow: auto; padding: 28px 10px 10px; z-index: 10000;">sudo apt-get remove --purge wps-office-2019</pre>
+<br />
+<b>Nota: </b>Pero este comando es únicamente para la versión que está aquí en esta página de Deepin Linux, pues la de la página Web original puede que en algún momento le cambien el nombre y no funcinará ese comando de terminal, por lo que lo mejor sería en ese caso hacerlo desde Synaptic o desde el gestor de paquetes de instalación de su Distribución Linux<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-size: large;"><b>Fuente</b></span><br />
+Estaba pensando que los archivos de traducción del MUI <a href="https://es.wikipedia.org/wiki/Interfaz_de_Usuario_Multiling%C3%BCe" target="_blank">(Multilingual User Interface, Interfaz de Usuario Multilenguaje) </a>terminan en .qm:<br />
+<br />
+<br />
+<a href="http://1.bp.blogspot.com/-zg_LD2Xveeo/Xpmk74J2KJI/AAAAAAAAbSY/Nin57kyeG7UlMEYvWqzN-jXJ_8YvWBf-wCK4BGAYYCw/s1600/20200417-074519.png" imageanchor="1"><img border="0" src="https://1.bp.blogspot.com/-zg_LD2Xveeo/Xpmk74J2KJI/AAAAAAAAbSY/Nin57kyeG7UlMEYvWqzN-jXJ_8YvWBf-wCK4BGAYYCw/s400/20200417-074519.png" /></a><br />
+<br />
+e investigando estos archivos fueron creados con <a href="https://www.qt.io/" target="_blank">qt</a> y sucede que las aplicaciones hechas con este se pueden hacer para Windows, Linux, MAC y otros, así que pensé que esos archivos de la versión de Windows podrían funcionar en la versión de Linux, y así fue, además que están mejor traducidos que en la versión de Linux.<br />
+<br />
+Puede revisar todos los pasos que hice para sacarlos en:<br />
+<br />
+<a href="https://github.com/wachin/wps-office-all-mui-win-language" target="_blank">https://github.com/wachin/wps-office-all-mui-win-language</a> <br />
+<br />
+Que Dios les bendiga 

@@ -1,0 +1,6 @@
+
+
+dpkg-deb -x debian_11_touchegg_2.0.12_i386.deb tmpdir
+dpkg-deb --control debian_11_touchegg_2.0.12_i386.deb tmpdir/DEBIAN
+gedit tmpdir/DEBIAN/control
+fakeroot dpkg -b tmpdir debian_11_touchegg_2.0.12_i386_ok.deb  

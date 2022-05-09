@@ -1,0 +1,22 @@
+
+
+El siguiente para mi es el mejor porque le puedo añadir tres niveles así ### y si lo coge bien
+
+Markdown TOC generate
+https://magnetikonline.github.io/markdown-toc-generate/
+
+magnetikonline/markdown-toc-generate: Table of contents (TOC) generator for a given Markdown page source.
+https://github.com/magnetikonline/markdown-toc-generate
+
+
+
+******************************
+
+El siguiente añade tres niveles ### pero le pone + en la tabla
+
+Generate TOC Table of Contents from GitHub Markdown or Wiki Online
+https://ecotrust-canada.github.io/markdown-toc/
+
+
+clear-code/github-wiki-toc-generator: Generates ToC for GitHub wiki pages.
+https://github.com/clear-code/github-wiki-toc-generator

@@ -1,0 +1,19 @@
+
+
+
+Cómo activar los colores del Terminal en antiX
+Primero copiaremos el archivo ~/bashrc al escritorio abriendo un Terminal y escribiendo el siguiente comando:
+1
+cp /etc/skel/.bashrc ~/.bashrc
+A continuación, escribimos este otro comando para editarlo:
+1
+nano ~/.bashrc
+Se nos mostrará el contenido del archivo en la misma ventana. Tenemos que buscar la línea que pone # force_color_prompt=yes y eliminar la almoadilla (#) que hay delante de la línea, con lo que se quedaría force_color_prompt=yes. Para adelantar, podéis usar el atajo Ctrl+W, introducir el texto “force” y presionar Intro.
+A continuación, guardamos con Crtl+O y salimos con Ctrl+X.
+Y, por último, recargamos el perfil con el siguiente comando:
+1
+source ~/.bashrc
+Si todo ha salido bien, podéis comprobar que se han activado los colores cerrando la ventana actual, volviendo a abrir una nueva y escribiendo “ls”. Os 
+
+Cómo activar los colores de la Terminal
+https://ubunlog.com/como-activar-los-colores-de-la-terminal/

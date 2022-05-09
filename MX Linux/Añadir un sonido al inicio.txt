@@ -1,0 +1,15 @@
+
+
+
+Startup and logout sounds problem - MX Linux Forum
+https://forum.mxlinux.org/viewtopic.php?t=39661
+
+
+Ejemplo en el archivo de Fluxbox
+
+
+gedit .fluxbox/startup
+
+allí puse:
+
+play /home/wachin/Música/Todopoderoso.ogg & 

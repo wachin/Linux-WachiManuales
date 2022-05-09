@@ -1,0 +1,16 @@
+
+
+antiX 9
+
+
+sudo apt-get install icewm-themes-extras-antix 
+
+
+kdenlive frei0r-plugins kde-baseapps adwaita-themes gimp gimp-gmic gimp-help-es gimp-data-extras inskcape krita playonlinux audacity audacious karlyriceditor wine winetricks exe-thumbnailer rosegarden 
+
+yakuake gnome-terminal xfce4-terminal mate-terminal
+
+
+frei0r-plugins.- Efectos para Kdenlive
+kde-baseapps instala kdialog necesario para color folder
+adwaita-themes.- adwaita adwaita-X-light GTK2/3 themes for antiX.

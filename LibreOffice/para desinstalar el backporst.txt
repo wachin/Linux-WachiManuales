@@ -1,0 +1,9 @@
+
+
+
+
+Para desinstalar el backport
+
+sudo rm -v /etc/apt/sources.list.d/buster-backports.list
+
+sudo apt-get update 

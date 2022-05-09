@@ -1,0 +1,8 @@
+
+
+Spotify Flatpak dice esto:
+
+ALSA lib ../../pulse/pulse.c:243:(pulse_connect) PulseAudio: Unable to connect: Conexión negada
+
+necesita tener instalado PulseAudio pero antiX 9 no lo usa
+ 

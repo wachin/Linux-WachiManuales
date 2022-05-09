@@ -1,0 +1,44 @@
+
+I have this:
+
+- Laptop Dell Inspiron 1750
+- antiX 9, 32 bits
+
+I install flatpak:
+
+sudo apt-get install flatpak xdg-desktop-portal-gtk
+
+When I run Spotify Flatpak:
+
+flatpak run com.spotify.Client
+
+give my this:
+
+$ /app/extra/share/spotify/spotify: /usr/lib/i386-linux-gnu/libcurl.so.4: no version information available (required by /app/extra/share/spotify/spotify)
+/proc/self/exe: /usr/lib/i386-linux-gnu/libcurl.so.4: no version information available (required by /proc/self/exe)
+[1029/110217.770217:ERROR:sandbox_linux.cc(344)] InitializeSandbox() called with multiple threads in process gpu-process.
+
+The program appear with the login windown, but can't do facebook login. 
+
+it seem to be neccesary have installed
+
+libcurl3
+
+but in antiX9 there is
+
+libcurl4
+
+I don't know how to solve this.
+
+
+However is posible to do login without facebook, then the program appear normally, but when I want to play a song appear this message in Spotify:
+
+"The song is not available. If you have the file on your computer you can import it"
+
+in the terminal appear:
+
+"ALSA lib ../../pulse/pulse.c:243:(pulse_connect) PulseAudio: Unable to connect: Conexión negada"
+
+I search in synaptic and pulseaudio is not installed. I have to considerate install it to hear sound
+
+

@@ -1,0 +1,4 @@
+
+
+
+su-to-root -X -c gdebi-gtk  

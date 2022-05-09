@@ -1,0 +1,6 @@
+
+
+
+Para abrirlo hay que abrirlo después de haber ejecutado a qjackctl y  así mismo hay que poner en la terminal:
+
+dbus-launch qsynth 

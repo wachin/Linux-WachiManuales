@@ -1,0 +1,63 @@
+
+
+How to Enable Backports Repository on Debian
+https://www.comoinstalarlinux.com/como-usar-el-editor-nano-linux/2/
+
+Open a terminal emulator, and find the codename of your Debian installation:
+
+lsb_release -sc
+
+debian-backports-lsb-release
+
+Note: in this example the codename is “stretch.” If at the time you read this the codename is different, for example “buster,” replace every occurence where you see “stretch” with “buster.”
+
+Debian’s APT package manager stores the list of repositories where it can download software in a file. View and edit this file with the following command:
+
+sudo apt edit-sources
+
+At the end of the file, add the following line:
+
+deb http://deb.debian.org/debian stretch-backports main contrib non-free
+
+sudo apt-get update
+
+(ver el manual de uso de nano)
+
+
+
+How To Install A Package From Backports
+https://linuxconfig.org/how-to-install-and-use-debian-backports
+
+When you want to install a package from backports, you can use the -t flag with Apt to specify the backports repo. For example, if you want the latest version of LibreOffice from backports, the command would look like this:
+
+sudo apt install -t stretch-backports libreoffice default-jre libreoffice-java-common
+
+sudo apt install -t stretch-backports flatpak libetonyek-0.1-1 libgltf-0.0-0v5 libmwaw-0.3-3 liborcus-0.11-0 libqgpgme7 libwps-0.4-4 xdg-dbus-proxy xdg-desktop-portal-gtk gpg-wks-client gpgsm libostree-1-1 bubblewrap
+
+
+
+How To Do a Complete Update From Backports
+
+sudo apt -t stretch-backports upgrade
+
+
+
+https://geekland.eu/repositorio-backports-debian-estable/
+
+
+
+***************
+en antiX
+
+
+
+abrir thunar y gedit como root
+
+
+/etc/apt/sources.list.d/debian.list
+
+
+
+deb http://deb.debian.org/debian/ stretch-backports main contrib non-free   
+
+

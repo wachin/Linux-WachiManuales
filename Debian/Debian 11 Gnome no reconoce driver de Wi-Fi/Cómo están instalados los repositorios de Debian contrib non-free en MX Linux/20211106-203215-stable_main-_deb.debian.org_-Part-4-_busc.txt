@@ -1,0 +1,3 @@
+﻿xserver-xorg-video-trident
+xserver-xorg-video-vesa
+xserver-xorg-video-vmware

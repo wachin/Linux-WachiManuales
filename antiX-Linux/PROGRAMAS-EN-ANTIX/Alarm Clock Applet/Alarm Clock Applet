@@ -1,0 +1,17 @@
+Cómo instalar "Alarm Clock Applet" en Debian 10 Buster, o antiX 9
+https://facilitarelsoftwarelibre.blogspot.com/2019/10/como-instalar-alarm-clock-applet-en.html
+
+
+alarm-clock-applet · Alarmas · Reloj · Temporizador
+En Debian 10 Buster no está disponible el paquete "alarm-clock-applet", pero se puede instalar y funciona muy bien el paquete de Ubuntu que está hasta Bionic, así que descarguemosle desde allí:
+
+https://packages.ubuntu.com/alarm-clock-applet
+
+
+
+después de descargar podemos instalar el deb con gdebi (tiene pocas dependencias y no da problemas en la instalación), vea este vídeo:
+
+Instalar paquetes DEB con gdebi ~ Proyecto Facilitar el Software Libre en el Ecuador
+https://facilitarelsoftwarelibre.blogspot.com/2016/09/instalar-paquetes-deb-con-gdebi.html
+
+Explicación.- El desarrollador original ha dejado de actualizar el programa. Si alguno de ustedes sabe programar me gustaría ayudaran al desarrollo de la aplicación, es una gran y pequeña aplicación, tiene un temporizador, cuenta atrás

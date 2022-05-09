@@ -1,0 +1,6 @@
+
+mintstick
+write .img and .iso files to USB sticks
+
+ 
+A GUI to write .img or .iso files to a USB Key. It can also format them. 

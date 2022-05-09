@@ -1,0 +1,26 @@
+
+
+
+ 
+$ sudo update-initramfs -uk all
+update-initramfs: Generating /boot/initrd.img-4.19.0-6-rt-686-pae
+cryptsetup: WARNING: The initramfs image may not contain cryptsetup binaries 
+    nor crypto modules. If that's on purpose, you may want to uninstall the 
+    'cryptsetup-initramfs' package in order to disable the cryptsetup initramfs 
+    integration and avoid this warning.
+I: The initramfs will attempt to resume from /dev/sda7
+I: (UUID=b98654fc-71f0-4485-91eb-877108d9cee3)
+I: Set the RESUME variable to override this.
+update-initramfs: Generating /boot/initrd.img-4.9.193-antix.1-486-smp
+cryptsetup: WARNING: The initramfs image may not contain cryptsetup binaries 
+    nor crypto modules. If that's on purpose, you may want to uninstall the 
+    'cryptsetup-initramfs' package in order to disable the cryptsetup initramfs 
+    integration and avoid this warning.
+I: The initramfs will attempt to resume from /dev/sda7
+I: (UUID=b98654fc-71f0-4485-91eb-877108d9cee3)
+I: Set the RESUME variable to override this.
+
+Y de hecho lo voy a hacer y los removí
+
+
+

@@ -1,0 +1,25 @@
+
+
+Why can't I copy files to a USB drive partitioned by GParted?
+
+
+If you cd to the drive in a terminal you can run sudo chmod 777 . which will completely open up the permissions for the current directory (the USB drive) and then you are free to add files as normal.
+
+
+My reply
+
+yo había creado una partición ext4 con gparted y luego al querer copiar archivos en ella no podía, pero abriendo una terminal allí y poniendo el comando indicado si él pudo, gracias
+
+I had created an ext4 partition with gparted and then when I wanted to copy files to it I couldn't, but by opening a terminal there and typing the indicated command it did, thanks
+
+
+https://askubuntu.com/questions/91790/why-cant-i-copy-files-to-a-usb-drive-partitioned-by-gparted
+https://askubuntu.com/a/866633/145772
+
+
+
+/media/wachin/Contenedor/HOME/(.)PlayOnLinux_wine.tar.xz
+/media/wachin/Contenedor/HOME/Dev.tar.xz
+/media/wachin/Contenedor/HOME/Dev-wachin.tar.xz
+/media/wachin/Contenedor/HOME/github-wachi-Dev.tar.xz
+/media/wachin/Contenedor/HOME/ressources.tar.xz

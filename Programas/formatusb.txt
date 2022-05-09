@@ -1,0 +1,5 @@
+
+
+compilar un programa desde código fuente en Linux y crear el 
+
+(desde un programa compilado previamente desde código fuente) 

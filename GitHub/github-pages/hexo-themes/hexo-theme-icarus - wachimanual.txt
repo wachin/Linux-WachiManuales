@@ -1,0 +1,59 @@
+
+
+Getting Started with Icarus - Icarus
+https://blog.zhangruipeng.me/hexo-theme-icarus/uncategorized/getting-started-with-icarus/
+
+git clone https://github.com/wachin/hexo-theme-icarus themes/icarus
+
+pero lo he renombrado para activarlo con github pages
+
+git clone https://github.com/wachin/wachin.github.io themes/icarus
+
+
+Next, activate Icarus in your site’s _config.yml file:
+_config.yml
+
+theme: icarus
+
+or use the hexo command to change the theme to Icarus:
+Shell
+
+hexo config theme icarus
+
+Finally, use the following command to start the Hexo local server and begin composing!
+Shell
+
+hexo server
+
+To learn more about the theme, widgets, and plugins, check out the Icarus User Guide
+
+https://blog.zhangruipeng.me/hexo-theme-icarus/tags/Icarus-User-Guide/
+
+
+You can also refer to the source code of this site for more examples. It is in the site branch 
+
+https://github.com/ppoffice/hexo-theme-icarus/tree/site
+
+of the Icarus repository on GitHub. Additionally, you may find help from other Icarus users on Gitter
+
+https://gitter.im/hexo-theme-icarus/
+
+
+
+Additional Resources
+
+Here are some other resources that you may find useful to further customize your site. You can also submit your Icarus tutorial through this link
+
+https://github.com/ppoffice/hexo-theme-icarus/edit/site/source/_posts/en/Getting-Started.md
+
+
+
+
+Rabi Kavoori: Installing Hexo on Ubuntu
+https://blog.kavoori.com/2014-10-13/installing-hexo-on-ubuntu.html
+
+3. Install Hexo.
+
+Use npm to install the hexo package globally (using the -g flag)
+
+sudo npm install -g hexo

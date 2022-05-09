@@ -1,0 +1,22 @@
+
+
+
+Instalar las dependencias necesarias en este orden:
+
+https://packages.debian.org/stretch/i386/libicu57/
+
+https://packages.debian.org/stretch/i386/libjavascriptcoregtk-3.0-0/
+
+https://packages.debian.org/stretch/gir1.2-javascriptcoregtk-3.0
+
+https://packages.debian.org/stretch/i386/libwebkitgtk-3.0-0/
+
+https://packages.debian.org/stretch/gir1.2-webkit-3.0
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+
+
+Yo soy de Ecuador y necesito el idioma Latino y a veces al estar usando antiX 17.4.1 se cambia el teclado y no puedo poner las tildes, para evitar que pase esto, en el menú de las Aplicaciones de antiX en:
+
+Panel de Control / Editar los ajustes de iceWM
+
+Allí añadir en Geany en la pestaña de la instancia del archivo "startup" allí añadir esto:
+
+setxkbmap -layout latam &
+
+Ahora bien, para saber que distribución de teclado se está usando en antiX, abra una terminal y ponga:
+
+setxkbmap -query | grep layout
+
+El resultado será la distribución que esté usando

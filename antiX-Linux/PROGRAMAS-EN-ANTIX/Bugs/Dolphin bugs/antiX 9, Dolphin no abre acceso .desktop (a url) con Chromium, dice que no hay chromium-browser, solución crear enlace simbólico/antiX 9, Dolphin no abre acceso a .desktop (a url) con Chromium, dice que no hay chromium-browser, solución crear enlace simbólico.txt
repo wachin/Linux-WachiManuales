@@ -1,0 +1,20 @@
+
+antiX 9, Dolphin no abre acceso a url con Chromium, dice que no hay chromium-browser, solución crear enlace simbólico
+
+En Ubuntu el lanzador tiene este nombre:
+
+/usr/bin/chromium-browser 
+
+en antiX 9 es este:
+
+/usr/bin/chromium
+
+Dolphin no encuentra esta ruta: "/usr/bin/chromium-browser" por eso crearé un enlace simbólico para que encuentre la ruta correcta
+
+poner en la terminal:
+
+sudo ln -s /usr/bin/chromium /usr/bin/chromium-browser 
+
+Fuente:
+
+https://kb.iu.edu/d/abbe

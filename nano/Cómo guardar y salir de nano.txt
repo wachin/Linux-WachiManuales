@@ -1,0 +1,4 @@
+
+
+
+Aplastar "Ctrl + X" y allí pregunta si uno desea salir y con la flecha del teclado seleccionar que "Si" y luego dar "ENTER" y listo se sale de nano en la terminal 

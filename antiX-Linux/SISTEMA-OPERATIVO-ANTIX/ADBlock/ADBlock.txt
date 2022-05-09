@@ -1,0 +1,9 @@
+ 
+
+ 
+ sudo /usr/local/bin/block-advert.sh
+
+ en synatpic
+ 
+ advert-block-antix
+Script and Desktop launcher for advert block, website add blocker for antiX.

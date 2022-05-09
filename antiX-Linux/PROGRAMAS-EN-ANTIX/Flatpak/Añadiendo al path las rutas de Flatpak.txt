@@ -1,0 +1,14 @@
+
+
+
+# http://mdjyft.blogspot.com/2019/04/whats-right-way-to-add-directories-to.html
+XDG_DATA_DIRS="/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
+XDG_DATA_DIRS="/home/wachin/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
+
+
+
+esto lo puse en el archivo 
+
+.profiles
+
+pero no sirve 

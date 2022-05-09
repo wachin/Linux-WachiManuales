@@ -1,0 +1,24 @@
+
+
+Cómo instalar qemu con kvm en Debian 10
+
+
+sudo apt install -y qemu-kvm virt-manager libguestfs-tools libvirt-clients libvirt-daemon-system
+
+
+DESINSTALAR:
+
+sudo apt remove qemu-kvm virt-manager libguestfs-tools libvirt-clients libvirt-daemon-system
+
+
+
+
+
+
+Basado en:
+
+es/KVM - Debian Wiki
+https://wiki.debian.org/es/KVM
+
+Ubuntu 19.04: Install KVM for virtualization - Narrow Escape
+https://www.hiroom2.com/2019/06/18/ubuntu-1904-kvm-en/

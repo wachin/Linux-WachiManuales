@@ -1,0 +1,21 @@
+
+
+wachin@mx21:~
+$ vidcutter
+Exception ignored in: 'vidcutter.libs.mpv._c_callback'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/vidcutter/libs/mpvwidget.py", line 111, in __init__
+    self.mpv.set_wakeup_callback(self.eventHandler)
+AttributeError: 'NoneType' object has no attribute 'call'
+Exception ignored in: 'vidcutter.libs.mpv._c_getprocaddress'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/vidcutter/libs/mpvwidget.py", line 134, in initializeGL
+    self.opengl = mpv.RenderContext(self.mpv, 'opengl', {'get_proc_address':getProcAddress})
+OverflowError: Python int too large to convert to C long
+
+
+
+
+
+
+

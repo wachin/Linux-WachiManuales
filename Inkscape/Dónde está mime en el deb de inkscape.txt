@@ -1,0 +1,4 @@
+
+
+
+file:///home/wachin/github-2/Facilitar-Software-Libre/Ubuntu-18.04-Apps/Inkscape-32-bit/inkscape-18.04-bionic/inkscape_0.92.3-1_i386/usr/lib/mime/packages/inkscape

@@ -1,0 +1,71 @@
+
+No lo puedo creer hay para aprender bash desde cero en los repositorios
+
+se instala así:
+
+sudo apt install abs-guide
+
+
+Pueden revisar la existencia de este paquete en:
+
+Debian
+https://packages.debian.org/abs-guide
+
+Ubuntu
+https://packages.ubuntu.com/impish/abs-guide
+
+
+se llama:
+
+abs-guide
+The Advanced Bash-Scripting Guide
+
+
+se instala el manual en:
+
+
+/usr/share/doc/abs-guide/html/
+
+index.html
+
+uno puede entrar allí en algún administrador de archivos y arrastrarlo al navegador web y se abre
+
+
+*********************
+En PDF
+
+https://tldp.org/LDP/abs/abs-guide.pdf
+
+*********************
+
+En html
+
+https://tldp.org/LDP/abs/html/
+
+Lo siguiente es lo que aparece allí:
+
+*************************************************
+Advanced Bash-Scripting Guide: An in-depth exploration of the art of shell scripting
+
+thegrendel.abs@gmail.com
+
+This tutorial assumes no previous knowledge of scripting or programming, yet progresses rapidly toward an intermediate/advanced level of instruction . . . all the while sneaking in little nuggets of UNIX® wisdom and lore. It serves as a textbook, a manual for self-study, and as a reference and source of knowledge on shell scripting techniques. The exercises and heavily-commented examples invite active reader participation, under the premise that the only way to really learn scripting is to write scripts.
+
+This book is suitable for classroom use as a general introduction to programming concepts.
+
+This document is herewith granted to the Public Domain. No copyright!
+
+
+*************************************************
+
+
+
+Prev		Next
+Part 1. Introduction
+ 	
+
+Script: A writing; a written document. [Obs.]
+
+--Webster's Dictionary, 1913 ed.
+
+The shell is a command interpreter. More than just the insulating layer between the operating system kernel and the user, it's also a fairly powerful programming language. A shell program, called a script, is an easy-to-use tool for building applications by "gluing together" system calls, tools, utilities, and compiled binaries. Virtually the entire repertoire of UNIX commands, utilities, and tools is available for invocation by a shell script. If that were not enough, internal shell commands, such as testing and loop constructs, lend additional power and flexibility to scripts. Shell scripts are especially well suited for administrative system tasks and other routine repetitive tasks not requiring the bells and whistles of a full-blown tightly structured programming language.

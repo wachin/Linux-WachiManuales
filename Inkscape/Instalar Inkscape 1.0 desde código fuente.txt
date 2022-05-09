@@ -1,0 +1,33 @@
+
+
+
+Instalar Inkscape 1.0 desde código fuente
+
+sudo apt-get install build-essential intltool libfreetype6-dev liblcms2-dev \
+libgc-dev libglibmm-2.4-dev libgsl0-dev libxml2-dev libxslt1-dev libcairo2-dev \
+libcairomm-1.0-dev libpangomm-1.4-dev libpango1.0-dev libpangoft2-1.0-0 \
+libgtkmm-2.4-dev libboost-dev libpopt-dev 
+
+
+sudo apt install libgc1c2 libgc-dev libsigc++-2.0-dev libgtkmm-3.0-dev cmake ninja-build libsoup2.4-dev libdouble-conversion-dev libpotrace-dev libgdl-3-dev libmagick++-6.q16-dev libgraphicsmagick++1-dev libwpg-dev libpoppler-dev libgtkspell3-3-dev libpoppler-glib-dev libvisio-dev aspell-es libcdr-dev libaspell-dev dictionaries-common-dev libmodbus-dev libpoppler-private-dev
+
+
+
+
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+exit
+
+
+
+Compiling Inkscape 0.91 on Linux Mint Debian Edition (LMDE) 2
+https://gist.github.com/jeffkayser/4637089d3c11546e6d4f
+
+compile ajunta: No package gdl-3.0 found
+https://ubuntuforums.org/showthread.php?t=1906039
+
+Bug #1764184 “cmake build error POPPLER_INCLUDE_DIR” : Bugs : Inkscape
+https://bugs.launchpad.net/inkscape/+bug/1764184

@@ -1,0 +1,26 @@
+
+
+
+
+
+sudo apt install cmake valac libwebkit2gtk-4.0-dev libgcr-3-dev libpeas-dev libsqlite3-dev libjson-glib-dev libarchive-dev intltool libxml2-utils
+
+
+git clone https://github.com/midori-browser/core
+
+cd core
+
+Use CMake to build Midori:
+
+mkdir _build
+cd _build
+cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+make
+sudo make install
+
+Midori can be run without being installed.
+
+_build/midori
+
+
+

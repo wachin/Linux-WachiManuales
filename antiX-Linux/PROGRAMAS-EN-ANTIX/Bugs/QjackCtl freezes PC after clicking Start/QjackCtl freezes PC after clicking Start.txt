@@ -1,0 +1,8 @@
+
+
+
+QjackCtl freezes PC after clicking Start
+
+To solved this problem put in the terminal:
+
+dbus-launch qjackctl 

@@ -1,0 +1,153 @@
+
+
+Instalar el Kernel Realtime
+
+Para 32 bits:
+
+sudo apt-get install dkms linux-image-rt-686-pae linux-headers-rt-686-pae
+
+
+Para 64 bits:
+
+sudo apt-get install dkms linux-image-rt-amd64 linux-headers-rt-amd64
+
+
+CONSULTA:
+
+Que es un Kernel PAE en Linux | El blog de Liher
+https://elblogdeliher.com/que-es-un-kernel-pae-en-linux/
+
+El Kernel PAE es un Kernel de 32 bits que mediante una extensión permite usar hasta 64 Gb de RAM. Digamos que es un “parche” para que podamos usar toda la RAM que tengamos instalada. Así de sencillo.
+
+Si tenéis un ordenador de 32 bits y tenéis mas de 3GB de RAM si no tenéis instalado un Kernel PAE sera como si tuvieses 3Gb, toda la RAM de mas estará sin uso. Si os encontráis en esta situación podéis instalar un Kernel PAE buscando los Kernel de vuestra distribución Linux, en el caso de Ubuntu aquí os dejo un articulo que os puede resultar útil:
+
+
+*******************************
+INSTALAR PULSEAUDIO-MODULE-JACK
+*******************************
+
+sudo apt-get install ardour grub-customizer pulseaudio-module-jack qjackctl a2jmidid jackeq patchage calf-plugins amb-plugins tap-plugins dssi-host-jack dssi-utils pavucontrol
+
+
+Opcional para Soundfont
+
+sudo apt install qsynth fluid-soundfont-gm
+
+
+Espere y aparecerá una ventana donde debe aceptar la nueva configuración de audio
+
+Ahora bien, si por un caso se confundió y aplastó ENTER en "No" pues vuelva a intentarlo, para eso porga en la terminal este comando:
+
+sudo dpkg-reconfigure -p high jackd2
+
+
+AÑADIR EL GRUPO AUDIO
+Para habilitar el audio en tiempo real (baja latencia = bajo retardo de audio) hay que crear el grupo "audio". Ponga en la terminal pero cambiando a su respectivo nombre de usuario:
+
+sudo adduser nombredeusuario audio
+
+para mi así:
+
+sudo adduser wachin audio
+
+
+Verificar el grupo audio
+Como habíamos reiniciado el ordenador es necesario verificar el grupo audio, para esto ponga en la terminal:
+
+groups
+
+
+LIMITES, verificar 95
+Poner en la termina (debe tener instalado gedit):
+sudo gedit /etc/security/limits.d/audio.conf
+debe decir esto:
+
+@audio   -  rtprio     95
+@audio   -  memlock    unlimited
+
+si es así salga nomás de gedit.
+
+
+
+ACTUALICE EL GRUB
+ponga en la terminal:
+
+sudo update-grub
+
+Cuando ya esté actualizado:
+
+Reiniciar
+
+
+
+Instalar Grub Customizer
+Para no que tener que elegir el Kernel de baja latencia cada vez que enciende el ordenador, instale grub Customizer poniendo en la terminal uno por uno estos tres comandos:
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt-get update
+sudo apt-get install grub-customizer
+
+
+poner en orden primero al nuevo Kernel de Tiempo Real
+
+
+
+
+PARA LANZAR QJACKCTL Y PULSEAUDIO:
+
+Poner en la terminal:
+
+dbus-launch qjackctl
+
+Abrir la configuración de QjackCtl en:
+
+Setup
+
+allí en "Frecuencia de muestreo" por defecto está en 48000, yo a usaré en 44100 para usar menos procesamiento
+
+pero en "Cuadros / Periodo" le pongo 128 porque quiero usar JACK como un estereo mixer para escuchar lo que yo mismo estoy hablando (o cantando) mientras se reproduce.
+
+Opcional (Verificar este paso):
+
+y en la pestaña "Otras" marcar la casilla: "Enable JACK D-Bus interface" lo cual es para que JACK envie sonido a las aplicaciones de Pulseaudio, lo cual se puede ver en pavucontrol.
+
+Ahora, poner en la terminal:
+
+pulseaudio --start
+
+ejecutarlo y después poner (para que se carguen los módulos de pulseaudio) en la terminal:
+
+pactl load-module module-jack-sink channels=2; pactl load-module module-jack-source; pacmd set-default-sink jack_out
+
+
+ENCENDER QJACKCTL
+Ahora si puede darle Play a QjackCtl y encender y revisar en el botón de los mensajes a ver si todo está bien, dice:
+
+16:32:19.582 El script de post - inicio finalizó satisfactoriamente.
+
+Ahora abrir el botón: "Conecciones", a la izquierda debe estar PulseAudio JACK Sync y System y a la derecha PulseAudio JACK  Source y System
+
+luego poner en la terminal:
+
+pavucontrol
+
+para manejar las entradas y las salidas de audio
+
+Nota: En antiX viene un icono de Volumen (en forma de parlante), usted no debe ejecutarlo para nada pues si lo hace hará que no funcione pavucontrol. 
+
+
+Luego Wachín para que lo configures así:
+
+Differences from mine:
+1) Realtime: checked
+2) Frames/Period: 32
+3) Channels: (default)
+4) Port Maximum: 256
+5) Timeout (msec): 500
+6) (this is interesting) Interface: (default) (but disabled)
+7) Input Device: ASIO::ASIO Echo FireWire (like you've done for output) <-- this may be the issue
+8. Channels I/O: 4 / 4 (that is four inputs, four outputs) <-- try putting just 2 / 2 to start with
+9) Latency I/O: (default) / (default)
+
+Setting up Jack audioconnection Kit on Windows - KVR Audio
+https://www.kvraudio.com/forum/viewtopic.php?t=472558
+

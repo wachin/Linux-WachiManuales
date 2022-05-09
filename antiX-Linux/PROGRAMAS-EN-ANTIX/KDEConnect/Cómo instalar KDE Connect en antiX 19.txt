@@ -1,0 +1,28 @@
+
+Cómo instalar KDE Connect en antiX 19
+
+sudo apt install kdeconnect
+
+para lanzar y emparejar ponga en la terminal:
+
+kdeconnect-indicator
+
+
+y aparecerá un icono a la derecha abajo, clic derechoy clic en "Configure" y dar clic al Celular y solicitar vinculación
+
+Luego para añadir al inicio se usarán estos 
+
+
+
+
+# KDE Connect para 64 bits
+/usr/lib/x86_64-linux-gnu/libexec/kdeconnectd &
+
+# KDE Connect para 32 bits
+sleep 50; /usr/lib/i386-linux-gnu/libexec/kdeconnectd &
+
+
+
+
+
+Nota: Esta información ha sido aprendida viendo los archivos instalados de KDE Connect en Synaptic

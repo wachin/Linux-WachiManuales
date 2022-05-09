@@ -1,0 +1,8 @@
+
+e instalado en antiX 17.4.1 la herramienta: "network-manager-gnome" la cual tiene el programa "nm-applet" la cual es una herramienta muy eficaz y fácil de usar para poderse conectar a internet mediante cable o Wi-Fi pero sucede que para evitar conflictos hay que desinstalar la herramienta "wicd" que viene instalada por defecto en el sistema operativo,
+
+Instrucciones para desinstalar wicd
+
+poer en la terminal:
+
+sudo apt-get remove wicd wicd-gtk wicd-daemon wicd-curses python-wicd

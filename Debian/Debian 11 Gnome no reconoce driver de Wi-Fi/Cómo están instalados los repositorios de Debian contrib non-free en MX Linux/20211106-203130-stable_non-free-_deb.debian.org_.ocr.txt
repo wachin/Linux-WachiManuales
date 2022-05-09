@@ -1,0 +1,13 @@
+﻿Paquete
+
+
+amd64-microcode
+atmel-firmware
+bluez-firmware
+broadcom-sta-dkms
+firmware-sof-signed
+firmware-zd1211
+fonts-ubuntu
+intel-microcode
+unrar
+aac-enc

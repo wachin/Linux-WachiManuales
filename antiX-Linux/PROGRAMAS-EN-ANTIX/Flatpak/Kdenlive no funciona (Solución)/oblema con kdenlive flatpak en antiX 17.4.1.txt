@@ -1,0 +1,16 @@
+
+
+solución
+https://github.com/flatpak/flatpak/issues/2267
+
+lugar exacto de la solución:
+https://github.com/flatpak/flatpak/issues/2267#issuecomment-506786536 
+
+apuntana a:
+
+https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=851427#35
+
+allí hay un archivo que hay que descargar:
+
+https://bugs.debian.org/cgi-bin/bugreport.cgi?att=2;bug=851427;filename=mount-functions.sh-testing-antix-rev1.tar.gz;msg=35
+

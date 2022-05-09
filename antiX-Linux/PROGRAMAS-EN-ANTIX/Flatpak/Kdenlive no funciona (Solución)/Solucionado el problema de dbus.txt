@@ -1,0 +1,14 @@
+
+
+poner en la terminal:
+
+sudo apt-get install pulseaudio
+
+pulseaudio --start
+
+dbus-launch flatpak run org.kde.kdenlive 
+
+
+
+
+

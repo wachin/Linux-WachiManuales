@@ -1,0 +1,34 @@
+
+Openbox Themes
+http://lxlinux.com/themes.html
+
+OPENBOX THEMES   ob
+
+The Openbox theme choices accompaning most new installs is generally pathetic - not many choices and those offered are dull and always the same ones. Luckily the internet abounds with Openbox themes and they are usually easy to install.
+
+System-wide themes are installed in /usr/share/themes while user-specific themes are generally put in ~/.themes. You can either create the ~/.themes folder, or waite until you install an .obt file, which are installed using Obconf, the Openbox Configuration Manager. To install a .obt file, simply launch Obconf, click "Install a new theme" and follow the subsequent directions. It will automatically create ~/.themes (if not already present) and put the theme folder in it. When a theme is downloaded as a file, usually with the theme's name, installation of the theme involves simply moving the (extracted, if necessary) file to either of the two directories just mentioned. Openbox will find it from there.
+
+A theme file will always contain a file named .themerc, which is the substance of the theme, and sometimes additional files, some of which are buttons (.xbm files) that determine some of the special geometric features of the theme. Openbox uses default buttons to complete the themes that do not include their own buttons. Buttons are interchangeable between themes; just move your favorite buttons to your favorite theme directory (replacing any buttons that may be there) to have that theme with those buttons. Otherwise, a theme can be edited or reconfigured by editing its .themerc. See Openbox theme wiki for help in this regard.
+
+The best theme source known to me is the box-look website with over 700 Openbox themes (70+ pages of themes). The following are some of my favorites: 
+
+##########
+TRADUCCIÓN
+##########
+
+
+Las opciones de temas de Openbox que acompañan a la mayoría de las nuevas instalaciones son generalmente patéticas: no hay muchas opciones y las que se ofrecen son aburridas y siempre las mismas. Afortunadamente, Internet abunda en temas de Openbox y, por lo general, son fáciles de instalar.
+
+Los temas de todo el sistema se instalan en 
+
+/usr/share/themes
+
+mientras que los temas específicos del usuario generalmente se colocan en 
+
+~/.themes
+
+Puede crear la carpeta ~/.themes o esperar hasta que instale un archivo .obt, que se instala mediante Obconf, el Administrador de configuración de Openbox. Para instalar un archivo .obt, simplemente inicie Obconf, haga clic en "Instalar un nuevo tema" y siga las instrucciones siguientes. Automáticamente creará ~ / .themes (si aún no está presente) y colocará la carpeta del tema en él. Cuando un tema se descarga como un archivo, generalmente con el nombre del tema, la instalación del tema implica simplemente mover el archivo (extraído, si es necesario) a cualquiera de los dos directorios que acabamos de mencionar. Openbox lo encontrará desde allí.
+
+Un archivo de tema siempre contendrá un archivo llamado .themerc, que es la sustancia del tema, y ​​en ocasiones archivos adicionales, algunos de los cuales son botones (archivos .xbm) que determinan algunas de las características geométricas especiales del tema. Openbox usa botones predeterminados para completar los temas que no incluyen sus propios botones. Los botones son intercambiables entre temas; simplemente mueva sus botones favoritos a su directorio de temas favoritos (reemplazando cualquier botón que pueda estar allí) para tener ese tema con esos botones. De lo contrario, un tema se puede editar o reconfigurar editando su .themerc. Consulte la wiki del tema de Openbox para obtener ayuda al respecto.
+
+La mejor fuente de temas que conozco es el sitio web con apariencia de caja con más de 700 temas de Openbox (más de 70 páginas de temas). Los siguientes son algunos de mis favoritos:

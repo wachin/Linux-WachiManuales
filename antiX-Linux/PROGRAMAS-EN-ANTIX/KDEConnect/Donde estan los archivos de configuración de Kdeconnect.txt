@@ -1,0 +1,4 @@
+
+están aquí
+
+~/.config/kdeconnect/

@@ -1,0 +1,30 @@
+
+Tengo creada una cuenta en:
+
+https://gitlab.com 
+
+Tengo los datos y he creado un repositorio, este:
+
+https://gitlab.com/wachin/libreoffice-6.4-x386
+
+y me apacere este mensaje:
+
+You won't be able to pull or push project code via SSH until you add an SSH key to your profile 
+
+y allí un botón y este es el enlace:
+
+https://gitlab.com/profile/keys
+
+según leo voy a crear una:
+
+ver las instrucciones en: 
+
+file:///home/wachin/github-2/wachin/Linux datos personales/Cómo generar la SSH Key para GitLab.txt
+
+y de allí pues son los mismos comandos que en Git, para hacer push me pedirá los datos de mi cuenta de gitlab, nombre de usuario y contraseña
+
+
+
+
+
+

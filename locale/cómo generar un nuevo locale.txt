@@ -1,0 +1,40 @@
+
+Locale (Español) - ArchWiki
+https://wiki.archlinux.org/index.php/Locale_(Espa%C3%B1ol)
+
+Activar el «locale» necesario
+
+Antes de que un locale puede utilizarse en el sistema, tiene que ser activado primero. Para mostrar una lista de todos las versiones locales disponibles, utilice la orden:
+
+$ locale -a
+
+Para habilitar un locale, descomente el nombre del locale en el archivo /etc/locale.gen. Este archivo contiene todos los locales disponibles que se pueden utilizar en el sistema. El proceso es reversible deshabilitando (comentando) el locale. Después de que los locales necesarios están habilitados, el sistema necesita ser actualizado con las nuevas configuraciones regionales:
+
+# locale-gen
+
+Para mostrar ahora los locales actualmente en uso, escriba:
+
+$ locale
+
+Sugerencia: Aunque lo más probable es que se utilice un solo idioma en su máquina, puede ser útil o incluso necesario habilitar otros locales también. Si usted está funcionando en un sistema multi-usuario con usuarios que no hablan, por ejemplo, en_US, sus otros locales personales deben, del mismo modo, ser soportados en su sistema.
+Ejemplo ES Español
+
+Primero descomente los locales siguientes en /etc/locale.gen:
+
+es_ES.UTF-8 UTF-8
+
+A continuación, actualice el sistema como root:
+
+# locale-gen
+
+Configuración del locale de todo el sistema
+
+Para definir la configuración regional de todo el sistema, establezca la variable LANG en /etc/locale.conf.
+
+El contenido de locale.conf es una lista de líneas separadas que definen las variables del entorno: además de LANG, es compatible con todas las variables LC_*, con excepción de LC_ALL.
+Nota: El archivo /etc/locale.conf no existe por defecto, hay que crearlo manualmente.
+Sugerencia: Si la salida de locale durante la instalación es de su agrado, puede guardarla haciendo: # locale | cat > /etc/locale.conf mientras se encuentra en el entorno chroot.
+
+/etc/locale.conf
+
+LANG="es_ES.UTF-8"

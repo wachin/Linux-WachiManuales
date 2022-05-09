@@ -1,0 +1,3 @@
+
+
+sudo apt remove conky-legacy-all connman-bluetooth-firmware-antix connman-vpn cmst connman

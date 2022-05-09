@@ -1,0 +1,37 @@
+
+
+
+Dónde están instalados los idiomas de los MUI de WPS Office versión de Windows en PlayOnLinux
+
+Todos estos hay que descargarlos en la aplicación para que se pongan en los siguientes lugares en PlayOnLinux
+
+MUI
+/home/wachin/PlayOnLinux's virtual drives/wpsoffice11.2.0.9255wine3.21/drive_c/users/wachin/Local Settings/Application Data/Kingsoft/WPS Office/11.2.0.9255/office6/mui/
+
+SPELLCHECK
+/home/wachin/PlayOnLinux's virtual drives/wpsoffice11.2.0.9255wine3.21/drive_c/users/wachin/Local Settings/Application Data/Kingsoft/WPS Office/11.2.0.9255/office6/dicts/spellcheck
+
+THESAURUS
+/home/wachin/PlayOnLinux's virtual drives/wpsoffice11.2.0.9255wine3.21/drive_c/users/wachin/Local Settings/Application Data/Kingsoft/WPS Office/11.2.0.9255/office6/dicts/thesaurus
+
+MUI Deutsch (Deutschland), Spanish, Francis(Canada), Polski (Polska)
+/home/wachin/PlayOnLinux's virtual drives/wpsoffice11.2.0.9255wine3.21/drive_c/users/wachin/Application Data/kingsoft/wps/addons/pool/win-i386/lang_de_1.1.2019.22
+/home/wachin/PlayOnLinux's virtual drives/wpsoffice11.2.0.9255wine3.21/drive_c/users/wachin/Application Data/kingsoft/wps/addons/pool/win-i386/lang_es_1.1.2019.22
+/home/wachin/PlayOnLinux's virtual drives/wpsoffice11.2.0.9255wine3.21/drive_c/users/wachin/Application Data/kingsoft/wps/addons/pool/win-i386/lang_fr_1.1.2019.22
+/home/wachin/PlayOnLinux's virtual drives/wpsoffice11.2.0.9255wine3.21/drive_c/users/wachin/Application Data/kingsoft/wps/addons/pool/win-i386/lang_pl_1.1.2019.22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

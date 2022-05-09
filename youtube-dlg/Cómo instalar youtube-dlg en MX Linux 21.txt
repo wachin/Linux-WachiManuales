@@ -1,0 +1,35 @@
+
+
+oleksis/youtube-dl-gui: A cross platform front-end GUI of the popular youtube-dl written in wxPython.
+https://github.com/oleksis/youtube-dl-gui
+
+Sin las siguentes dependencias no funciona:
+
+sudo apt install python3-venv wxpython-tools python-setuptools
+
+
+descargue el ultimo release
+
+https://github.com/oleksis/youtube-dl-gui/releases
+
+que es teste:
+
+https://github.com/oleksis/youtube-dl-gui/releases/tag/v1.7.1
+
+lo descomprimí y entre en una terminal y puse:
+
+make clean-requirements
+make venv
+
+luego hay que activar el entorno virtual:
+
+source venv/bin/activate
+
+ahora si pongo
+
+make install
+
+
+
+bash - Issue with activating virtualenv - Stack Overflow
+https://stackoverflow.com/questions/37137664/issue-with-activating-virtualenv

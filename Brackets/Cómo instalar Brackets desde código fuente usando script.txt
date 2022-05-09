@@ -1,0 +1,86 @@
+
+Aquí menciona un script
+https://github.com/adobe/brackets-shell/wiki/Building-brackets-shell#linux
+
+este:
+
+wget -N https://gist.github.com/jasonsanjose/5514813/raw/setup.sh; bash setup.sh; rm setup.sh
+
+	
+
+
+
+
+DOWNLOAD NODE
+https://nodejs.org/dist/v14.16.1/
+
+BUILD.md
+
+Installation via Linux package manager can be achieved with:
+
+Ubuntu, Debian: sudo apt-get install python g++ make 
+
+cd /home/wachin/github/node/node-v14.16.1/
+./configure
+make -j4
+sudo make install
+
+Nota: La compilación se demoró como 2 horas
+
+
+https://phantomjs.org/download.html
+
+instalé manualmente a phantomjs
+
+https://bitbucket.org/ariya/phantomjs/downloads/
+
+https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-i686.tar.bz2
+
+
+
+sudo apt install grunt libnss3-dev libnspr4-dev gyp gir1.2-gtk-2.0 
+
+sudo npm install -g grunt-cli
+
+npm install grunt-contrib-jasmine
+
+sudo npm install -g jasmine-node
+
+
+
+
+
+https://gist.githubusercontent.com/jasonsanjose/5514813/raw/setup.sh
+
+
+sudo npm install -g grunt-cli
+
+# clone brackets
+git clone https://github.com/adobe/brackets
+pushd brackets
+
+# add upstream
+git remote add upstream https://github.com/adobe/brackets
+git fetch upstream
+
+# update submodules
+git checkout upstream/master
+git submodule update --init --recursive
+popd
+
+# clone brackets-shell
+git clone https://github.com/adobe/brackets-shell
+pushd brackets-shell
+
+# add upstream
+git remote add upstream https://github.com/adobe/brackets-shell
+git fetch upstream
+git checkout upstream/master
+
+# npm install for node dependencies
+# postinstall grunt (setup and build)
+sudo npm install
+sudo npm install --unsafe-perm
+popd
+
+echo "brackets-shell compiled successfully to ./out/Release/Brackets"

@@ -1,0 +1,5 @@
+[exec] (BibleTime ) { bibletime } Categories=X-Bible;X-Religion;Literature;Education;Dictionary;Qt;
+[exec] (Chroot Rescue Scan ) { x-terminal-emulator -e sudo chroot-rescue-scan --pause } Categories=X-antiX;MX-Maintenance;
+[exec] (Exit options ) { exit-options } Categories=Accessories;
+[exec] (Guía Bíblica Xiphos ) { xiphos } Categories=Education;
+[exec] (ScolaSync ) { /usr/bin/scolasync } Categories=GNOME;Application;Education;

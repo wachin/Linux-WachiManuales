@@ -1,0 +1,6 @@
+usuario: wachin
+password: Cuiraa
+
+root password maestro:  Akire
+
+ 

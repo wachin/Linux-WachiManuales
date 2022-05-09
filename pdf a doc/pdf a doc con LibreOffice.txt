@@ -1,0 +1,18 @@
+
+
+
+soffice --infilter="writer_pdf_import" --convert-to doc 20201104_Marik_Critical_Care_COVID-19_Protocol.pdf
+
+/opt/libreoffice7.1/program/soffice --infilter="writer_pdf_import" --convert-to doc 20201104_Marik_Critical_Care_COVID-19_Protocol.pdf
+
+/opt/libreoffice7.1/program/soffice --infilter="writer_pdf_import" --convert-to odt 20201104_Marik_Critical_Care_COVID-19_Protocol.pdf
+
+
+
+Pasar PDF a Word desde Linux | Linux Adictos
+https://www.linuxadictos.com/pasar-de-pdf-a-word.html#Convertir_PDF_a_Word
+
+php - LibreOffice convert PDF to Word as textbox instead normal document - Stack Overflow
+https://stackoverflow.com/questions/53763301/libreoffice-convert-pdf-to-word-as-textbox-instead-normal-document
+
+https://stackoverflow.com/a/53789333/10648253

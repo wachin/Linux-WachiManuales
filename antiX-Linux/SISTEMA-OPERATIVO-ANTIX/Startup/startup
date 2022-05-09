@@ -1,0 +1,23 @@
+#!/bin/bash
+
+konsole &
+
+setxkbmap -layout latam &
+
+numlockx on &
+
+alarm-clock-applet --hidden &
+
+redshift -p; redshift-gtk &
+
+goldendict &
+
+xfce4-notes &
+
+ksnip &
+
+dolphin /home/wachin/ /home/wachin/Dropbox/UbuntuManuales/ /home/wachin/Imágenes/ /home/wachin/Dropbox/ /home/wachin/EasyJoin/ &
+
+sleep 20; dropbox start -i &
+
+chromium --no-sandbox &

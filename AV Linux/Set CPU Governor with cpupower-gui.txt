@@ -1,0 +1,17 @@
+
+
+
+sudo apt install cpupower-gui
+
+
+
+cpupower-gui
+
+
+alli elegir cual se necesita
+
+
+CONSULTA:
+
+vagnum08/cpupower-gui: cpupower-gui is a graphical program that is used to change the scaling frequency limits of the cpu, similar to cpupower.
+https://github.com/vagnum08/cpupower-gui

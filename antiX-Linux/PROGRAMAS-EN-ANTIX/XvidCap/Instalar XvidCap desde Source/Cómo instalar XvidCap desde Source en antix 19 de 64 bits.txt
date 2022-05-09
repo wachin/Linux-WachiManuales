@@ -1,0 +1,26 @@
+
+
+
+Orden de instalación
+
+
+
+sudo apt-get install libgtk2.0-dev libglade2-dev libxmu-dev libxml-parser-perl
+
+
+LIBS="-lX11 -ldl -lXext -lz" ./configure
+
+make
+
+sudo make install
+
+
+
+
+compiling - Building xvidcap on Ubuntu 14.04 - undefined reference to symbol 'XGetWindowAttributes' - Ask Ubuntu
+https://askubuntu.com/questions/512642/building-xvidcap-on-ubuntu-14-04-undefined-reference-to-symbol-xgetwindowattr?noredirect=1&lq=1
+
+
+
+
+

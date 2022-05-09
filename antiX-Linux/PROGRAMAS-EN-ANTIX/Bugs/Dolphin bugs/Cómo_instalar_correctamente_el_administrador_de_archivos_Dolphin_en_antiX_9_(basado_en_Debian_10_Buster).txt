@@ -1,0 +1,22 @@
+
+
+Cómo instalar correctamente el administrador de archivos Dolphin en antiX 9 (basado en Debian 10 Buster)
+
+Poner en la terminal 
+
+sudo apt install kde-cli-tools kio-extras kde-runtime ffmpegthumbs
+
+instalado en ese orden las siguientes explicaciones son:
+
+En el administrador de archivos Dolphin no funciona propiedades "Opciones de tipo de archivo" - Solución para antiX, Debian 
+https://facilitarelsoftwarelibre.blogspot.com/2019/09/no-funcionan-en-propiedades-opciones-de.html
+
+En Preferencias no aparecen las opciones de vista previa de Dolphin en antiX 9 
+https://facilitarelsoftwarelibre.blogspot.com/2019/10/en-preferencias-no-aparecen-las.html
+
+No aparece la barra (ventanita) de progreso de los archivos copiandose en dolphin en antiX 9 
+https://facilitarelsoftwarelibre.blogspot.com/2019/10/no-aparece-progreso-de-los-archivos.html
+
+Dolphin Administrador de Archivos no tiene vista previa de videos en antiX y Debian 9 (Stretch) - SOLUCIÓN
+https://facilitarelsoftwarelibre.blogspot.com/2019/08/dolphin-administrador-de-archivos-no.html
+

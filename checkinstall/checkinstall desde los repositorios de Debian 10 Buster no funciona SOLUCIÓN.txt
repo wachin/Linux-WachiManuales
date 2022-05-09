@@ -1,0 +1,12 @@
+
+
+
+
+
+git clone https://github.com/giuliomoro/checkinstall
+cd checkinstall
+sudo make install
+ 
+
+Checkinstall on debian9/armhf throws: make: *** [cmake_check_build_system] Segmentation fault · Issue #8897 · opencv/opencv
+https://github.com/opencv/opencv/issues/8897

@@ -1,0 +1,29 @@
+Instalé el teclado en pantalla "Florence" en antiX 19 pero no funciona (SOLUCIÓN)
+
+Al poner en la terminal "florence" para lanzarlo aparece lo siguiente:
+
+
+
+(florence:19402): dbind-ERROR **: 14:16:21.421: AT-SPI: Couldn
+'t connect to accessibility bus. Is at-spi-bus-launcher runnin
+g? 
+`trap' para punto de parada/seguimiento
+
+
+SOLUCIÓN:
+
+Instalar 
+
+sudo apt-get install at-spi2-core
+
+
+CONSULTAS:
+
+#769706 - florence: Crashes on openbox, as any buuton s pressed by mouse. - Debian Bug report logs
+https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=769706
+
+Florence / Bugs / #12 Couldn't register with accessibility bus: Did not receive a reply (arch linux)
+https://sourceforge.net/p/florence/bugs/12/
+
+How can I add an onscreen keyboard at login? - Page 2 - MX Linux Forum
+https://forum.mxlinux.org/viewtopic.php?t=37390&start=10

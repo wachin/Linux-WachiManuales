@@ -1,0 +1,15 @@
+
+Cómo compila Escuelas Linux a LibreOffice 6
+
+De compilar LibreOffice, nos basamos fuertemente en este how-to
+https://blog.documentfoundation.org/blog/2019/06/12/start-developing-libreoffice-download-the-source-code-and-build-on-linux/
+Pero nuestro autogen.input dice asì
+--with-parallelism=8
+--with-distro=LibreOfficeLinux
+--with-lang=es
+--with-myspell-dicts
+--enable-release-build
+--with-package-format=deb
+--disable-dependency-tracking
+--with-jdk-home=/usr/lib/jvm/ibm-java80-jdk-i386/
+Y le recordamos que es una soluciòn remedial, ya que no hemos sabido còmo compilar debs independientes de distribuciòn, como los que publica la LibreOffice Foundation en su pàgina para arquitectura de 64 bits

@@ -1,0 +1,73 @@
+
+
+KDE connect cannot detect my phone
+https://forum.kde.org/viewtopic.php?f=18&t=160294
+
+
+ Hello
+I installed KDE connect on my linux box (UBUNTU 16.04 LTS with Unity)
+
+uname -a
+Linux <hostname> 4.13.0-32-generic #35~16.04.1-Ubuntu SMP Thu Jan 25 10:13:43 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+
+KDE connect indicator version is 0.1-0~41~ubuntu16.04.1 from LP-PPA-vikoadi
+
+My phone is Pixel 3, Android 9, KDE connect client version is 1.12
+
+The device never appears in the list of recognized devices on kdeconnect settings
+I wonder what should be done or checked. Are there any recommendations on how to get more diagnostics (especially from the phone).
+Maybe there are logs available or a way to run service and client in debug mode
+Any help/advice would be appreciated.
+
+See diagnostics below
+A bit of diagnostics (the required ports are allowed in iptables, firewall is not running)
+
+1. devices are on the same network and I can mutually ping each other.
+
+
+2.
+ps -ef|grep kdec
+1813 1308 0 Apr16 ? 00:00:10 /usr/lib/x86_64-linux-gnu/libexec/kdeconnectd
+
+
+3.
+sudo netstat -tunelp | grep -i kdeconnect
+
+tuve que instalarlo:
+
+sudo apt install netstat
+
+
+4.
+sudo ufw status
+Status: inactive
+
+
+5.
+netcat -z -v 192.168.1.6 1714-1764
+
+6.
+
+ls -al ~/.config/kdeconnect/
+
+7.
+kdeconnect-cli -l
+0 devices found
+
+
+Help me diagnose KDE Connect connection issues
+https://forum.kde.org/viewtopic.php?f=22&t=154107
+
+
+5. Are the ports open/blocked?
+netcat -z -v <your-phones-ip> 1714-1764 # Try phone and laptop, use port which netstat shows
+
+Example output:
+Connection to <your -phones-ip> 1716 port [tcp/*] succeeded!
++ lots of Connection refused, but you need 1 "succeeded"
+
+6. Check the kdeconnect home dir
+ls -al /home/<user>/.config/kdeconnect/
+
+
+

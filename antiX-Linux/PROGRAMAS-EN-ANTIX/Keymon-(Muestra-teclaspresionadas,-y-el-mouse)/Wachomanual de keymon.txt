@@ -1,0 +1,52 @@
+
+Wachomanual de keymon
+
+----------------------------------------------
+COMO INSTALAR KEYMON EN KUBUNTU O UBUNTU 12.10 
+----------------------------------------------
+
+Bueno, yo lo trataba de instalar desde el Synaptic y si se instalaba pero no funcionaba, y vi en los archivos instalados y estaban instaladas unas cosas que no era nada, faltaba en la carpeta bin la aplicación, y busqué en el google como instalarlo y encontré esto:
+
+http://xubuntugeek.blogspot.com/2012/06/how-to-install-latest-keymon-in-xubuntu.html
+
+Allí me redirecciona a:
+
+http://code.google.com/p/key-mon/downloads/list
+
+Y allí está el instalador el cual lo descargué, lo instalé y si funciona
+
+
+------------------------------
+LANZAR KEYMON DE TAMAÑO GRANDE
+------------------------------
+
+Para lanzar keymon de tamaño grande se pone en la terminal:
+
+key-mon --larger
+
+lo aprendí de 
+
+http://code.google.com/p/key-mon/
+
+---------------------------------------
+COMO CREAR UN LANZADOR BASH PARA KEYMON
+---------------------------------------
+
+Se debe usar este comando poniendolo en un archivo en Gedit (en Ubuntu) o Kate (en Kubuntu):
+
+#! /bin/bash
+
+Lo aprendí de aquí:
+
+http://askubuntu.com/questions/106666/similar-linux-ubuntu-batch-file
+
+Ver el Video para más info
+
+---------------------------------------------
+COMO CREAR UN LANZADOR EN KUBUNTU PARA KEYMON
+---------------------------------------------
+
+Ver el Video, lo aprendí viendo las opciones de Kubuntu
+
+Dios les bendiga
+Att: wachin

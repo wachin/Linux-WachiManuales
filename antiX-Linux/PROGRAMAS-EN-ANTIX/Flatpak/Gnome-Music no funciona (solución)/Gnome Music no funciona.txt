@@ -1,0 +1,20 @@
+
+
+
+flatpak run org.gnome.Music
+
+$ flatpak run org.gnome.Music
+15:46:24 ERROR  Cannot connect to tracker, error tracker-sparql-error-quark: Failed to load SPARQL backend: Error al lanzar («spawn») el comando «dbus-launch --autolaunch=c13cb5e38b037f327a4cee735dacc0c9 --binary-syntax --close-stderr»: El proceso hijo terminó con el código 1 (6)
+
+Traceback (most recent call last):
+  File "/app/lib/python3.7/site-packages/gnomemusic/application.py", line 111, in do_activate
+    MediaPlayer2Service(self)
+  File "/app/lib/python3.7/site-packages/gnomemusic/mpris.py", line 213, in __init__
+    self.con = Gio.bus_get_sync(Gio.BusType.SESSION, None)
+gi.repository.GLib.Error: g-spawn-exit-error-quark: Error al lanzar («spawn») el comando «dbus-launch --autolaunch=c13cb5e38b037f327a4cee735dacc0c9 --binary-syntax --close-stderr»: El proceso hijo terminó con el código 1 (1)
+
+
+
+debe:
+
+dbus-launch flatpak run org.gnome.Music

@@ -1,0 +1,20 @@
+
+
+la solución es instalar
+
+sudo apt-get install phonon4qt5-backend-gstreamer 
+
+
+
+There is no sound in antiX 9 (SOLVED)
+
+- Laptop Dell Inspiron 1750
+- antiX 9, 32 bits
+
+I install gwenview with:
+
+sudo apt-get install gwenview kipi-plugins
+
+Then I run, and I search a videos, but when I give clic there is no sound. Next I foun the way to solve this with:
+
+sudo apt-get install phonon4qt5-backend-gstreamer 

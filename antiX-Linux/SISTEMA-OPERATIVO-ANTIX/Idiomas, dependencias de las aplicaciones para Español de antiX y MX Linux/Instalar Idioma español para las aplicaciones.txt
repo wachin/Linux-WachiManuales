@@ -1,0 +1,45 @@
+
+
+sudo apt install kdenlive dolphin kde-cli-tools speedcrunch florence gnome-disk-utility mediainfo-gui puddletag cups-pdf gprename pdfshuffler uget rar unrar goldendict vlc gdebi xfce4-notes geeqie soundconverter convertall converseen hugin clementine calibre mkvtoolnix-gui gedit pluma phototonic boomaga nautilus khelpcenter winetricks kio-extras gnome-font-viewer krename gnome-terminal rosegarden kdegraphics-thumbnailers okular kruler nautilus gwenview isomaster furiusisomount konsole caja engrampa caja-open-terminal chromium krita inkscape gimp default-jre
+
+
+En antiX y MX Linux las aplicaciones muchas veces no instalan por defecto la dependencia de los paquetes de los idiomas del lenguaje del sistema operativo que estemos usando, así que la única forma es hacerlo manualmente, para la mayoría de las aplicaciones más importantes ponga en la terminal:
+
+sudo apt-get install libreoffice-l10n-es mythes-es kde-l10n-es firefox-esr-l10n-es-es firefox firefox-l10n-xpi-es-es qttranslations5-l10n chromium-l10n krita-l10n gutenprint-locales calligra-l10n-es vlc-l10n k3b-i18n aspell-es
+
+o si desea hagalo una por una:
+
+libreoffice-l10n-es Idioma español de la interfaz de LibreOffice
+mythes-es.- Es el diccionario de sinónimos para LibreOffice
+kde-l10n-es.- Archivos de localización para las aplicaciones KDE
+firefox-esr-l10n-es-es Para Firefox-ESR
+firefox-l10n-xpi-es-es Para Firefox
+qttranslations5-l10n Para algunas aplicaciones Qt5
+chromium-l10n De Chromium Web Browser
+aegisub-l10n.- del paquete aegisub para editar subtítulos
+thunderbird-l10n-es-es
+smplayer-l10n
+calligra-l10n-es.- los idiomas de calligra 
+vlc-l10n.- Para VLC
+k3b-i18n.- Para K3b
+aspell-es.- Para el idoma en español para Inkscape
+
+
+estos paquetes se encuentran buscando en synaptic la palabra:
+
+l10n
+
+seguda del nombre del paquete.
+
+
+
+Otros:
+
+qterminal-l10n.- de la aplicación qterminal
+
+
+
+
+Si quieres generar los locales otra vez poner:
+
+sudo locale-gen

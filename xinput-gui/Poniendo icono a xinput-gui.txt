@@ -1,0 +1,18 @@
+
+
+
+touch $HOME/.local/share/applications/xinput-gui.desktop
+
+y luego poner de una sola vez las siguientes 9 líneas y de ENTER:
+
+cat << EOF > $HOME/.local/share/applications/xinput-gui.desktop
+[Desktop Entry]
+Name=xinput-gui
+Comment=Cursor input config tool
+Exec=xinput-gui
+Type=Application
+Icon=/usr/share/icons/gnome/32x32/categories/applications-games.png
+StartupWMClass=xinput-gui
+Terminal=false
+Categories=Qt;KDE;Graphics;X-KDE-More;
+EOF

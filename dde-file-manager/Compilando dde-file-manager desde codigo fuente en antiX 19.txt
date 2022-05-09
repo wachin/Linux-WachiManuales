@@ -1,0 +1,83 @@
+
+
+Descargar el código fuente:
+
+https://github.com/linuxdeepin/dde-file-manager
+
+Build dependencies
+
+The master branch is current development branch, build dependencies may changes without update README.md, refer to ./debian/control for a working build depends list
+
+sudo apt install pkg-config dh-systemd libxcb1-dev libxcb-ewmh-dev libxcb-util0-dev libx11-dev libgsettings-qt-dev libsecret-1-dev libpoppler-cpp-dev libpolkit-agent-1-dev libpolkit-qt5-1-dev libjemalloc-dev libmagic-dev libtag1-dev libdmr-dev x11proto-core-dev libdframeworkdbus-dev
+
+
+
+sudo apt install deepin-gettext-tools libdtkcore-dev libffmpegthumbnailer-dev
+
+No encuentro: dde-dock-dev
+
+
+
+    Qt5(>= 5.6) with modules:
+
+sudo apt install qtbase5-dev qtbase5-private-dev libqt5x11extras5-dev qt5-qmake libqt5svg5-dev qttools5-dev-tools qtmultimedia5-dev qtdeclarative5-dev libkf5codecs-dev
+
+    Deepin-tool-kit(>=2.0) with modules:
+
+sudo apt install libdtkwidget-dev
+
+    deepin-anything with modules:
+
+sudo apt install deepin-anything-dev deepin-anything-server-dev
+
+Installation
+Build from source code
+
+    Make sure you have installed all dependencies.
+
+Package name may be different between distros, if dde-file-manager is available from your distro, check the packaging script delivered from your distro is a better idea.
+
+
+Para instalar dde-file-manager en antiX 19 de 32 bit es necesario instalar:
+
+sudo apt-get install qt4-qmake
+
+sudo apt install libpcap-dev libncurses5-dev libprocps-dev libxtst-dev libxcb-util0-dev qttools5-dev-tools libdtkwidget-dev libdtkwm-dev pkg-config
+
+sudo apt install qt5-default
+
+Ahora hay que instalar dtkqui
+
+https://github.com/linuxdeepin/dtkgui
+
+$ cd dtkgui
+$ mkdir Build
+$ cd Build
+$ qmake ..
+$ make
+$ exit
+
+
+Ahora si entrar en la carpeta del proyecto:
+
+$ cd dde-file-manager
+$ mkdir Build
+$ cd Build
+$ qmake ..
+$ make
+
+    Install:
+
+$ sudo make install
+
+The executable binary file could be found at /usr/bin/dde-file-manager
+Usage
+
+Execute dde-file-manager
+
+
+
+CONSULTAS
+
+lrelease: could not exec '/usr/lib/qt5/lrelease': No such file or directory · Issue #22 · linuxdeepin/deepin-system-monitor
+https://github.com/linuxdeepin/deepin-system-monitor/issues/22

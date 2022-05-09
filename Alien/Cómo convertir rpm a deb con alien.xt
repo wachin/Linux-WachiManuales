@@ -1,0 +1,26 @@
+
+
+
+Convertir RPM a DEB.
+alien -d -c archivo.rpm
+
+ 
+
+Convertir DEB a RPM.
+alien -r -c archivo.deb
+
+ 
+
+Convertir DEB a TGZ
+alien -t -c archivo.deb
+
+Convertir e instalar.
+ 
+
+Si queremos hacerlo todo en un solo paso, lo único que tenemos que añadir es la opcion -i a la linea de comandos. Por ej:
+
+alien -r -c -i archivo.deb
+
+
+Alien, herramienta para convertir paquetes deb a rpm y viceversa - LinuxParty
+https://www.linux-party.com/35-linux/10103-alien-herramienta-para-convertir-paquetes-deb-a-rpm-y-viceversa

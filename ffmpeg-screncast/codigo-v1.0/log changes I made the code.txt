@@ -1,0 +1,42 @@
+
+
+
+
+palaniraja/merge-mp4.sh
+
+
+
+
+"I add the script merge-mp4.sh developed by palaniraja to join mp4 and I update rec.sh"
+
+
+git commit -m "I change -maxdepth 2 for -maxdepth 1 to avoid join videos from other folders"
+
+
+
+git commit -m "I add the instructions to move the videos created by rec.sh to the Old folder"
+
+
+git commit -m "I add the instructions to move the joined videos to the Video folder"
+
+
+git commit -m "I add a thank you to palaniraja in merge-mp4.sh for creating the Bash script"
+
+
+git commit -m "I add a thank you to palaniraja in README.md for creating the Bash script merge-mp4.sh"
+
+
+git commit -m "Corrections in README"
+
+git commit -m "Add execution rights to merge-mp4.sh"
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+
+
+Buscados en Synaptic viendo que tenga también la dependencia linux-headers-4.19.0-14-common-rt
+
+
+sudo apt install linux-headers-4.19.0-14-rt-686-pae linux-image-4.19.0-14-rt-686-pae 
+
+
+
+
+

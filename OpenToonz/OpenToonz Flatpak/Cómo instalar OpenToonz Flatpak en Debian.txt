@@ -1,0 +1,13 @@
+
+
+OpenToonz—Linux Apps on Flathub
+https://flathub.org/apps/details/io.github.OpenToonz
+
+flatpak install flathub io.github.OpenToonz
+
+flatpak run io.github.OpenToonz
+
+
+flatpak remove io.github.OpenToonz
+
+

@@ -1,0 +1,26 @@
+
+Lame builds
+
+
+2012
+https://github.com/gypified/libmp3lame
+
+7 sep 2019
+https://github.com/ShiftMediaProject/lame
+
+
+20200518
+xbmc/audioencoder.lame: Lame MP3 encoder addon for Kodi
+https://github.com/xbmc/audioencoder.lame
+
+2 ago 2017 Deprecated
+rbrito/deprecated-lame-mirror: [DEPRECATED] Old, Semi-official mirror of the CVS repository of the LAME MP3 encoder.
+https://github.com/rbrito/deprecated-lame-mirror
+
+
+lame 3.99.5 + gcc 4.9 + 32 bit patch
+https://gist.github.com/rdp/3581e2c51916f3d8056e
+
+
+build-shotcut.sh and lame. · Issue #116 · mltframework/shotcut
+https://github.com/mltframework/shotcut/issues/116

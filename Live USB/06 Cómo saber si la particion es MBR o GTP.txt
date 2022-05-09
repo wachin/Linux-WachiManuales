@@ -1,0 +1,82 @@
+
+
+
+
+sudo gdisk -l /dev/sdc1 | grep -A4 '^Partition table scan:'
+
+sudo gdisk -l /dev/sdc2 | grep -A4 '^Partition table scan:'
+
+
+sudo fdisk -l /dev/sdc1
+
+sudo fdisk -l /dev/sdc2
+
+
+partitioning - How can I detect whether my disk is using GPT or MBR from a terminal? - Ask Ubuntu
+https://askubuntu.com/questions/387351/how-can-i-detect-whether-my-disk-is-using-gpt-or-mbr-from-a-terminal
+
+
+RESULTADOS:
+
+
+wachin@mxlinux:~
+$ sudo gdisk -l /dev/sdc1 | grep -A4 '^Partition table scan:'
+Warning: Partition table header claims that the size of partition table
+entries is 0 bytes, but this program  supports only 128-byte entries.
+Adjusting accordingly, but partition table may be garbage.
+Warning: Partition table header claims that the size of partition table
+entries is 0 bytes, but this program  supports only 128-byte entries.
+Adjusting accordingly, but partition table may be garbage.
+Partition table scan:
+  MBR: MBR only
+  BSD: not present
+  APM: not present
+  GPT: not present
+
+
+
+wachin@mxlinux:~
+$ sudo gdisk -l /dev/sdc2 | grep -A4 '^Partition table scan:'
+Warning: Partition table header claims that the size of partition table
+entries is 0 bytes, but this program  supports only 128-byte entries.
+Adjusting accordingly, but partition table may be garbage.
+Warning: Partition table header claims that the size of partition table
+entries is 1094582784 bytes, but this program  supports only 128-byte entries.
+Adjusting accordingly, but partition table may be garbage.
+Partition table scan:
+  MBR: MBR only
+  BSD: not present
+  APM: not present
+  GPT: not present
+
+
+
+wachin@mxlinux:~
+$ sudo fdisk -l /dev/sdc1
+Disk /dev/sdc1: 14,36 GiB, 15417212928 bytes, 30111744 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x20ac7dda
+
+Device      Boot      Start        End    Sectors   Size Id Type
+/dev/sdc1p1      3224498923 3657370039  432871117 206,4G  7 HPFS/NTFS/exFAT
+/dev/sdc1p2      3272020941 5225480974 1953460034 931,5G 16 Hidden FAT16
+/dev/sdc1p3               0          0          0     0B 6f unknown
+/dev/sdc1p4        50200576  974536369  924335794 440,8G  0 Empty
+
+Partition table entries are not in disk order.
+
+
+wachin@mxlinux:~
+$ sudo fdisk -l /dev/sdc2
+Disk /dev/sdc2: 49 MiB, 51380224 bytes, 100352 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00000000
+
+
+

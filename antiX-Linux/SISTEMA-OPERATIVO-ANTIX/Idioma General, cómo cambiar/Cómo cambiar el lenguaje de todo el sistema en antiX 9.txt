@@ -1,0 +1,67 @@
+
+
+según este:
+
+change system language - antiX oldforums archive
+https://antixlinux.com/forum-archive/change-system-language-t3063.html
+
+Cómo cambiar el lenguaje de todo el sistema en antiX 9
+
+
+seeing how you are running 8.5 you will need to run in terminal ( dpkg-reconfigure locales ) simply run through the list and check the languages that you would like. M11 has this option in the control center under system tab, then configure system.
+
+
+
+poner en la terminal:
+
+sudo dpkg-reconfigure locales
+
+luego dejar allí tal como está todos esos corchetes para marcar puesto que allí está ya marcado el español y el inglés, y seguir y allí si hay la pregunta de que uno eliga el idioma que va a ser usado por todo el sistema y escogerlo
+
+
+**********************************
+For the menus, control center, etc.
+**********************************
+Dave
+posted: 2011-04-23   13:36#4
+
+ You will need to copy the files from /usr/share/antiX/localisation/LANGUAGE-WANTED to the appropriate folders, ex menus to ~/.fluxbox, ~/.icewm, and the control center and contol center apps to /usr/local/bin. Iceape and iceweasel you will need to change in their prefferances I believe,as to the other apps I do not know.
+
+EDIT,
+it would be quite a bit easier to use the script that was made for M11, but the version I have made I think anti changed a bit. Maybe he can upload it to mepisimo for the people still running 8.5 such as yourself.
+
+
+
+********
+sino así
+********
+
+change language - MX Linux Forum
+https://forum.mxlinux.org/viewtopic.php?t=44504
+
+on the installed system
+
+sudo update-locale LANG=en_US.utf8
+
+on the live, just choose a new one from the language menus.
+
+
+para el español
+
+
+Los locales están aquí (visto en synaptic en el paquete locale):
+
+/usr/share/i18n/locales/
+
+allí veo que el idioma español para Ecuador está así:
+
+file:///usr/share/i18n/locales/es_EC
+
+entonces devo poner para el español así:
+
+
+sudo update-locale LANG=es_EC.utf8
+
+
+
+

@@ -1,0 +1,17 @@
+
+
+No puedo instalar VirtualBox Extension Pack en antiX 19 (basado en Debian 10 Buster) de 32 bits (SOLUCIÓN)
+
+
+Me salió un mensaje que decía:
+
+Fallo al instalar el paquete de extensión  . . . .Oracle_VM_VirtualBox_Extension_Pack-6.0.0_RC-127378.vbox-extpack
+
+y por nada podía instalar el extension Pack, pero la siguiente es la solución, ponga en la terminal
+
+sudo /sbin/rcvboxdrv setup
+
+y espere hasta que la terminal este vacia como al principio y reinicie el ordenador e instale otra vez y verá que si se puede
+
+Resolver el error “Result Code: NS_ERROR_FAILURE (0x80004005)” de VirtualBox en Arch Linux
+https://maslinux.es/resolver-el-error-result-code-ns_error_failure-0x80004005-de-virtualbox-en-arch-linux/

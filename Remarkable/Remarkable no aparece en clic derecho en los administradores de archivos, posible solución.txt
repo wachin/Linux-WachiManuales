@@ -1,0 +1,38 @@
+
+
+[Desktop Entry]
+Type=Application
+Name=ghostwriter
+GenericName=Markdown Editor
+Comment=Distraction-free text editor for Markdown
+Icon=ghostwriter
+TryExec=ghostwriter
+Exec=ghostwriter %f
+Terminal=false
+MimeType=text/plain;text/markdown;text/x-markdown;
+Categories=Qt;Office;WordProcessor;
+Keywords=Markdown;editor;document;fullscreen;distraction;concentration;focused;writing;
+
+
+
+[Desktop Entry]
+Name=Remarkable
+Comment=A free, fully featured markdown editor for Linux.
+Categories=GNOME;Utility;
+Exec=/usr/bin/remarkable %f
+Icon=remarkable
+Terminal=false
+Type=Application
+
+
+
+https://github.com/kachkaev/linter-markdown-51/blob/master/error.png
+
+
+https://github.com/kachkaev/linter-markdown-51/blob/master/error.png
+
+https://raw.githubusercontent.com/wachin/wps-office-all-mui-windows-version/master/imagenes/20200411-075342_instalar%2C_siguiente.png
+
+
+
+

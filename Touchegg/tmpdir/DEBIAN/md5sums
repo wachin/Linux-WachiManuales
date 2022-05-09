@@ -1,0 +1,6 @@
+79b720c080adb41da0bc2aa3aec90b1b  lib/systemd/system/touchegg.service
+23024ccef8ec1ef68aaf253fc9c79333  usr/bin/touchegg
+9bc2ae2a2e45a5316f0d75e5e88c56ef  usr/share/doc/touchegg/changelog.gz
+607de2f0c5144a5ac47f5959a16a068c  usr/share/doc/touchegg/copyright
+ead6f76c0f74bfad676d47e92929a666  usr/share/lintian/overrides/touchegg
+ae84edeef7f4a428c6d73e4b292348d4  usr/share/touchegg/touchegg.conf

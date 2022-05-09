@@ -1,0 +1,4 @@
+# Debian Buster Updates
+deb http://ftp.br.debian.org/debian/ buster-updates main contrib non-free 
+
+

@@ -1,0 +1,8 @@
+
+
+KDE connect: Could not mount device/ Device not responding • KDE Community Forums
+https://forum.kde.org/viewtopic.php?f=230&t=159968
+
+Re: KDE connect: Could not mount device/ Device not respondi
+Tue May 07, 2019 7:27 pm
+Okay, so I finally discovered that in the KDE connect app you need to expose the folders you want to see in your computer explicitly before trying to access. For each device Filesystyem expose has to be set in Plugin settings.

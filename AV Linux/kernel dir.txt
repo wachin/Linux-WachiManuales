@@ -1,0 +1,17 @@
+
+AV Linux Kernels
+http://www.bandshed.net/kernels/apt/pool/main/l/
+
+Hay algunos Kernel en 32 bits, los 4
+
+Los Kernel 5 sólo están disponibles en 64 bits
+
+
+Codigo fuente en:
+https://github.com/musical-chairs/linux
+https://github.com/musical-chairs/linux/tags
+
+hice un fork:
+https://github.com/wachin/linux-avl
+
+

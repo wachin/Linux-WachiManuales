@@ -1,0 +1,16 @@
+
+Ctrl+Shift+u + 7e   = ~ Virgulilla
+Ctrl+Shift+u + 2b   = + Signo más
+Ctrl+Shift+u + 00d7 = × Signo multiplicación
+Ctrl+Shift+u + 00f7 = ÷ Signo división
+Ctrl+Shift+u + 40   = @ Arroba
+Ctrl+Shift+u + 3c   = < inecuación
+Ctrl+Shift+u + 3e   = > inecuación
+Ctrl+Shift+u + 2f   = / Barra(Tipografía)
+Ctrl+Shift+u + 5c   = \ Barra inversa (la que se usa en Windows)
+Ctrl+Shift+u + 7c   = | Pleca o Barra vertical
+Ctrl+Shift+u + 5b   = [ Paréntesis corchete izquierdo
+Ctrl+Shift+u + 5d   = ] Paréntesis corchete derecho
+Ctrl+Shift+u + 7b   = { Paréntesis llave izquierda
+Ctrl+Shift+u + 7d   = }  Paréntesis llave derecha
+Ctrl+Shift+u + 00b0 = ° Símbolo de grados centígrados

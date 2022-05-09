@@ -1,0 +1,37 @@
+
+
+How to reduce Google Chrome's CPU usage? - Super User
+https://superuser.com/questions/697567/how-to-reduce-google-chromes-cpu-usage
+
+If slowdowns didn't go away even after Chrome restart, open chrome://flags (put this in the Chrome address bar and press Enter) and set up following:
+
+accelerated 2D canvas – Disable
+GPU rasterization - Disable
+Zero-copy rasterizer - Disable 
+
+
+en linux el siguiente no aparece:
+
+
+Hardware-accelerated video decode - Disable
+
+
+Reset Google Chrome:
+
+Click the Chrome Menu on the toolbar and then click "Settings."
+
+Select "Show Advanced Settings" from the bottom of the page and then click "Reset Browser Settings."
+
+Click "Reset" to revert your browser configuration to default.
+
+
+
+A trick I learned from a few sites:
+
+Use –-purge-memory-button in Chrome's command line and click Purge memory in Chrome's task manager and it will free up memory (if possible)
+Obviously, just disable extensions and that'll save you memory as well.
+
+Also, some sites have mentioned FooTab, an extenstion that pauses all other tabs upon startup until loaded.
+
+shareeditflag
+answered Mar 16 '15 at 1:36

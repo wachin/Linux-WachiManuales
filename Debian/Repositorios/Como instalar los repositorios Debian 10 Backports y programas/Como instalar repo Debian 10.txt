@@ -1,0 +1,32 @@
+
+Cómo instalar el repositorio Debian Backports para Debian 10 Buster e instalar LibreOffice 6.3
+
+Primero debe estar instalado en LibreOffice normal que viene en la distribución, si no lo ha hecho instalelo así:
+
+sudo apt install libreoffice
+
+
+Luego ponga en la terminal:
+
+echo "deb http://deb.debian.org/debian buster-backports main contrib non-free" |
+sudo tee /etc/apt/sources.list.d/buster-backports.list
+
+luego actualice los repositorios:
+
+sudo apt-get update
+
+y después instale LibreOffice 6 la última versión
+
+sudo apt install libreoffice libreoffice-gtk3 -t buster-backports
+
+y listo se instalará
+
+
+Basado en:
+
+How to Use Debian Backports – Linux Hint
+https://linuxhint.com/debian_backports/
+
+
+
+sudo thunar /etc/apt/sources.list.d

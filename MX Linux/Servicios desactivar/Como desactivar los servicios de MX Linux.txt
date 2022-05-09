@@ -1,0 +1,10 @@
+
+
+Con el siguiente comando se pueden ver todos los servicios activos en MX Linux
+
+sudo service --status-all
+
+
+
+Disable Unnecessary Services Debian Linux – Linux Hint
+https://linuxhint.com/disable_unnecessary_services_debian_linux/

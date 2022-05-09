@@ -1,0 +1,32 @@
+
+How to use JACK and Pulseaudio/ALSA at the same time on the same audio device? - Ask Ubuntu
+https://askubuntu.com/questions/572120/how-to-use-jack-and-pulseaudio-alsa-at-the-same-time-on-the-same-audio-device
+
+It might be much easier now. What worked for me today, to satisfy my really basic needs, after a fresh install of Linux Mint 18.2 (Ubuntu 16.04 package base) was:
+
+Use Synaptic to install QSynth and QJackCtl.
+
+Copy required sound font(s) into an appropriate folder such as /usr/share/sounds/sf2/
+
+In QSynth Setup: under Audio tab change Audio Driver to pulseaudio.
+
+In QSynth Setup: under SoundFonts: Open... and select one as required.
+
+In QJackCtl Setup > Settings > Advanced:
+
+Server Prefix: pasuspsender -- /usr/bin/jackd
+
+In QJackCtl Setup > Options:
+
+Execute script after startup:
+
+pactl load-module module-jack-sink channels=2; pactl load-module module-jack-source; pacmd set-default-sink jack_out
+
+
+In QJackCtl Connect: ALSA: join the keyboard entry on the left to FLUID Synth on the right.
+
+In the main System Settings for Sound, select the required output device.
+
+Now I can play the keyboard while watching a video (e.g. on YouTube using Firefox for example) - previously I could only do one of these at a time without a lot of tweaks I could seldom keep track of.
+
+Hope that helps someone, or encourages them to try again :-). 

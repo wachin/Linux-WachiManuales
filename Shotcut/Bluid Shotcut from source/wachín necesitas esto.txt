@@ -1,0 +1,45 @@
+
+
+
+DEPENDENCIAS:
+
+sudo apt-get install libmlt-dev libqt5websockets5-dev libqt5webkit5-dev libsdl2-dev cmake libx11-dev xorg-dev libglu1-mesa-dev freeglut3-dev libglew1.5 libglew1.5-dev libglu1-mesa libglu1-mesa-dev libgl1-mesa-glx libgl1-mesa-dev anjuta
+
+
+
+
+
+https://github.com/mltframework/shotcut/releases
+
+https://github.com/mltframework/shotcut/releases/download/v20.04.12/shotcut-src-200412.txz
+
+descomprimir y entrar en esa carpeta. Allí en el archivo:
+
+file:///home/wachin/github/shotcut/src/README
+
+dice que está el archivo:
+
+  src/shotcut/scripts/build-shotcut.sh
+
+y lo ejecuto así:
+
+sudo ./build-shotcut.sh
+
+
+fatal: unable to access 'https://git.opus-codec.org/opus.git/': SSL: certificate subject name (catfish.xiph.org) does not match target host name 'git.opus-codec.org'
+
+
+
+How to install a OpenGL environment on Ubuntu - Vincent Nicopolsky - Medium
+https://medium.com/@Plimsky/how-to-install-a-opengl-environment-on-ubuntu-e3918cf5ab6c
+
+
+Project ERROR: Unknown module(s) in QT: websockets | Qt Forum
+https://forum.qt.io/topic/46131/project-error-unknown-module-s-in-qt-websockets/8
+
+
+How to Install Shotcut Video Editor in Ubuntu 18.04, 18.10 - SpeedySense
+https://speedysense.com/install-shotcut-video-editor-in-ubuntu-18-04/
+
+graphics - How do I set up an OpenGL programming environment? - Ask Ubuntu
+https://askubuntu.com/questions/11378/how-do-i-set-up-an-opengl-programming-environment

@@ -1,0 +1,20 @@
+
+
+el panel de iceWM en antiX viene con 4 medidores de estado: Internet WIFI, Internet NET, RAM, CPU
+
+quiero desactivar el de internet etho, en el archivo:
+
+preferences
+
+allí busco esta linea: "#  Task Bar Settings" allí por el final encuentro:
+
+TaskBarShowNetStatus=0
+NetStatusCommand="desktop-defaults-run -t netstat -c"
+NetworkStatusDevice="ppp0 eth0"
+
+las dejo así:
+
+TaskBarShowNetStatus=0
+# NetStatusCommand="desktop-defaults-run -t netstat -c"
+# NetworkStatusDevice="ppp0 eth0"
+

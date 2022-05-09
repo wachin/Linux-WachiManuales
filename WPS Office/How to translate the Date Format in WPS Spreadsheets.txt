@@ -1,0 +1,3 @@
+
+How to translate the "Date Format" in WPS Spreadsheets? 
+https://github.com/wps-community/wps_i18n/issues/378

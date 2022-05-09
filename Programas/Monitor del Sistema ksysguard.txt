@@ -1,0 +1,4 @@
+
+
+ksysguard
+Monitor de proceso y estadísticas del sistema 

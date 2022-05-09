@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006"  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <version value="2.5" />
+    <identifier value="spanish.qu_EC.dicts.from.arno" />
+
+    <display-name>
+        <name lang="en-US">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
+        <name lang="qu_EC">Español (España y América Latina): Ortografía, separación y sinónimos</name>
+
+        <name lang="en">Kichwa spelling dictionary, hyphenation rules for Ecuador Latin America</name>
+        <name lang="no">Stavekontroll for Kichwa</name>
+        <name lang="es">Diccionario y separación de ortografía Kichwa</name>
+
+
+
+    </display-name>
+
+    <platform value="all" />
+
+    <dependencies>
+        <OpenOffice.org-minimal-version value="3.0" d:name="OpenOffice.org 3.0" />
+    </dependencies>
+
+    <publisher>
+        <name xlink:href="https://www.proz.com/profile/1399823" lang="es">arno</name>
+    </publisher>
+
+</description>

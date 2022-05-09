@@ -1,0 +1,80 @@
+
+
+
+
+
+git clone https://github.com/ruffle-rs/ruffle
+cd ruffle
+
+allí está en el README.md un enlace a:
+
+Guía oficial:
+https://www.rust-lang.org/tools/install
+
+poner en la terminal:
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+me hizo unas preguntas:
+
+1) Proceed with installation (default)
+2) Customize installation
+3) Cancel installation
+
+Le puse el número:
+
+1
+
+y le di ENTER, y continuó la instalación. Al final apareció el siguiente mensaje:
+
+Rust is installed now. Great!
+
+To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH
+environment variable. Next time you log in this will be done
+automatically.
+
+To configure your current shell, run:
+source $HOME/.cargo/env
+
+
+la traducción de esto es:
+
+
+Para comenzar, necesita el directorio Cargo bin ($HOME/.cargo/bin) en su RUTA
+de variable de entorno. La próxima vez que inicie sesión, esto se hará
+automáticamente.
+
+Para configurar su shell actual, ejecute:
+source $HOME/.cargo/env
+
+
+Por lo tanto puse en la terminal:
+
+source $HOME/.cargo/env
+
+
+luego reinicié el ordenador, y listo configurado
+
+
+
+INSTALACIÓN DE RUFFLE
+
+Ahora entrar en el código fuente:
+
+cd ruffle
+
+sigo las siguientes instrucciones, allí poner en la terminal:
+
+cargo build
+
+
+
+
+
+
+
+
+
+
+
+

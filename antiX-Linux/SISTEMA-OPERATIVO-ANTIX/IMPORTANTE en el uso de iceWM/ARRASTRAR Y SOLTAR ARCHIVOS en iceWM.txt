@@ -1,0 +1,3 @@
+
+
+antiX por defecto usa iceWM como administrador de ventanas y para arrastrar y soltar archivos entre los administradores de archivos como son: Caja, Nautilus, Nemo, Dolphin y aplicaciones como: Kdenlive, OpenShot, VLC, Gimp, Inkscape, LibreOffice, etc, usted debe saber que deben siempre estar maximizadas para poder hacerlo, sino no se puede

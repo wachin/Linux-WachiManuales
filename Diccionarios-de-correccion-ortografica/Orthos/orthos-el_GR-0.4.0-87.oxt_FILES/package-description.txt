@@ -1,0 +1,6 @@
+Orthos - LibreOffice/OpenOffice Greek speller dictionary.
+
+Support for the Greek Language in LibreOffice/OpenOffice. 
+Includes a spell check dictionary of Greek.
+
+

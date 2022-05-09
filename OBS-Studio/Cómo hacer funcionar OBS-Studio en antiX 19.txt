@@ -1,0 +1,14 @@
+
+Question / Help - Failed to initialize video. Your GPU may not be supported, or your graphics drivers may need to be updated. | OBS Forums
+https://obsproject.com/forum/threads/failed-to-initialize-video-your-gpu-may-not-be-supported-or-your-graphics-drivers-may-need-to-be-updated.86284/
+
+poner esto en la terminal:
+
+
+LIBGL_ALWAYS_SOFTWARE=1 obs-studio
+
+or:
+
+For Mint cinnamon working but with:
+
+LIBGL_ALWAYS_SOFTWARE=1 obs 

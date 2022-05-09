@@ -1,0 +1,61 @@
+
+Cómo lanzar correctamente a QjackCtl para habilitar JACK AUDIO CONNECTION KIT en antiX 9
+
+Este tutorial es después de haber aplicado: file:///home/wachin/Dropbox/antiX-Linux/PROGRAMAS-EN-ANTIX/JACK AUDIO CONNECTION KIT on antiX/Kernel Real Time/Kernel Real Time MEJORADO.txt
+
+Esta solución es sólo para el Sistema Operativo antiX 9
+
+
+pongo en la terminal:
+
+sudo apt-get install gedit
+
+luego:
+
+sudo gedit /etc/pulse/default.pa
+
+y añade debajo de la línea:"#load-module module-alsa-sink" (búsquela sin los comillas) añada las siguientes dos líneas:
+
+load-module module-jack-sink
+load-module module-jack-source
+
+Guardar y reiniciar.
+
+Luego de reiniciar
+
+Abrir Pulseaudio, poner en la terminal:
+
+pulseaudio --start
+
+luego poner
+
+pactl load-module module-jack-sink channels=2; pactl load-module module-jack-source; pacmd set-default-sink jack_out
+
+Luego para iniciar QjackCtl poner en la terminal:
+
+dbus-launch qjackctl 
+
+
+Ahora hay que iniciarlo dando clic en Play y todo debería estar funcionado bien.
+
+Para abrir Qsynth hay que poner así:
+
+dbus-launch qsynth
+
+luego para ver el volumen hay que poner en la terminal:
+
+pavucontrol
+
+Para saber si Pulseaudio está funcionando correctamente:
+
+ps -e | grep pulse
+
+
+Consulta:
+
+PulseAudio on Linux
+https://learn.foundry.com/nuke/content/timeline_environment/managetimelines/audio_pulse.html
+
+2.3.3. Integrating PulseAudio with JACK
+https://docs.fedoraproject.org/en-US/Fedora/15/html/Musicians_Guide/sect-Musicians_Guide-Integrating_PulseAudio_with_JACK.html
+

@@ -1,0 +1,143 @@
+
+
+
+***************************************
+5.- INSTALAR COMPONENTES DE PLAYONLINUX
+***************************************
+En 
+
+"PlayOnLinux configuración/Instalar componentes"
+
+instale:
+
+msls31
+mfc42
+vbrun6
+
+
+SUPPORTED INTERFACE LANGUAGES
+
+    Chinese (CN)
+    English (GB, US)
+    French (CA, FR)
+    German (DE)
+    Indonesian (ID)
+    Polish (PL)
+    Portuguese (BR, PT)
+    Russian (RU)
+    Spanish (ES, MX)
+
+SUPPORTED SPELLCHECK LANGUAGES
+
+    Catalan (ES)
+    Croatian (HR)
+    Czech (CZ)
+    Dutch (NL)
+    English (AU, GB, US)
+    French (FR)
+    German (DE)
+    Greek (GR)
+    Italian (IT)
+    Khmer (KH)
+    Lithuanian (LT)
+    Polish (PL)
+    Portuguese (BR, PT)
+    Romanian (RO)
+    Russian (RU)
+    Slovak (SK)
+    Spanish (ES, MX)
+    Swedish (SE)
+    Turkish (TR)
+    Ukrainian (UA)
+ 
+
+
+
+
+
+IDIOMAS DE INTERFAZ
+
+     Chino (China)
+     Inglés (Estados Unidos)
+     Inglés (Reino Unido)
+     Francés
+     Francés (Canadá)
+     Alemán (Alemania)
+     Indonesio
+     Polaco (Polonia)
+     Portugués (Brasil)
+     Portugués (Portugal)
+     Ruso (Federación Rusa)
+     Español (México)
+     Español (España)
+
+
+DICT-EXTRAS
+IDIOMAS DE SPELLCHECK SOPORTADOS
+
+be_BY    Bielorruso (Bielorrusia)
+bg_BG    Búlgaro (Bulgaria)
+bs_BA    Bosnio (Bosnia)
+ca_ES    Catalán (España)
+cs_CZ    Checo
+da_DK    Danés (Stavekontrolden)
+el_GR    Griego (Grecia)
+
+
+
+DICT-EXTRAS
+SPELLCHECK
+
+be_BY    Belarusian (Belarus)
+bg_BG    Bulgarian (Bulgaria)
+bs_BA    Bosnian (Bosnia)
+ca_ES    Catalan (Spain)
+cs_CZ    Czech
+da_DK    Danish (Stavekontrolden)
+el_GR    Greek (Greece)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     Catalán (ES)
+     Croata (HR)
+     Checo (CZ)
+     Holandés (NL)
+     Inglés (AU, GB, EE. UU.)
+     Francés (FR)
+     Alemán (DE)
+     Griego (GR)
+     Italiano (IT)
+     Jemer (KH)
+     Lituano (LT)
+     Polaco (PL)
+     Portugués (BR, PT)
+     Rumano (RO)
+     Ruso (RU)
+     Eslovaco (SK)
+     Español (ES, MX)
+     Sueco (SE)
+     Turco (TR)
+     Ucraniano (UA)
+
+
+
+
+
+
+
+
+
+
+

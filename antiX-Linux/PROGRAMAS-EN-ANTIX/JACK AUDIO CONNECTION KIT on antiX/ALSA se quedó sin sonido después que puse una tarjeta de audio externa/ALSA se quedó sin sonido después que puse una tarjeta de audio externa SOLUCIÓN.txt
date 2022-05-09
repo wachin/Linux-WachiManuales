@@ -1,0 +1,36 @@
+
+
+
+En antiX 9 con el Kernel de Tiempo Real
+
+Había puesto yo la tarjeta de audio externa que me compré en portoviejo, y abrí QjackCtl y lo encendí (no abrí Pulseaudio) 
+
+
+Advanced Linux Sound Architecture/Troubleshooting - ArchWiki
+https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture/Troubleshooting
+
+Output is muted after reboot
+Run the following command:
+
+alsactl restore
+
+o si no:
+
+/usr/sbin/alsactl restore
+
+If the problem persists, verify that the Auto-Mute option in alsamixer is set to Disabled.
+
+
+
+
+*****************************************************
+
+You could also save the mixer settings into a custom file with alsactl:
+
+alsactl --file ~/.config/asound.state store
+Reloading:
+
+alsactl --file ~/.config/asound.state restore
+
+alsa - Howto save AlsaMixer settings? - Ask Ubuntu
+https://askubuntu.com/questions/50067/howto-save-alsamixer-settings

@@ -1,0 +1,32 @@
+
+
+
+sudo apt install qemu qemu utils
+
+
+Ahora debo ponerme en un directorio, me pondré en Documentos, allí entraré en una terminal y crearé la unidad virtual:
+
+qemu-img create -f raw WinXP.img 6G
+
+luego abriré la instalación:
+
+qemu-system-i386 -m 512 -hda WinXP.img -cdrom Win_XP_SP3_GRTMPVOL_ES.iso -boot d 
+
+
+aparece este mensaje:
+
+
+(qemu-system-i386:6272): dbind-WARNING **: 16:48:06.651: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+WARNING: Image format was not specified for 'WinXP.img' and probing guessed raw.
+         Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
+         Specify the 'raw' format explicitly to remove the restrictions.
+         
+
+tengo el siguiente serial para Windows XP SP3
+
+
+
+
+Basado en
+Installing Windows XP on QEMU – Xathrya's Blog
+https://blog.xathrya.id/2015/12/05/installing-windows-xp-on-qemu/

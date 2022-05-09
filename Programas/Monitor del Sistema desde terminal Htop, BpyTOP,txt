@@ -1,0 +1,31 @@
+
+
+
+HTOP.- Htop is an ncursed-based process viewer similar to top, but it
+allows one to scroll the list vertically and horizontally to see
+all processes and their full command lines.
+
+Tasks related to processes (killing, renicing) can be done without
+entering their PIDs.
+
+
+BpyTOP.- Resource monitor that shows usage and stats for processor,
+memory, disks, network and processes. bpytop includes:
+ - Easy to use, with a game inspired menu system.
+ - Full mouse support, all buttons with a highlighted key is clickable
+     and mouse scroll works in process list and menu boxes.
+ - Fast and responsive UI with UP, DOWN keys process selection.
+ - Function for showing detailed stats for selected process.
+ - Ability to filter processes, multiple filters can be entered.
+ - Easy switching between sorting options.
+ - Send SIGTERM, SIGKILL, SIGINT to selected process.
+ - UI menu for changing all config file options.
+ - Auto scaling graph for network usage.
+ - Shows current read and write speeds for disks
+
+Python port of bashtop.
+
+ 
+ 
+ksysguard
+Monitor de proceso y estadísticas del sistema

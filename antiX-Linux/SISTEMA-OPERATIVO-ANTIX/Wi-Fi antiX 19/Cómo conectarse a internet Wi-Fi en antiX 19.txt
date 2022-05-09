@@ -1,0 +1,3 @@
+
+
+En la pestaña Status dar clic en la sección "Tecnologles" allí hay que aplastar el botón rojo "off" el cual se pondrá verde y luego hay que dar clic en la pestaña "Wireless" y allí en "Name" dar clic y buscar el Wi-Fi que en mi caso se llama "WACHIN", y luego dar clic en el botón "Connect" y aparecerá una ventana con el nombre "Agent input"

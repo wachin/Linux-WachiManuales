@@ -1,0 +1,141 @@
+
+kdenlive flatpak not working on antiX 9, 32 bits
+
+I have this:
+
+- Laptop Dell Inspiron 1750
+- antiX 9, 32 bits
+
+I install flatpak:
+
+sudo apt-get install flatpak xdg-desktop-portal-gtk 
+
+I install kdenlive flatpak:
+
+flatpak install flathub org.kde.kdenlive
+
+When I run Kdenlive Flatpak give my this:
+
+$ flatpak run org.kde.kdenlive
+"Session bus not found\nTo circumvent this problem try the following command (with Linux and bash)\nexport $(dbus-launch)"
+
+Then I run:
+
+$ export $(dbus-launch)
+
+
+Next:
+
+$ flatpak run org.kde.kdenlive
+
+
+then give my this:
+
+Note that the directories 
+
+'/var/lib/flatpak/exports/share'
+'/home/wachin/.local/share/flatpak/exports/share'
+
+are not in the search path set by the XDG_DATA_DIRS environment variable, so
+applications installed by Flatpak may not appear on your desktop until the
+session is restarted.
+
+The Kdenlive flatpak appear but close unexpectedly
+
+And I search a Workingaround, and I found this:
+
+flatpak directories not added to XDG_DATA_DIRS on Plasma + Wayland
+https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=927907
+
+From: Ioan Eugen Stan <eu@ieugen.ro>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: flatpak directories are not in the search path set by the XDG_DATA_DIRS
+Date: Thu, 25 Apr 2019 00:10:51 +0300
+
+My XDG_DATA_DIRS looks like this:
+```
+▶ env | grep XDG_DATA_DIRS
+XDG_DATA_DIRS=/usr/share:/usr/share:/usr/local/share
+```
+
+I switched to Plasma under Wayland recently, don't know if it is important. I'm
+running Debian Buster (mostly) with some third party packages and some from
+sid.
+
+From: Simon McVittie <smcv@debian.org>
+To: Ioan Eugen Stan <eu@ieugen.ro>, 927907@bugs.debian.org
+Cc: plasma-desktop@packages.debian.org
+Subject: Re: Bug#927907: flatpak directories not added to XDG_DATA_DIRS on Plasma + Wayland
+Date: Fri, 30 Aug 2019 08:17:47 +0100
+
+This presumably means your session startup won't source
+/etc/X11/Xsession.d/20flatpak like an X11 session would. GNOME in Wayland
+mode doesn't do that either, so at least they're consistent.
+
+Setting environment variables during session startup is, unfortunately,
+still a bit of a mess. Flatpak tries to add its directories to
+XDG_DATA_DIRS in several ways:
+
+- /etc/X11/Xsession.d/20flatpak (X11-specific)
+- /etc/profile.d/flatpak.sh (shell-specific)
+- /usr/share/gdm/env.d/flatpak.env (GNOME/GDM-specific)
+
+but apparently Plasma in Wayland mode doesn't use any of those.
+
+Perhaps the answer is for Flatpak to have a systemd environment generator,
+systemd.environment-generator(7), instead of or in addition to the
+hooks we currently have? That would leave out sysvinit users, but that
+isn't necessarily a huge problem, because they probably aren't using
+Wayland anyway.
+
+Or if there is a Plasma-specific mechanism similar to the GDM-specific
+/usr/share/gdm/env.d (which is used by GNOME in Wayland mode) then
+Flatpak could use that too, but I'd need details of that mechanism.
+
+   smcv
+
+From: Simon McVittie <smcv@debian.org>
+To: Ioan Eugen Stan <eu@ieugen.ro>, 927907@bugs.debian.org
+Cc: plasma-desktop@packages.debian.org
+Subject: Re: Bug#927907: flatpak directories not added to XDG_DATA_DIRS on Plasma + Wayland
+Date: Fri, 30 Aug 2019 09:29:21 +0100
+
+Actually, it has had one of these since 1.1.3, so that can't be it. Please
+check whether /usr/lib/systemd/user-environment-generators/60-flatpak is
+getting run when you log in?
+
+    smcv    
+ 
+ This appear to be a important info but I don't know how to do something to solve the problem
+ 
+ 
+ 
+ 
+ Then I found in 
+
+About something being printed during installation or update of apps #533
+https://github.com/flatpak/flatpak/issues/533
+
+alexlarsson commented on 8 Feb 2017
+Weird. Just to check, when you've logged in, what is the value of the XDG_DATA_DIRS environment variable?
+
+ndmax commented on 26 Oct 2018
+I'm still seeing this message:
+
+flatpak --user --assumeyes update
+
+Note that '/home/user/.local/share/flatpak/exports/share' is not in the search path set by the XDG_DATA_HOME and XDG_DATA_DIRS
+
+The odd thing is that it seem to be correctly set for the session:
+
+echo $XDG_DATA_DIRS
+
+/usr/share/budgie-desktop:/home/user/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+
+And it seems to be set correctly by this X-session init script:
+
+/etc/X11/Xsession.d/20flatpak
+
+What is triggering the warning? It seems like a false positive; all install flatpak apps seem to fire up and work just fine...
+
+Some of you know how to solve this

@@ -1,0 +1,19 @@
+
+
+
+Este tutorial es solo para
+Debian 10 Buster u otro Sistema Operativo Linux basado en el como antiX 9.
+
+Poner en la terminal:
+
+sudo apt-get install cm-super-x11 fonts-beteckna fonts-bpg-georgian fonts-breip fonts-dejavu-extra fonts-dkg-handwriting fonts-dustin fonts-ecolier-court fonts-ecolier-lignes-court fonts-f500 fonts-inconsolata fonts-junicode fonts-jura fonts-larabie-deco fonts-larabie-straight fonts-larabie-uncommon fonts-liberation fonts-linex fonts-linuxlibertine fonts-manchufont fonts-noto-hinted fonts-noto-mono fonts-ocr-a fonts-oflb-euterpe fonts-opensymbol fonts-sil-andika fonts-sil-charis fonts-sil-doulos fonts-sil-gentium fonts-sil-gentium-basic fonts-tuffy fonts-ubuntu-title gsfonts gsfonts-other lmodern t1-cyrillic t1-oldslavic t1-teams t1-xfree86-nonfree ttf-adf-accanthis ttf-adf-baskervald ttf-adf-berenis ttf-adf-gillius ttf-adf-ikarius ttf-adf-irianis ttf-adf-libris ttf-adf-mekanus ttf-adf-oldania ttf-adf-romande ttf-adf-switzera ttf-adf-tribun ttf-adf-universalis ttf-adf-verana ttf-aenigma ttf-ancient-fonts ttf-bitstream-vera ttf-engadget ttf-essays1743 ttf-georgewilliams ttf-goudybookletter ttf-isabella ttf-jsmath ttf-sjfonts ttf-staypuft ttf-summersby ttf-tiresias ttf-unifont ttf-xfree86-nonfree ttf-xfree86-nonfree-syriac xfonts-scalable
+
+
+son bastante fuentes que se instalaran:
+
+
+
+Y listo estarán instaladas  fuentes del parque UbuntuStudio-Fonts
+
+
+

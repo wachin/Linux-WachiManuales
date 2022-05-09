@@ -1,0 +1,10 @@
+
+
+
+
+Have a look into /root/.synaptic/synaptic.conf. Look for the DefaultDistro line and change its value, e.g. replace stable with wheezy.
+
+
+
+How can I fix the error “The value 'stable' is invalid for APT::Default-Release”?
+https://superuser.com/a/575754

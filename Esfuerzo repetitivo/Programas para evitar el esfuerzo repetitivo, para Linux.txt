@@ -1,0 +1,26 @@
+
+
+
+	Programas para evitar el esfuerzo repetitivo, para Sistemas Operativos Linux
+
+Buscando en Synaptic la palabra en inglés:
+
+strain
+
+aparecen los siguientes resultados:
+
+
+safeeyes
+workrave
+rsibreak
+
+
+
+sudo apt install safeeyes
+
+
+
+sudo apt install workrave
+
+
+sudo apt install rsibreak

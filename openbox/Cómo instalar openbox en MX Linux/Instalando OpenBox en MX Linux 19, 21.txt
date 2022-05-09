@@ -1,0 +1,70 @@
+
+
+Instalando Openbox + fbpanel en MX Linux 21
+
+
+Instalar dependencias
+Poner en una terminal:
+
+sudo apt install numlockx pnmixer gedit openbox obconf lxappearance qt5ct fbpanel
+
+
+
+
+
+Por si lo quiera instalar en otros sistemas operativos que no sean MX Linux deben instalar además lo siguiente (esto ya viene instalado en MX Linux):
+
+gnome-icon-theme xfce4-appfinder xfce4-notes xfce4-terminal pcmanfm thunar orage 
+
+
+
+
+Primero 
+A
+
+/home/wachin/.config/openbox/autostart
+
+
+
+
+xfce4-terminal &
+thunar &
+gedit &
+gammy &
+ksnip &
+firefox &
+xinput-gui &
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+sleep 7; xfce4-notes &
+numlockx on &
+pnmixer &
+
+
+
+**********************************************
+Configurar la cantidada de Espacios de Trabajo
+**********************************************
+En fbpanel se muestran por defecto 4 Espacios de Trabajo o Escritorios pero desde alli no se puede configurar eso sino hay que hacerlo en openbox en la herramienta ObConf que aparece al dar clic derecho en el Escritorio, al abrir esa ventana hay un botón que dice:
+
+Escritorios
+
+allí reducirle a ejemplo 2
+
+
+*****************************
+Configurando aplicaciones KDE
+*****************************
+
+Llega un momento que hay que abrir 
+
+qt5ct
+
+
+
+CONSULTAS:
+
+Help:Openbox-session - Openbox
+http://openbox.org/wiki/Help:Openbox-session
+
+
+
