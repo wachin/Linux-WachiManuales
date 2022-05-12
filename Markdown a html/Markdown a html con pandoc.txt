@@ -4,8 +4,11 @@ Convert markdown files to html with Pandoc
 https://gist.github.com/atelierbram/09c8fb742f1518f09ff9e4338ab8f7fb
 
 
-  pandoc -f markdown -t html5 -o output.html input.md -c style.css
+pandoc -f markdown -t html5 -o output.html input.md -c style.css
   
+para mis tutoriales:
+
+pandoc -f markdown -t html5 -o output.html README.md -c style.css
   
   
   
