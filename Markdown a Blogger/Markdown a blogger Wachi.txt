@@ -57,6 +57,10 @@ para lo cual para hacerlo más rapido usaré:
 
 https://sourceforge.net/projects/findandreplace/
 
+https://sourceforge.net/projects/findandreplace/files/findandreplace/2.0.3/
+
+https://sourceforge.net/projects/findandreplace/files/findandreplace/2.0.3/FAR-2.0.3-x.tar.gz
+
 este programa en linux tiene un .sh para lanzarlo
 
 alli buscar el archivo y abrirlo y luego en la pestaña de reemplazar añadir lo que voy a buscar y reemplazar y luego guardar esa informacion asi la proxima vez queabra el programa podré abrir otra vez con todo lo que deseo cambiar ya listo
