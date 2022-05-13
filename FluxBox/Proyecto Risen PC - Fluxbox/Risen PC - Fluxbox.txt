@@ -44,6 +44,9 @@ Ciertos programas como Konsole no muestran sus iconos en la barra de tareas, es 
 
 
 
+######################
+Atajos de teclado
+######################
 
 
 # Keys
@@ -78,6 +81,15 @@ Nota: Instalará las dos versiones, la completa y la simple la cual es necesaria
 Vea mi post para más información:
 https://facilitarelsoftwarelibre.blogspot.com/2017/06/control-de-brillo-para-pantallas-en.html
 
+
+##########################
+Menu generado por Fluxbox pero sin iconos
+##########################
+
+
+
+
+o puede suar
 
 ################################################
 Menu de aplicaciones con iconos con xdgmenumaker

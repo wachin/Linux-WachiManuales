@@ -1,0 +1,27 @@
+
+
+
+http://mirror.cedia.org.ec/mx-workspace/mx/repo/pool/main/m/mx-fluxbox/mx-fluxbox-data_22.04.02mx21_all.deb
+
+extraer el contenido con clic derecho
+
+dentro de la carpeta:
+
+/mx-fluxbox-data_22.04.02mx21_all/usr/share/mxflux/pi/etc/skel/
+
+activar el ver los archivos ocultos en su administrador de archivos, ejemplo Ctrl + H y verá:
+
+.fluxbox/styles/
+
+allí están los estilos, copielos como permisos de super usuario a:
+
+/usr/share/fluxbox/styles/
+
+ejemplo con pcmanfm
+
+sudo pcmanfm /usr/share/fluxbox/styles/
+
+y con Ctrl + T abra otra pestaña y allí busque la ruta donde descargó y descomprimió el .deb y copie el contenido de styles y peguelo en la pestaña anterior
+
+
+
