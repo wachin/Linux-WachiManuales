@@ -13,7 +13,10 @@ activar el ver los archivos ocultos en su administrador de archivos, ejemplo Ctr
 
 .fluxbox/styles/
 
-allí están los estilos, copielos como permisos de super usuario a:
+allí están los estilos, copielos a:
+.fluxbox/styles/
+
+o también puede copiarlos con permisos de super usuario a:
 
 /usr/share/fluxbox/styles/
 

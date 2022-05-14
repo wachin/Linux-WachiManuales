@@ -59,10 +59,21 @@ for i in *.mp4; do ffmpeg -i "$i" "/home/wachin/Vídeos/sd-card/${i%.*}.mp4"; do
 
 
 
-
 PARA GUARDAR LA CONVERSIÓN DE VARIOS FORMATOS DE VIDEO EN OTRA CARPETA
 
 for i in *.*; do ffmpeg -i "$i" "Convertidos/${i%.*}.mp4"; done
+
+
+UN EXPERIMENTO PARA CONVERSION DE MP4 A MP4 SIN USAR OTRA CARPETA, AÑADIENDO FECHA
+
+for i in *.mp4; do ffmpeg -i "$i" "${i%.*}-$(date '+%Y-%m-%d_%H.%M.%S').mp4"; done
+
+
+UN EXPERIMENTO PARA CONVERSION DE MP4 A MP4 SIN USAR OTRA CARPETA, AÑADIENDO PREFIJO
+
+for i in *.mp4; do ffmpeg -i "$i" "${i%.*}-conv.mp4"; done
+
+
 
 
 
