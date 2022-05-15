@@ -1,5 +1,8 @@
  
+ robado en:
 UBUNTU 17.04 32 BITS
+MX Linux 21 de 32 bits
+
 
 ### Dependencies qml-borderless-camera
 https://gitlab.com/mixedCase/qml-borderless-camera
@@ -9,10 +12,26 @@ https://gitlab.com/mixedCase/qml-borderless-camera
 - QtMultimedia 5.6+
 
 
-sudo apt-get install qml qml-module-qtmultimedia
+sudo apt-get install qml qml-module-qtmultimedia libqt5multimedia5-plugins qml-module-io-thp-pyotherside libqt5qml5
+
+
+Modo de uso para ventana pequeña
+
+Poner en la terminal
+
+qml app.qml
+
+
+Modo de uso para ventana grande
+
+Poner en la terminal
+
+qml app-logitech.qml
+
+
+
 
 INFORMACION EN SYNAPTIC DE LOS SIGUIENTES MODULOS A INSTALAR:
-
 
 qml-module-qtmultimedia
 Qt 5 Multimedia QML module
@@ -20,10 +39,11 @@ Qt 5 Multimedia QML module
 qml-module-io-thp-pyotherside
 asynchronous Python 3 Bindings for Qt 5 (QML plugin)
 
-INSTALADO YA EN UBUNTUSTUDIO 17.04
-
 libqt5qml5
 Qt 5 QML module
 
 qml-module-qtquick-controls
 Qt 5 Quick Controls QML module
+
+defaultServiceProvider::requestService(): no service found for - "org.qt-project.qt.camera"
+https://localcoder.org/defaultserviceproviderrequestservice-no-service-found-for-org-qt-project
