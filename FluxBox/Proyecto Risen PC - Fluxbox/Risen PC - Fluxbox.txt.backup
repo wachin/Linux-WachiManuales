@@ -7,7 +7,7 @@ Este tutorial ha sido testeado en Ubuntu 16.04, es posible que funcione en 18.04
 
 Minimo:
 
-sudo apt-get install bash lxappearance gedit pnmixer numlockx xfce4-appfinder xfce4-notes thunar gnome-terminal engrampa orage gnome-icon-theme
+sudo apt-get install bash lxappearance gedit pnmixer numlockx xfce4-appfinder xfce4-notes thunar gnome-terminal engrampa orage gnome-icon-theme qt5ct
  
  
  
