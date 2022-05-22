@@ -1,0 +1,39 @@
+
+python setup.py uninstall
+https://stackoverflow.com/questions/1550226/python-setup-py-uninstall
+
+o revisar tambien
+https://gist.github.com/myusuf3/933625
+
+Note: Avoid using python setup.py install use pip install .
+
+You need to remove all files manually, and also undo any other stuff that installation did manually.
+
+If you don't know the list of all files, you can reinstall it with the --record option, and take a look at the list this produces.
+
+To record a list of installed files, you can use:
+
+python setup.py install --record files.txt
+
+Once you want to uninstall you can use xargs to do the removal:
+
+xargs rm -rf < files.txt
+
+Or if you're running Windows, use Powershell:
+
+Get-Content files.txt | ForEach-Object {Remove-Item $_ -Recurse -Force}
+
+Then delete also the containing directory, e.g. /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/my_module-0.1.egg/ on macOS. It has no files, but Python will still import an empty module:
+
+>>> import my_module
+>>> my_module.__file__
+None
+
+Once deleted, Python shows:
+
+>>> import my_module
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'my_module'
+
+
