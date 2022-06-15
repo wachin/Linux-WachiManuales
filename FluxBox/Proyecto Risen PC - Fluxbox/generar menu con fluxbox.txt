@@ -1,0 +1,9 @@
+
+Poner en la terminal:
+
+fluxbox-generate_menu
+
+y se generaran en:
+
+
+ 

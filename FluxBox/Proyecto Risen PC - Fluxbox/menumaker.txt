@@ -1,0 +1,13 @@
+
+
+
+# pacman -S menumaker
+and generate menu:
+Quote:
+
+mmaker -v Fluxbox  
+
+
+
+Enable to display "menumaker" in fluxbox?
+https://www.linuxquestions.org/questions/arch-29/enable-to-display-menumaker-in-fluxbox-846174/

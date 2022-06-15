@@ -1,0 +1,98 @@
+
+Cómo determinar el path de la micro sd (memoria externa)(the external removable SD card partiti) de celular Android conectado por adb a PC Linux
+
+
+
+adb shell sm list-volumes public
+
+ejemplo a mi Galaxy J5:
+
+wachin@mx19:~
+$ adb shell sm list-volumes public
+public:179,65 mounted DE66-2D1E
+wachin@mx19:~
+$ 
+
+
+
+Y esto para poderlo poner como scrilpt para que me de el resultado directo del nombre de mi microSD:
+
+adb shell sm list-volumes public|awk '{print $3}'
+
+wachin@mx19:~
+$ adb shell sm list-volumes public|awk '{print $3}'
+DE66-2D1E
+wachin@mx19:~
+
+
+
+#! /bin/bash
+D=`adb shell sm list-volumes public|awk '{print $3}'`
+adb pull /storage/$D/adb-SD-android/ $HOME/adb-linux-$(date '+%Y-%m-%d_%H.%M.%S')/
+
+
+#! /bin/bash
+D=`adb shell sm list-volumes public|awk '{print $3}'`
+echo "adb pull /storage/$D/adb-SD-android/ $HOME/adb-linux-$(date '+%Y-%m-%d_%H.%M.%S')/"
+
+
+
+
+LO SIGUIENTE NO FUNCIONA:
+
+
+
+adb shell 'echo ${SECONDARY_STORAGE%%:*}'
+
+el resultado es en mi galaxy j5
+
+wachin@mx19:~
+$ adb shell 'echo ${SECONDARY_STORAGE%%:*}'
+/storage/sdcard1
+
+stock browser - How can I determine the SD card's path? - Android Enthusiasts Stack Exchange
+https://android.stackexchange.com/questions/55481/how-can-i-determine-the-sd-cards-path
+
+
+Para saber manualmente 
+
+adb shell
+
+luego poner:
+
+printenv
+
+y allí debe aparecer en, ejemplo para mi GAlaxy J5:
+
+
+wachin@mx19:~
+$ adb shell
+shell@j53g:/ $ printenv
+_=/system/bin/printenv
+ANDROID_DATA=/data
+MKSH=/system/bin/sh
+SECONDARY_STORAGE=/storage/sdcard1
+HOME=/data
+ENC_EMULATED_STORAGE_TARGET=/storage/enc_emulated
+USER=shell
+
+
+
+allí donde dice:
+
+SECONDARY_STORAGE=/storage/sdcard1
+
+esa es mi microSD
+
+
+android - Get sdcard directory by adb - Stack Overflow
+https://stackoverflow.com/questions/9374628/get-sdcard-directory-by-adb
+
+
+If I've not misunderstood you, you're looking for something like:
+
+$ adb shell cd \$EXTERNAL_STORAGE
+$ adb shell ls \$EXTERNAL_STORAGE
+$ adb shell echo \$EXTERNAL_STORAGE
+
+
