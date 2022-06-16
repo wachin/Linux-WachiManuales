@@ -95,7 +95,7 @@ https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.10.109.tar.xz
 
 # Resumen de Descarga
 
-Haré un resumen de los enlaces para poner en la terminal y descargar:
+Haré un resumen de los enlaces para poner en la terminal y descargar. Le aconsejo que esto lo haga dentro de alguna carpeta:
 
 **Parche RT**
 
@@ -109,33 +109,60 @@ Haré un resumen de los enlaces para poner en la terminal y descargar:
 
 Ubíquese en una terminal en el lugar donde está el parche y el código fuente, y ponga:
 
-tar xJvf linux-5.10.109.tar.xz
+```tar xJvf linux-5.10.109.tar.xz
 cd linux-5.10.109
 xzcat ../patch-5.10.109-rt65.patch.xz | patch -p1
-wget -c https://github.com/wachin/AV-Linux-archivos-importantes/raw/master/AVL-MXE-2021.05.22-xfce4-openbox-i386.iso/usr/src/linux-headers-5.9.1-rt19avl1/.config
+wget https://github.com/wachin/AV-Linux-archivos-importantes/raw/master/AVL-MXE-2021.05.22-xfce4-openbox-i386.iso/usr/src/linux-headers-5.9.1-rt19avl1/.config
+```
 
-
-y si activamos el ver los archivos ocultos, ejemplo en Thunar con Ctrl + H vemos ahora el archivo:
+Si activamos el ver los archivos ocultos, ejemplo en Thunar con Ctrl + H vemos ahora el archivo:
 
 .config
 
-abrir ese archivo con un editor de texto como Gedit y buscar la línea:
-
-CONFIG_SYSTEM_TRUSTED_KEYS
-
-allí borrar lo que esté dentro de las comillas, en mi caso estaba así (en otro Linux puede que esté otra cosa):
-
-CONFIG_SYSTEM_TRUSTED_KEYS="debian/certs/debian-uefi-certs.pem"
-
-y lo dejé así:
-
-CONFIG_SYSTEM_TRUSTED_KEYS=""
-
-Guardar el archivo y cerrar el editor de texto.
+este archivo tiene las configuraciones para el Kernel de AV Linux del 2021
 
 Ahora poner allí mismo en la terminal:
 
 make menuconfig
+
+![]()
+
+
+
+
+
+## No hacer ningún cambio en la configuración del Kernel 
+
+No  es necesario hacer ningún cambio pues ese archivo .config ya tiene las  configuraciones para el Kernel RT. Presionaremos la tecla Tab o con la  flecha derecha para ubicarnos en el menú Load:
+
+
+
+
+
+*********************************************************
+
+
+Con el .config del Kernel por defecto tiene 
+
+schedutil
+
+ en:
+
+Power management and ACPI options --- 
+
+CPU Frequency scaling ---
+
+Default CPUFreq governor (schedutil)
+
+voy a ver si al usar otro .config cambia a performance
+
+
+
+
+make deb-pkg LOCALVERSION=-wachin KDEB_PKGVERSION=$(make kernelversion)-1
+
+
+
 
 
 CONFIGURAR EL TIEMPO REAL
@@ -165,32 +192,6 @@ Processor type and features ---> Timer Frecuency (xxx) ---
 entrar y chequear la frecuencia a 1000 Hz
 
 salir
-
-
-
-*********************************************************
-
-
-Con el .config del Kernel por defecto tiene 
-
-schedutil
-
- en:
-
-Power management and ACPI options --- 
-
-CPU Frequency scaling ---
-
-Default CPUFreq governor (schedutil)
-
-voy a ver si al usar otro .config cambia a performance
-
-
-
-
-make deb-pkg LOCALVERSION=-wachin KDEB_PKGVERSION=$(make kernelversion)-1
-
-
 
 
 

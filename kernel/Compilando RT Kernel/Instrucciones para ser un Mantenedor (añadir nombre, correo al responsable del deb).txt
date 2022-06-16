@@ -1,0 +1,40 @@
+
+
+
+
+3.1. Email address
+
+Various Debian maintenance tools recognize your email address and name to use by the shell environment variables $DEBEMAIL and $DEBFULLNAME.
+
+Let’s setup these packages by adding the following lines to ~/.bashrc [7].
+
+Add to the ~/.bashrc file.  
+
+
+DEBEMAIL="your.email.address@example.org"
+DEBFULLNAME="Firstname Lastname"
+export DEBEMAIL DEBFULLNAME
+
+reiniciar el ordenador
+
+
+Al poner eso ejemplo al compilar un Kernel aparecerá su nombre y correo en synaptic en la parte de la información de responsable (Maintainer en inglés)
+
+
+
+Guide for Debian Maintainers
+https://www.debian.org/doc/manuals/debmake-doc/index.en.html
+Chapter 3. Tool Setups
+https://www.debian.org/doc/manuals/debmake-doc/ch03.en.html#email-setup
+
+3.1. Email address
+
+Various Debian maintenance tools recognize your email address and name to use by the shell environment variables $DEBEMAIL and $DEBFULLNAME.
+
+Let’s setup these packages by adding the following lines to ~/.bashrc [7].
+
+Add to the ~/.bashrc file. 
+
+DEBEMAIL="your.email.address@example.org"
+DEBFULLNAME="Firstname Lastname"
+export DEBEMAIL DEBFULLNAME
