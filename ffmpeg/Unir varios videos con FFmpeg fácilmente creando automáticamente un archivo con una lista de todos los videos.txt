@@ -7,7 +7,10 @@ Unir mp4
 
 Crear una lista de todos los archivos a convertir
 
+for f in *.mp4; do echo "file './$f'" >> milista.txt; done
+
 for f in *.mp4; do echo "file '$f'" >> milista.txt; done
+
 
 luego unir los archivos de la lista:
 
