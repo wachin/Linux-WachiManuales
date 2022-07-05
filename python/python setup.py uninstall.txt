@@ -15,6 +15,13 @@ To record a list of installed files, you can use:
 
 python setup.py install --record files.txt
 
+ejemplo:
+
+sudo python3 setup.py install --record files.txt
+
+
+
+
 Once you want to uninstall you can use xargs to do the removal:
 
 xargs rm -rf < files.txt

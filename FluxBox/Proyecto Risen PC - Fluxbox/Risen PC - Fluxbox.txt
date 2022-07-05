@@ -35,7 +35,6 @@ sudo apt-get install qt5ct
 
 luego ponga los siguientes dos comandos en una terminal, uno por uno:
 
-touch ~/.profile
 echo "export QT_QPA_PLATFORMTHEME="qt5ct"" >> ~/.profile
 
 Con esto hemos añadido esa última línea al archivo, esto es necesario.
