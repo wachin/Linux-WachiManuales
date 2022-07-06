@@ -1,0 +1,539 @@
+
+<!--Esta nota contiene algunas 📆instrucciones.
+(1) Para mejorar tu redacción, lee las sugerencias que te explicamos en el PASO ANTERIOR.
+(2) Para CITAR usa el icono 🔖 y rellena la información.
+(3) 📡Continúa leyendo: https://es.wikipedia.org/wiki/WP:EV
+(*) Revisa la estructura: https://es.wikipedia.org/wiki/WP:ACA/GR
+(*) Documentación de la ficha: https://es.wikipedia.org/wiki/Plantilla:Ficha_de_persona
+(*) Puedes cambiar a una ficha adecuada: https://es.wikipedia.org/wiki/Plantilla:Ficha_de_político -->
+
+
+== Caracteres imprimibles ASCII ==
+
+El carácter 'espacio', designa al espacio entre palabras, y se produce normalmente por la barra espaciadora de un teclado. Los códigos Decimales del 32 al 126 se conocen como caracteres imprimibles, y representan letras, dígitos, signos de puntuación y varios símbolos, en contraste en el Sistema Operativo [[Microsoft Windows|Windows]] para insertar la arroba se usa el atajo de teclado:
+
+Alt + 64
+
+En los Sistemas Operativos [[GNU/Linux|Linux]] se usa el [[Sistema Hexadecimal|Sistema hexadecimal]] del 20 al 7E para mostrar los carácteres imprimibles que representan letras, dígitos, signos de puntuación y varios símbolos. Ejemplo para insertar la arroba se usa el atajo de teclado:
+
+Ctrl + Shift + u + 40
+
+La siguiente organización de la tabla es para ayudar a memorizar el significado de los símbolos (todavía en proceso de escribir)
+
+<!--
+ Segunda tabla
+-->
+{| cellspacing="1" cellpadding="0" border="0"
+|- valign="top"
+|
+{| class="wikitable" style="padding: 0.5em; border: 1px #aaa solid; border-collapse: collapse;background:#F9F9F9" cellpadding="4" border="2" 
+|- style="background:#F2F2F2" valign="bottom"
+!Dec
+!Hex
+!Sig.
+!Descripción
+|-
+| align="center" |32
+| align="center" |20
+| align="center" |(&nbsp;)
+|Espacio
+|-
+| align="center" |33
+| align="center" |21
+| align="center" |[[Signo de exclamación|!]]
+|Signo de exclamación
+|-
+| align="center" |34
+| align="center" |22
+| align="center" |[[comillas|"]]
+|Comillas
+|-
+| align="center" |35
+| align="center" |23
+| align="center" |[[almohadilla|#]]
+|almohadilla​, numeral
+|-
+| align="center" |36
+| align="center" |24
+| align="center" |[[$]]
+|signo de peso, signo de dólar
+|-
+| align="center" |37
+| align="center" |25
+| align="center" |[[Porcentaje|%]]
+|Porcentaje
+|-
+| align="center" |38
+| align="center" |26
+| align="center" |[[&]]
+|et, y comercial, [https://www.fundeu.es/consulta/nombre-de-este-signo-grafico-2714/ ampersand]
+|-
+| align="center" |39
+| align="center" |27
+| align="center" |[[apóstrofo|']]
+|Apóstrofo
+|-
+| align="center" |40
+| align="center" |28
+| align="center" |[[paréntesis|(]]
+|
+|-
+| align="center" |41
+| align="center" |29
+| align="center" |[[paréntesis|)]]
+|
+|-
+| align="center" |42
+| align="center" |2A
+| align="center" |[[asterisco|*]]
+|
+|-
+| align="center" |43
+| align="center" |2B
+| align="center" |[[Signos más y menos|+]]
+|
+|-
+| align="center" |44
+| align="center" |2C
+| align="center" |[[coma (puntuación)|,]]
+|
+|-
+| align="center" |45
+| align="center" |2D
+| align="center" |[[guion ortográfico|-]]
+|
+|-
+| align="center" |46
+| align="center" |2E
+| align="center" |[[punto (puntuación)|.]]
+|
+|-
+| align="center" |47
+| align="center" |2F
+| align="center" |[[barra (tipografía)|/]]
+|
+|-
+| align="center" |48
+| align="center" |30
+| align="center" |[[cero|0]]
+|
+|-
+| align="center" |49
+| align="center" |31
+| align="center" |[[uno|1]]
+|
+|-
+| align="center" |50
+| align="center" |32
+| align="center" |[[dos|2]]
+|
+|-
+| align="center" |51
+| align="center" |33
+| align="center" |[[tres|3]]
+|
+|-
+| align="center" |52
+| align="center" |34
+| align="center" |[[cuatro|4]]
+|
+|-
+| align="center" |53
+| align="center" |35
+| align="center" |[[cinco|5]]
+|
+|-
+| align="center" |54
+| align="center" |36
+| align="center" |[[seis|6]]
+|
+|-
+| align="center" |55
+| align="center" |37
+| align="center" |[[siete|7]]
+|
+|-
+| align="center" |56
+| align="center" |38
+| align="center" |[[ocho|8]]
+|
+|-
+| align="center" |57
+| align="center" |39
+| align="center" |[[nueve|9]]
+|
+|-
+| align="center" |58
+| align="center" |3A
+| align="center" |[[dos puntos|:]]
+|
+|-
+| align="center" |59
+| align="center" |3B
+| align="center" |[[punto y coma|;]]
+|
+|-
+| align="center" |60
+| align="center" |3C
+| align="center" |[[inecuación|&lt;]]
+|
+|-
+| align="center" |61
+| align="center" |3D
+| align="center" |[[signo igual|=]]
+|
+|-
+| align="center" |62
+| align="center" |3E
+| align="center" |[[inecuación|>]]
+|
+|-
+| align="center" |63
+| align="center" |3F
+| align="center" |[[signo de interrogación|?]]
+|
+|}
+|&nbsp;
+|
+{| class="wikitable" style="padding: 0.5em; border: 1px #aaa solid; border-collapse: collapse;background:#F9F9F9" cellpadding="4" border="2" 
+|- style="background:#F1F2F2" valign="bottom"
+!Dec
+!Hex
+!Sig.
+!Descripción
+|-
+| align="center" |64
+| align="center" |40
+| align="center" |[[Arroba (símbolo)|@]]
+|
+|-
+| align="center" |65
+| align="center" |41
+| align="center" |[[A]]
+|
+|-
+| align="center" |66
+| align="center" |42
+| align="center" |[[B]]
+|
+|-
+| align="center" |67
+| align="center" |43
+| align="center" |[[C]]
+|
+|-
+| align="center" |68
+| align="center" |44
+| align="center" |[[D]]
+|
+|-
+| align="center" |69
+| align="center" |45
+| align="center" |[[E]]
+|
+|-
+| align="center" |70
+| align="center" |46
+| align="center" |[[F]]
+|
+|-
+| align="center" |71
+| align="center" |47
+| align="center" |[[G]]
+|
+|-
+| align="center" |72
+| align="center" |48
+| align="center" |[[H]]
+|
+|-
+| align="center" |73
+| align="center" |49
+| align="center" |[[I]]
+|
+|-
+| align="center" |74
+| align="center" |4A
+| align="center" |[[J]]
+|
+|-
+| align="center" |75
+| align="center" |4B
+| align="center" |[[K]]
+|
+|-
+| align="center" |76
+| align="center" |4C
+| align="center" |[[L]]
+|
+|-
+| align="center" |77
+| align="center" |4D
+| align="center" |[[M]]
+|
+|-
+| align="center" |78
+| align="center" |4E
+| align="center" |[[N]]
+|
+|-
+| align="center" |79
+| align="center" |4F
+| align="center" |[[O]]
+|
+|-
+| align="center" |80
+| align="center" |50
+| align="center" |[[P]]
+|
+|-
+| align="center" |81
+| align="center" |51
+| align="center" |[[Q]]
+|
+|-
+| align="center" |82
+| align="center" |52
+| align="center" |[[R]]
+|
+|-
+| align="center" |83
+| align="center" |53
+| align="center" |[[S]]
+|
+|-
+| align="center" |84
+| align="center" |54
+| align="center" |[[T]]
+|
+|-
+| align="center" |85
+| align="center" |55
+| align="center" |[[U]]
+|
+|-
+| align="center" |86
+| align="center" |56
+| align="center" |[[V]]
+|
+|-
+| align="center" |87
+| align="center" |57
+| align="center" |[[W]]
+|
+|-
+| align="center" |88
+| align="center" |58
+| align="center" |[[X]]
+|
+|-
+| align="center" |89
+| align="center" |59
+| align="center" |[[Y]]
+|
+|-
+| align="center" |90
+| align="center" |5A
+| align="center" |[[Z]]
+|
+|-
+| align="center" |91
+| align="center" |5B
+| align="center" |[[paréntesis|<nowiki>[</nowiki>]]
+|
+|-
+| align="center" |92
+| align="center" |5C
+| align="center" |[[barra inversa|\]]
+|
+|-
+| align="center" |93
+| align="center" |5D
+| align="center" |[[paréntesis|<nowiki>]</nowiki>]]
+|
+|-
+| align="center" |94
+| align="center" |5E
+| align="center" |[[acento circunflejo|^]]
+|
+|-
+| align="center" |95
+| align="center" |5F
+| align="center" |[[guion bajo|_]]
+|
+|}
+|&nbsp;
+|
+{| class="wikitable" style="padding: 0.5em; border: 1px #aaa solid; border-collapse: collapse;background:#F9F9F9" cellpadding="4" border="2" 
+|- style="background:#F1F2F2" valign="bottom"
+!Dec
+!Hex
+!Sig.
+!Descripción
+|-
+| align="center" |96
+| align="center" |60
+| align="center" |[[acento grave|`]]
+|Acento grave
+|-
+| align="center" |97
+| align="center" |61
+| align="center" |[[a]]
+|
+|-
+| align="center" |98
+| align="center" |62
+| align="center" |[[b]]
+|
+|-
+| align="center" |99
+| align="center" |63
+| align="center" |[[c]]
+|
+|-
+| align="center" |100
+| align="center" |64
+| align="center" |[[d]]
+|
+|-
+| align="center" |101
+| align="center" |65
+| align="center" |[[e]]
+|
+|-
+| align="center" |102
+| align="center" |66
+| align="center" |[[f]]
+|
+|-
+| align="center" |103
+| align="center" |67
+| align="center" |[[g]]
+|
+|-
+| align="center" |104
+| align="center" |68
+| align="center" |[[h]]
+|
+|-
+| align="center" |105
+| align="center" |69
+| align="center" |[[i]]
+|
+|-
+| align="center" |106
+| align="center" |6A
+| align="center" |[[j]]
+|
+|-
+| align="center" |107
+| align="center" |6B
+| align="center" |[[k]]
+|
+|-
+| align="center" |108
+| align="center" |6C
+| align="center" |[[l]]
+|
+|-
+| align="center" |109
+| align="center" |6D
+| align="center" |[[m]]
+|
+|-
+| align="center" |110
+| align="center" |6E
+| align="center" |[[n]]
+|
+|-
+| align="center" |111
+| align="center" |6F
+| align="center" |[[o]]
+|
+|-
+| align="center" |112
+| align="center" |70
+| align="center" |[[p]]
+|
+|-
+| align="center" |113
+| align="center" |71
+| align="center" |[[q]]
+|
+|-
+| align="center" |114
+| align="center" |72
+| align="center" |[[r]]
+|
+|-
+| align="center" |115
+| align="center" |73
+| align="center" |[[s]]
+|
+|-
+| align="center" |116
+| align="center" |74
+| align="center" |[[t]]
+|
+|-
+| align="center" |117
+| align="center" |75
+| align="center" |[[u]]
+|
+|-
+| align="center" |118
+| align="center" |76
+| align="center" |[[v]]
+|
+|-
+| align="center" |119
+| align="center" |77
+| align="center" |[[w]]
+|
+|-
+| align="center" |120
+| align="center" |78
+| align="center" |[[x]]
+|
+|-
+| align="center" |121
+| align="center" |79
+| align="center" |[[y]]
+|
+|-
+| align="center" |122
+| align="center" |7A
+| align="center" |[[z]]
+|
+|-
+| align="center" |123
+| align="center" |7B
+| align="center" |[[paréntesis|<nowiki>{</nowiki>]]
+|
+|-
+| align="center" |124
+| align="center" |7C
+| align="center" |[[pleca|&#124;]]
+|
+|-
+| align="center" |125
+| align="center" |7D
+| align="center" |[[paréntesis|<nowiki>}</nowiki>]]
+|
+|-
+| align="center" |126
+| align="center" |7E
+| align="center" |[[virgulilla|~]]
+|
+|}
+|}
+
+
+== Enlaces externos ==
+<!--❗ Esta sección es para páginas web oficiales. Si no existen, bórralo abajo.-->
+* [https://es.wikipedia.org/wiki/ASCII Sitio web oficial].
+
+<!--No borres esta línea-->{{NF}}<!--Gracias-->
+<!--📍Elimina {{categorizar}} y añade el nombre de categoría (desde las propiedades) o código wiki. Deben estar entre [[ ]] y en plural.
+✏Ejemplos: [[Categoría:Abogados]] [[Categoría:Presidentes de Francia]] categoriza esta página en Abogados y Presidentes de Francia. -->
+{{categorizar}}

@@ -3,6 +3,11 @@
 Cómo instalar los temas de antiX para Fluxbox Ubuntu
 ****************************************************
 
+
+http://repo.antixlinux.com/stretch/pool/main/f/fluxbox-themes-antix/
+
+
+
 Ponga en la terminal uno por uno estas ocho líneas ejecutandolas:
 
 
