@@ -16,3 +16,14 @@ ahora hay que abrir el archivo con LibreOffice para que se carguen las imagenes
 
 Markdown to Word/PDF converter for Linux - Super User
 https://superuser.com/a/1203099
+
+
+odt a md debería ser así
+
+pandoc --extract-media=images -s "Ghostwriter instalarlo, configurarlo, habilitar formatos exportación.odt" -t markdown -o test2.md
+
+
+blog.atwork.at | Convert Word documents to Markdown, HTML or any other format
+https://blog.atwork.at/post/Convert-documents-with-Pandoc
+
+
