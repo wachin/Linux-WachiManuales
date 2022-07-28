@@ -1,7 +1,18 @@
 
 
+Index of /deepin/
+https://community-packages.deepin.com/
+
+https://community-packages.deepin.com/deepin/pool/
 
 https://community-packages.deepin.com/deepin/pool/main/d/deepin-keyring/
+
+https://community-packages.deepin.com/deepin/pool/main/d/deepin-icon-theme/
+
+
+
+http://packages.deepin.com/deepin/
+
 
 
 Para añadirlos, pero causan problemas:

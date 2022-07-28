@@ -4,6 +4,13 @@
 Convertir RPM a DEB.
 alien -d -c archivo.rpm
 
+or
+
+Now, just run alien on it (using fakeroot).
+
+$ fakeroot alien packagecloud-test-1.1-1.x86_64.rpm
+packagecloud-test_1.1-2_amd64.deb generated
+
  
 
 Convertir DEB a RPM.
@@ -24,3 +31,6 @@ alien -r -c -i archivo.deb
 
 Alien, herramienta para convertir paquetes deb a rpm y viceversa - LinuxParty
 https://www.linux-party.com/35-linux/10103-alien-herramienta-para-convertir-paquetes-deb-a-rpm-y-viceversa
+
+Use alien to convert Deb to RPM (and RPM to Deb) | Packagecloud Blog
+https://blog.packagecloud.io/use-alien-to-convert-deb-to-rpm-and-rpm-to-deb/

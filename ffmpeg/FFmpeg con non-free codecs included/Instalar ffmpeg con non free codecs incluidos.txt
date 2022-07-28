@@ -10,7 +10,7 @@ luego
 
 git clone https://github.com/markus-perl/ffmpeg-build-script.git
 cd ffmpeg-build-script
-./build-ffmpeg --help
+./build-ffmpeg --build
 
 
 Usage

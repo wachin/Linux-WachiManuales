@@ -5,6 +5,7 @@ how to create deb from qt source
 
 Cómo crear un deb desde código fuente Qt
 
+la carpeta inicial debe tener nombre y version del programa
 
 Algunos necesitan
 
@@ -15,6 +16,19 @@ dh_make -s -c gpl -e wachin.id@gmail.com --createorig
 dpkg-buildpackage
 
 
+y si en algún otro programa que usted esté compilando no se puede así, ponga 
+
+dpkg-buildpackage -rfakeroot -b -uc -us
+
+
+Donde:
+
+      sudo: Algunos programas lo necesitan para este proceso
+     dpkg-buildpackage: comando para crear paquetes binarios o fuente a partir de fuentes.
+     -rfakeroot: crea un entorno fakeroot para simular privilegios de root (para evitar problemas de propiedad y permisos).
+     -b: compila solo el paquete binario.
+     -uc - No firma criptográficamente el registro de cambios. es decir, no firma los archivos .buildinfo y .changes
+     -us: no firma el paquete fuente.
 
 
 
