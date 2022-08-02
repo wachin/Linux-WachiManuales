@@ -1,0 +1,23 @@
+
+
+make install >file.txt 2>&1
+
+pero esta lista está mesclada, buscar allí:
+
+-install qinstall
+
+aquí unos ejemplos de lo que se ha instalado:
+
+/usr/lib/qt5/bin/qmake -install qinstall /home/wachin/Dev/vnote.1/src/data/core/logo/256x256/vnote.png /home/wachin/bin//share/icons/hicolor/256x256/apps/vnote.png
+
+/usr/lib/qt5/bin/qmake -install qinstall -exe libVTextEdit.so.1.0.0 /home/wachin/bin/lib/libVTextEdit.so.1.0.0
+strip --strip-unneeded /home/wachin/bin/lib/libVTextEdit.so.1.0.0
+ln -f -s libVTextEdit.so.1.0.0 /home/wachin/bin/lib/libVTextEdit.so
+ln -f -s libVTextEdit.so.1.0.0 /home/wachin/bin/lib/libVTextEdit.so.1
+ln -f -s libVTextEdit.so.1.0.0 /home/wachin/bin/lib/libVTextEdit.so.1.0
+
+
+software installation - How to create a txt log file of a "make install"? - Ask Ubuntu
+https://askubuntu.com/questions/458623/how-to-create-a-txt-log-file-of-a-make-install
+https://askubuntu.com/a/458634/145772
+
