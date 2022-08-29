@@ -1,0 +1,106 @@
+
+
+
+flechas simples
+
+← U+2190 (alt-08592) FLECHA HACIA LA IZQUIERDA
+↑ U+2191 (alt-08593) FLECHA HACIA ARRIBA
+→ U+2192 (alt-08594) FLECHA HACIA LA DERECHA = notación z función total
+↓ U+2193 (alt-08595) FLECHA HACIA ABAJO
+↔ U+2194 (alt-08596) FLECHA IZQUIERDA DERECHA = relación de notación z
+↕ U+2195 (alt-08597) FLECHA ARRIBA ABAJO
+
+Flechas blancas y símbolos de teclado
+
+⇦ U+21E6 (alt-08678) FLECHA BLANCA HACIA LA IZQUIERDA
+⇧ U+21E7 (alt-08679) FLECHA BLANCA HACIA ARRIBA = shift = seleccionar nivel 2 (ISO 9995-7)
+⇨ U+21E8 (alt-08680) FLECHA BLANCA HACIA LA DERECHA = selección de grupo (ISO 9995-7)
+⇩ U+21E9 (alt-08681) FLECHA BLANCA HACIA ABAJO
+
+Operadores n-arios
+
+∑ U+2211 (alt-08721) SUMA N-ARIA = signo de suma
+
+Símbolos del teclado
+
+⌨ U+2328 (alt-09000) TECLADO
+
+Símbolos electrotécnicos
+
+⏚ U+23DA (alt-09178) TIERRA
+
+Símbolos de la interfaz de usuario
+
+⏰ U+23F0 (alt-09200) RELOJ DE ALARMA
+⏱ U+23F1 (alt-09201) CRONÓMETRO
+⏲ ​​U+23F2 (alt-09202) TEMPORIZADOR
+ ⏳ U+23F3 (alt-09203) RELOJ DE ARENA CON ARENA FLUYENTE
+
+
+Componentes de caja de línea ligera y pesada
+
+└ U+2514 (alt-09492) CAJA DIBUJOS LUZ ARRIBA Y DERECHA = Videotex Mosaic DG 18
+├ U+251C (alt-09500) CAJA DIBUJOS LUZ VERTICAL Y DERECHA = Videotex Mosaic DG 20
+
+Líneas sólidas ligeras y pesadas
+
+─ U+2500 (alt-09472) CAJA DIBUJOS LUZ HORIZONTAL = Videotex Mosaic DG 15
+
+estos me sirven para poder editar los arboles de las carpetas dadas por tree
+
+
+Símbolo misceláneo
+
+☕ U+2615 (alt-09749) BEBIDA CALIENTE = té o café, dependiendo del lugar
+
+Varios símbolos
+
+☎ U+260E (alt-09742) TELÉFONO NEGRO
+☏ U+260F (alt-09743) TELÉFONO BLANCO
+
+simbolos musicales
+
+♩ U+2669 (alt-09833) NEGRA = entrepierna
+♪ U+266A (alt-09834) OCTAVA NOTA = corchea
+♫ U+266B (alt-09835) OCTAVA NOTAS CON VIGAS = corcheas con vigas
+♬ U+266C (alt-09836) NOTAS CORTE 1/16 CON BARRAS = semicorcheas con barras
+♭ U+266D (alt-09837) SEÑAL DE MÚSICA PLANA
+♮ U+266E (alt-09838) SIGNO NATURAL DE LA MÚSICA
+♯ U+266F (alt-09839) SIGNO DE MÚSICA SHARP = notación z conteo de bolsa infijo
+
+
+Misceláneas
+✂ U+2702 (alt-09986) TIJERA NEGRA
+✆ U+2706 (alt-09990) SEÑAL DE UBICACIÓN DEL TELÉFONO
+✈ U+2708 (alt-09992) AVIÓN
+✌ U+270C (alt-09996) MANO VICTORIA = tijeras en el juego Piedra, Papel, Tijeras
+✍ U+270D (alt-09997) MANO DE ESCRITURA
+✎ U+270E (alt-09998) LÁPIZ INFERIOR DERECHO
+✏ U+270F (alt-09999) LÁPIZ
+✐ U+2710 (alt-010000) LÁPIZ SUPERIOR DERECHO
+✑ U+2711 (alt-010001) PLUMA BLANCA
+✒ U+2712 (alt-010002) PLUMA NEGRA
+✓ U+2713 (alt-010003) MARCA DE VERIFICACIÓN
+✔ U+2714 (alt-010004) MARCA DE VERIFICACIÓN PESADA
+
+cruces
+
+✝ U+271D (alt-010013) CRUZ LATINA
+✞ U+271E (alt-010014) CRUZ LATINA BLANCA SOMBREADA
+
+Estrellas, asteriscos y copos de nieve
+
+✡ U+2721 (alt-010017) ESTRELLA DE DAVID
+
+
+Adornos de puntuación
+
+❟ U+275F (alt-010079) ORNAMENTO DE COMILLAS DE COMA ÚNICA PESADA Y BAJA
+❠ U+2760 (alt-010080) ORNAMENTO DE COMILLAS DOBLE COMA BAJA PESADA
+
+Flechas de dingbat
+
+➛ U+279B (alt-010139) PUNTO DE REDACCIÓN FLECHA HACIA LA DERECHA
+➜ U+279C (alt-010140) FLECHA HACIA LA DERECHA CON PUNTA REDONDA PESADA
+➝ U+279D (alt-010141) FLECHA HACIA LA DERECHA CON PUNTA DE TRIÁNGULO
+➞ U+279E (alt-010142) FLECHA HACIA LA DERECHA CON PUNTA DE TRIÁNGULO PESADO

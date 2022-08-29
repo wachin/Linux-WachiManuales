@@ -1,17 +1,15 @@
 
-Cómo compartir videos largos en whatsapp
+Cómo compartir videos largos en whatsapp comprimiendo desde Linux con FFmulticonverter a menos de 16 MB
 
 Menos de 16 MB acepta WhatsApp en un video
 
-ffmulticonverter video para WhatsApp a 800kbps, 480x360
-Nota: Estaba convirtiendo un video de 10,20min y pesa 1,4GB, pero el tamaño que dió fue 70MB y al tratar de enviarlo en WhatsApp me dejaba seleccionar 1/4 partes del video
+Cualquiera de las líneas ejemplo:
 
-********************
-Dos canales de audio
-********************
+-vf "scale=512:288" -b:v 220k -r 15 -ac 1 -b:a 30k -ar 44100
 
-video 250kbps, 512x288, fps15, audio 128kbps, 44.1kHz, 2 canales, AAC
--vf "scale=512:288" -b:v 250k -r 15 -ac 2 -b:a 128k -ar 44100
+hay que colocarla en FFmulticonverter en:
+
+Comando:
 
 
 *****************
