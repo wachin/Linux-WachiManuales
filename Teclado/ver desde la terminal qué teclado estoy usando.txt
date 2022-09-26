@@ -1,0 +1,15 @@
+
+
+How to get keyboard layout (language) in terminal (console, command-line) - Ask Ubuntu
+https://askubuntu.com/questions/973257/how-to-get-keyboard-layout-language-in-terminal-console-command-line
+https://askubuntu.com/q/973257/145772
+
+
+setxkbmap -v | awk -F "+" '/symbols/ {print $2}'
+
+
+
+
+
+
+
