@@ -27,7 +27,10 @@ entonces debo poner así:
 
 tar cvf - -T /home/wachin/build-from-source/inkscape-1.0.2_2021-01-15_e86c870879/build/install_manifest.txt | tar xvf - -C /home/wachin/build-from-source/Inkscape-1.0.2-extraido-su-contenido/
 
-y aquí ya está recreado:
+otro ejemplo:
+
+tar cvf - -T /home/wachin/Dev-wachin/dmidiplayer-1.7/drumstick-2.7.2/build/install_manifest.txt | tar xvf - -C /home/wachin/Dev-wachin/dmidiplayer-1.7/drumstick-2.7.2-extraido/
+
 
 
 y en la siguiente imagen abro el arbol de las carpetas allí en el administrador de archivos Dolphin:
