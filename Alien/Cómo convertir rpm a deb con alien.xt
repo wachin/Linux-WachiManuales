@@ -2,14 +2,21 @@
 
 
 Convertir RPM a DEB.
-alien -d -c archivo.rpm
+sudo alien -d -c archivo.rpm
+
+http://rpm.pbone.net/
+http://rpm.pbone.net/info_idpl_54111599_distro_opensusetumbleweed_com_vnote-1.20-1.11.i586.rpm.html
+
+sudo alien -d -c vnote-1.20-1.11.i586.rpm
 
 or
 
-Now, just run alien on it (using fakeroot).
-
 $ fakeroot alien packagecloud-test-1.1-1.x86_64.rpm
-packagecloud-test_1.1-2_amd64.deb generated
+
+
+Si nomás se quiere extraer la carpeta:
+
+sudo alien -d -c -s archivo.rpm
 
  
 

@@ -1,0 +1,7 @@
+
+How to install qt 5 on Ubuntu
+https://www.addictivetips.com/ubuntu-linux-tips/how-to-install-qt-5-on-ubuntu/
+
+Following the installation of the Qt 5 run file, you must install various dependencies. These dependencies are required for Qt 5 to run correctly on Ubuntu. 
+
+sudo apt install libfontconfig1 build-essential mesa-common-dev libglu1-mesa-dev

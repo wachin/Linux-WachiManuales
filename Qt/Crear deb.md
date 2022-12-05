@@ -16,6 +16,9 @@ Open a terminal and execute cd yourProjectName_projectVersion.
 Para mi es así:
     
     dh_make -s -c gpl -e wachin.id@gmail.com --createorig
+    
+    
+    dh_make -s --copyright lgpl3 --email wachin.id@gmail.com --createorig    
         
 pero si el programa no está en <package>-<version> se puede así:
 
@@ -29,11 +32,18 @@ Finally, execute
 
     dpkg-buildpackage
     
-o:
+pero este lo signa y también:
 
     dpkg-buildpackage -rfakeroot
     
+    
+Construir un paquete Debian desde código fuente
+http://www.estrellateyarde.org/instalar-software-en-linux/construir-un-paquete-debian-desde-las-fuentes    
+    
+para construir el paquete .deb ejecutaremos:
 
+    dpkg-buildpackage -uc -b
+    
 
 . You may get something like error exit status 255, if so, check that the tar.xs file in you Home folder matches the file requested by dpkg-buildpackage (check the last lines of the output of dpkg-buildpackage to find out what file wants).
 

@@ -27,7 +27,7 @@ Donde:
      dpkg-buildpackage: comando para crear paquetes binarios o fuente a partir de fuentes.
      -rfakeroot: crea un entorno fakeroot para simular privilegios de root (para evitar problemas de propiedad y permisos).
      -b: compila solo el paquete binario.
-     -uc - No firma criptográficamente el registro de cambios. es decir, no firma los archivos .buildinfo y .changes
+     -uc - No firma criptográficamente el registro de cambios. es decir, nlos archivos o firma .buildinfo y .changes
      -us: no firma el paquete fuente.
 
 
