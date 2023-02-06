@@ -6,16 +6,16 @@ Convertir ppt o pptx a txt con unoconv desde la terminal y desde Thunar
 Para convertir presentaciones Power Point a texto, los pasos son convertir las presentaciones pptx o ppt a odp, luego a html, y luego a txt
 
 
-DESDE LA TERMINAL
+DESDE LA TERMINAL ppt a odt
 
 unoconv -f odp *.ppt
 
-o
+o si tiene el archivo pptx
 
 unoconv -f odp *.pptx
 
 
-y luego
+y luego odp a html
 
 unoconv -f html *.odp
 

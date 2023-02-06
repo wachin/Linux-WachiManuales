@@ -12,6 +12,17 @@ hay que colocarla en FFmulticonverter en:
 Comando:
 
 
+**************************************************
+Un canal de audio, buena calidad audio, baja video
+**************************************************
+
+Tamaño 512x288, Video 145k, audio 128k
+-vf "scale=512:288" -b:v 145k -r 15 -ac 1 -b:a 128k -ar 44100
+
+
+
+
+
 *****************
 Un canal de audio
 *****************

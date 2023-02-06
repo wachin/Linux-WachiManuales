@@ -1,0 +1,23 @@
+
+
+
+
+
+
+unoconv -f htm *.odt
+
+cd /home/wachin/Documentos/Yuly/
+
+unoconv -f piel.odt 19-Piel.html
+
+
+
+
+unoconv -f pdf *.odt
+
+
+
+
+
+
+

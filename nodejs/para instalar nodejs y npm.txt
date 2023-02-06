@@ -1,0 +1,5 @@
+
+Con lo siguiente se instalan nodejs y npm
+
+sudo apt install npm
+ 
