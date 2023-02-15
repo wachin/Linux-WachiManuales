@@ -1,0 +1,173 @@
+
+Conecto el cable de red pues no funciona el wifi
+
+
+He instalado actualizado los repositorios:
+
+
+e instalado:
+
+
+gedit
+git
+
+
+
+Instalo el modulo controlador para las particiones exfat:
+
+git clone https://github.com/arter97/exfat-linux
+make
+sudo make install
+
+
+añadido los repositorios de mx linux segun:
+
+https://mxlinux.org/uncategorized/repos-mx-21/
+
+
+
+sudo gedit /etc/apt/sources.list.d/mx.list
+
+a este archivo añado:
+
+
+# MX Community Main and Test Repos
+
+deb http://mxrepo.com/mx/repo/ bullseye main non-free
+
+#deb http://mxrepo.com/mx/testrepo/ bullseye test
+
+#deb http://mxrepo.com/mx/repo/ bullseye ahs
+
+
+
+
+
+busco aquí:
+
+https://mxrepo.com/mx/repo/pool/main/m/
+
+encuentro:
+
+https://mxrepo.com/mx/repo/pool/main/m/mx21-archive-keyring/
+
+descargo e instalo:
+
+https://mxrepo.com/mx/repo/pool/main/m/mx21-archive-keyring/mx21-archive-keyring_2021.2.19_all.deb
+
+recargo los repositorios en synaptic e instalo:
+
+mx-network-asistant
+
+abro este programa
+
+e instalo:
+
+mx-packageinstaller
+
+
+
+El internet de wifi lo voy a tratar de habilitar instalando:
+
+
+instalé:
+
+firmware-b43-installer
+
+
+b43-fwcutter
+
+y funcionó
+
+
+
+El siguiente no funcionó
+
+firmware-b43legacy-installer
+
+
+
+
+Desinstalo
+
+todos los juegos (para eso los he seleccionado en synaptic en la sección de juegos)
+
+librecad librecad-data tuxpaint tuxpaint-data tuxpaint-stamps-default tuxpaint-plugins-default tuxpaint-config
+
+
+
+
+
+
+
+
+How to disable auto Login in Bodhi Linux
+https://www.youtube.com/watch?v=GT6ocHFeEWY
+
+
+sudo gedit /etc/lightdm/lightdm.conf
+
+
+FIX PACK 1 ESCUELAS LINUX 
+Enviado por Escuelas Linux por Messenger de Facebook
+
+Ok, en /etc/modprobe.d cree un archivo llamado blacklist.conf. ese archivo debe contener:
+Escuelas
+Escuelas Linux
+La siguiente línea:
+blacklist evbug
+
+o sea
+
+sudo gedit /etc/modprobe.d/blacklist.conf
+
+
+
+
+Recobrando el kernel
+De Escuelas Linux me dijeron que se puede usar dpkg-repack para recuperar un paquete instalado en el sistema
+
+Instalarlo primero:
+
+sudo apt install dpkg-repack
+
+luego en synaptip busco la palabra:
+
+kernel
+
+y encuentro los siguientes 4.19 y copio los nombres y los preparo:
+
+sudo dpkg-repack linux-headers-4.19.265-0419265
+sudo dpkg-repack linux-headers-4.19.265-0419265-generic
+sudo dpkg-repack linux-image-4.19.265-0419265-generic
+sudo dpkg-repack linux-modules-4.19.265-0419265-generic
+
+
+
+Programas que luego desisntalé porque habia instalado mx-packageinstaller
+
+
+sudo apt remove aptitude aptitude-common flatpak gnome-desktop3-data libappstream-glib8 \
+libcwidget4 libgnome-desktop-3-19 libmalcontent-0-0 libostree-1-1 libpipewire-0.3-0 \
+libpipewire-0.3-modules libspa-0.2-modules libxkbregistry0 mx-packageinstaller \
+mx-packageinstaller-pkglist pipewire pipewire-bin socat xdg-desktop-portal xdg-desktop-portal-gtk 
+
+
+INVESTIGAR
+
+Listen to your mic - with Pipewire
+https://github.com/mijorus/whisper
+
+OnlyOffice
+https://github.com/ONLYOFFICE/DesktopEditors/
+https://github.com/btactic/document-server-package/blob/btactic-documentation/README-BUILD-DEBIAN-PACKAGE-NO-LIMITS.md
+
+
+
+
+
+
+
+
+
+

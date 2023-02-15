@@ -1,0 +1,17 @@
+
+
+29 OCTOBER, 2022
+How to Clear huge /var/log/journal folder in Linux/Debian/Ubuntu/Kali Linux/RedHat/Fedora/Rocky Linux etc.
+https://dannyda.com/2022/10/29/how-to-clear-huge-var-log-journal-folder-in-linux-debian-ubuntu-kali-linux-redhat-fedora-rocky-linux-etc/
+
+1 Find out how much disk space /var/log/journal is consuming
+journalctl --disk-usage
+
+3 Control/Limit the disk space /var/log/journal can use
+We can manually edit the configuration file /etc/systemd/journald.conf
+
+sudo gedit /etc/systemd/journald.conf
+
+Add the following line at the bottom of the configuration file
+
+SystemMaxUse=50M

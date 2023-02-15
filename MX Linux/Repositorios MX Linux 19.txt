@@ -2,19 +2,6 @@
 
 https://mxlinux.org/wiki/system/repos-mx-19/
 
-
-Repos – MX-19
-
-    Jerry3904
-
-    October 22, 2019
-
-    Version: MX-19
-
-    Section: System	
-
-Default repositories
-
 Sources of software packages are listed in files contained in /etc/apt/sources.list.d/. Note that users may see minor changes due to localization (e.g., http://ftp.uk.debian.org/debian/ instead of http://ftp.us.debian.org/debian/) or choice of mirror.
 
 mx.list
