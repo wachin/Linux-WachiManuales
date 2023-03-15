@@ -10,4 +10,7 @@ firefox
 ## y lo he comprimido allí para tener ese respaldo allí
 ## y luego el comprimido .mozilla.tar.gz lo he puesto en HOME
 ## para ahora si desde allí lanzar este
+## tar --help
+## -C, --directory=DIR        cambia al directorio DIR
+
 

@@ -37,5 +37,8 @@ otro ejemplo:
 export PATH=$PATH:/home/wachin/.local/bin
 
 
+y luego reiniciar el ordenador
+
+
 
 
