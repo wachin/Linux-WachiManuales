@@ -1,0 +1,9 @@
+
+
+https://www.messenger.com/t/100008103343089
+
+Mar 22, 2023, 2:51 PM
+Escuelas
+Saludos. Recuerde que en el archivo comprimido de Escuelas Linux 8.1 LowMem 32 bits vienen incluidos los paquetes deb de LibreOffice 7.5.1, la versión más reciente de esa suite ofimática:
+ 
+ https://es.osdn.net/projects/escuelaslinux/downloads/74609/escuelaslinux-8.1-32.tar.gz/

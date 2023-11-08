@@ -10,6 +10,8 @@ firefox
 ## y lo he comprimido allí para tener ese respaldo allí
 ## y luego el comprimido .mozilla.tar.gz lo he puesto en HOME
 ## para ahora si desde allí lanzar este
+## La segunda línea descomprime el archivo tar pero cambiando 
+## la ruta a ~/.config/ esto lo aprendí viendo la ayuda
 ## tar --help
 ## -C, --directory=DIR        cambia al directorio DIR
 
