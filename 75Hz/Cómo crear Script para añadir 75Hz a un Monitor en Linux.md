@@ -25,6 +25,10 @@ Ahora, ingrese los siguientes datos a la terminal:
 
 	gtf 1280 768 75
 
+	o:
+
+
+
 como resultado aparece así:
 
 	# 1280x768 @ 75.00 Hz (GTF) hsync: 60.15 kHz; pclk: 102.98 MHz
