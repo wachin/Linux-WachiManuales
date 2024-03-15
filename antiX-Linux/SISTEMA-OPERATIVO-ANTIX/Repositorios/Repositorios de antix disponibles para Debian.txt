@@ -8,3 +8,15 @@ sudo gedit /etc/apt/sources.list.d/antix.list
 
 
 deb http://repo.antixlinux.com/buster buster main nonfree nosystemd
+
+
+
+
+y para descargar los paquetes
+
+http://repo.antixlinux.com/
+
+ejemplo del kernel para debian 12:
+
+
+http://repo.antixlinux.com/bookworm/pool/main/l/

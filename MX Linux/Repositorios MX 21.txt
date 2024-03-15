@@ -8,6 +8,11 @@ Sources of software packages are listed in files contained in /etc/apt/sources.l
 
 sudo kate /etc/apt/sources.list
 
+or:
+
+sudo nano /etc/apt/sources.list
+
+
 
 mx.list
 
@@ -21,6 +26,17 @@ deb http://mxrepo.com/mx/repo/ bullseye main non-free
 
 
 
+Para bookworm
+
+deb http://mxrepo.com/mx/repo/ bookworm main non-free
+
+y descargar e instalar la llave:
+
+https://mxrepo.com/mx/repo/pool/main/m/mx23-archive-keyring/
+
+ejemplo a esta fecha el archivo:
+
+https://mxrepo.com/mx/repo/pool/main/m/mx23-archive-keyring/mx23-archive-keyring_2023.6.6_all.deb
 
 
 debian-stable-updates.list

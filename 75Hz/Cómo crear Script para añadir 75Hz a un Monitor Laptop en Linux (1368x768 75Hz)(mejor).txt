@@ -66,7 +66,9 @@ Esto significa que el monitor de la laptop es "LVDS-1"
 
 Ahora, ingrese los siguientes datos a la terminal:
 
-wachin@Dell-Inspiron-1750:~$ gtf 1368 768 75
+$ gtf 1368 768 75
+
+
 
 como resultado aparece así:
 
@@ -97,8 +99,16 @@ xrandr --output LVDS-1 --mode 1368x768_75.00
 -------------------------------------------------------------
 
 
-Adaptado para Ubuntu de:
-http://www.arunviswanathan.com/node/53
+o con
+
+cvt 1360 768 75
+
+xrandr --newmode "1360x768_75.00"  109.00  1366 1447 1583 1808  768 771 781 805 -hsync +vsync
+xrandr --addmode LVDS-1 1368x768_75.00
+xrandr --output LVDS-1 --mode 1368x768_75.00
+
+
+
 
 
                    
