@@ -1,0 +1,22 @@
+
+Después de poner el nombre de usuario poner:
+
+git config --global credential.helper store
+
+y cuando le pregunte por la contraseña ponga el Token. Esto creará en su HOME el archivo:
+
+.git-credentials
+
+y añadirá al archivo:
+
+.gitconfig
+
+las lineas:
+
+[credential]
+	helper = store
+	
+Después de esto ya no preguntará por el Token. Eso es todo, Dios les bendiga	
+	
+	
+

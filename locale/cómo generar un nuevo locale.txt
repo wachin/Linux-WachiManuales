@@ -8,6 +8,11 @@ Antes de que un locale puede utilizarse en el sistema, tiene que ser activado pr
 
 $ locale -a
 
+Para reconfigurar los locales
+
+sudo dpkg-reconfigure locales
+
+
 Para habilitar un locale, descomente el nombre del locale en el archivo /etc/locale.gen. Este archivo contiene todos los locales disponibles que se pueden utilizar en el sistema. El proceso es reversible deshabilitando (comentando) el locale. Después de que los locales necesarios están habilitados, el sistema necesita ser actualizado con las nuevas configuraciones regionales:
 
 # locale-gen
